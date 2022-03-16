@@ -21,3 +21,7 @@ function DNAtoRNA(dna) {
 function greet(name){
     return `Hello, ${name} how are you doing today?`
 }
+
+function paperwork(n, m) {
+    return n < 0 || m < 0 ? 0 : n * m
+}
