@@ -28,3 +28,11 @@ function paperwork(n, m) {
 function solution(str){
     return str.split("").reverse().join("");
 }
+
+function boolToWord( bool ){
+    return bool ? 'Yes' : 'No'
+}
+
+function boolToWord2( bool ){
+    return `${bool}`
+}
