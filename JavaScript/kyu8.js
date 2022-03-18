@@ -56,3 +56,13 @@ class SmallestIntegerFinder {
 function positiveSum(arr) {
     return arr.map((item) => (item > 0 ? item : 0)).reduce((a, b) => a + b, 0)
 }
+
+function century(year) {
+    let century = 100
+    let count = 1
+    while (century < year) {
+        count++
+        century += 100
+    }
+    return year > century ? 0 : count
+}
