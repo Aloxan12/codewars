@@ -46,3 +46,9 @@ function lovefunc(flower1, flower2){
         return false
     }
 }
+
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        return Math.min(...args)
+    }
+}
