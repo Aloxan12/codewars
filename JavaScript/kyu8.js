@@ -52,3 +52,7 @@ class SmallestIntegerFinder {
         return Math.min(...args)
     }
 }
+
+function positiveSum(arr) {
+    return arr.map((item) => (item > 0 ? item : 0)).reduce((a, b) => a + b, 0)
+}
