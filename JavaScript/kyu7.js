@@ -30,3 +30,19 @@ function filter_list(l) {
     l.map(item => typeof(item) === "number" ? newArr.push(item) : false)
     return newArr
 }
+
+function DNAStrand(dna){
+    return dna.split('')
+        .map((item) =>
+            item === 'A'
+                ? 'T'
+                : item === 'T'
+                    ? 'A'
+                    : item === 'C'
+                        ? 'G'
+                        : item === 'G'
+                            ? 'C'
+                            : '',
+        )
+        .join('')
+}
