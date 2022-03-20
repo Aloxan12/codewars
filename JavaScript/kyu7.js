@@ -16,3 +16,7 @@ function squareDigits(num){
         .map((item) => Math.pow(+item, 2))
         .join('')
 }
+
+function roundToNext5(n){
+    return Math.ceil(n/5)*5
+}
