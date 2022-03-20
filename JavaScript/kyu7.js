@@ -46,3 +46,12 @@ function DNAStrand(dna){
         )
         .join('')
 }
+
+function getMiddle(str) {
+    const arr = str.split("");
+    while (arr.length > 2) {
+        arr.pop();
+        arr.shift();
+    }
+    return arr.join("");
+}
