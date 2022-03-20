@@ -24,3 +24,9 @@ function roundToNext5(n){
 function rowSumOddNumbers(n) {
     return Math.pow(n, 3)
 }
+
+function filter_list(l) {
+    const newArr = []
+    l.map(item => typeof(item) === "number" ? newArr.push(item) : false)
+    return newArr
+}
