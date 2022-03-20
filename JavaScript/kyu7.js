@@ -9,3 +9,10 @@ String.prototype.toJadenCase = function () {
 
     return result;
 };
+
+function squareDigits(num){
+    return +num.toString()
+        .split('')
+        .map((item) => Math.pow(+item, 2))
+        .join('')
+}
