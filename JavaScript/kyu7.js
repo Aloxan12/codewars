@@ -20,3 +20,7 @@ function squareDigits(num){
 function roundToNext5(n){
     return Math.ceil(n/5)*5
 }
+
+function rowSumOddNumbers(n) {
+    return Math.pow(n, 3)
+}
