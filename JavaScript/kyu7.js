@@ -55,3 +55,5 @@ function getMiddle(str) {
     }
     return arr.join("");
 }
+
+const binaryArrayToNumber = (arr) => parseInt(arr.join(''),2)
