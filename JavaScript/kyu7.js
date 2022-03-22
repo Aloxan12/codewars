@@ -80,3 +80,14 @@ const checkExam = (array1, array2) => {
     }
     return result > 0 ? result : 0
 }
+
+function rowWeights(array){
+    const arrOdd = array
+        .filter((item, i) => i % 2 === 0)
+        .reduce((a, b) => a + b, 0)
+    const arrEven = array
+        .filter((item, i) => i % 2 !== 0)
+        .reduce((a, b) => a + b, 0)
+
+    return array.length > 1 ? [arrOdd, arrEven] : [...array, 0]
+}
