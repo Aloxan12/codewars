@@ -114,3 +114,16 @@ function getCount(str) {
     return vowelsCount
 }
 
+function removeSmallest(numbers) {
+    const min = Math.min(...numbers)
+    let minIndex = 0
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] === min) {
+            minIndex = i
+            break
+        }
+    }
+    const newArr = numbers.filter((item, i) => i !== minIndex)
+    return newArr
+}
+
