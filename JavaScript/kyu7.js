@@ -62,3 +62,7 @@ function highAndLow(numbers){
     const newArr = numbers.split(' ').map(item => +item)
     return `${Math.max(...newArr)} ${Math.min(...newArr)}`
 }
+
+function smallEnough(a, limit){
+    return Math.max(...a) <= limit ? true : false
+}
