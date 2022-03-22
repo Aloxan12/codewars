@@ -91,3 +91,8 @@ function rowWeights(array){
 
     return array.length > 1 ? [arrOdd, arrEven] : [...array, 0]
 }
+
+function vaporcode(string) {
+    return string.toUpperCase().replace(' ', '').split('').filter(item=> item !== ' ').join('  ')
+}
+
