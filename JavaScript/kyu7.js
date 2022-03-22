@@ -57,3 +57,8 @@ function getMiddle(str) {
 }
 
 const binaryArrayToNumber = (arr) => parseInt(arr.join(''),2)
+
+function highAndLow(numbers){
+    const newArr = numbers.split(' ').map(item => +item)
+    return `${Math.max(...newArr)} ${Math.min(...newArr)}`
+}
