@@ -96,3 +96,21 @@ function vaporcode(string) {
     return string.toUpperCase().replace(' ', '').split('').filter(item=> item !== ' ').join('  ')
 }
 
+function getCount(str) {
+    let vowelsCount = 0
+
+    for (let i = 0; i < str.length; i++) {
+        if (
+            str[i] === 'a' ||
+            str[i] === 'e' ||
+            str[i] === 'i' ||
+            str[i] === 'o' ||
+            str[i] === 'u'
+        ) {
+            vowelsCount++
+        }
+    }
+
+    return vowelsCount
+}
+
