@@ -127,3 +127,12 @@ function removeSmallest(numbers) {
     return newArr
 }
 
+function gimme (triplet) {
+    const max = Math.max(...triplet)
+    const min = Math.min(...triplet)
+    return +triplet
+        .map((item, i) =>
+            item !== max && item !== min ? triplet.indexOf(item) : '',
+        )
+        .join('')
+}
