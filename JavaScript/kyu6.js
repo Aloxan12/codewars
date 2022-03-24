@@ -13,3 +13,26 @@ function sumDigPow(a, b) {
     }
     return result
 }
+
+function solve(s) {
+    const result = s
+        .split('')
+        .map((item) =>
+            item === 'a' ||
+            item === 'e' ||
+            item === 'i' ||
+            item === 'o' ||
+            item === 'u'
+                ? '/'
+                : item,
+        )
+        .join('')
+        .split('/')
+        .map((item) => item.split('').map((item) => item.charCodeAt(0) - 96))
+        .map((item) =>
+            item.length > 1
+                ? item.reduce((a, b) => a + b)
+                : Number(item.join('')),
+        )
+    return Math.max(...result)
+}
