@@ -144,3 +144,14 @@ const sequenceSum = (begin, end, step) => {
     }
     return result
 }
+
+function minValue(values){
+    let unique = [];
+    for (let str of values) {
+        if (!unique.includes(str)) {
+            unique.push(str);
+        }
+    }
+    let result = unique.sort().join('')
+    return +result
+}
