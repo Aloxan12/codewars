@@ -44,3 +44,22 @@ function findOdd(A) {
 
     return result ? result[0] : 0
 }
+
+function encode(string) {
+    return string
+        .split('')
+        .map((item) => {
+            return item === 'a'
+                ? '1'
+                : item === 'e'
+                    ? '2'
+                    : item === 'i'
+                        ? '3'
+                        : item === 'o'
+                            ? '4'
+                            : item === 'u'
+                                ? '5'
+                                : item
+        })
+        .join('')
+}
