@@ -63,3 +63,22 @@ function encode(string) {
         })
         .join('')
 }
+
+function decode(string) {
+    return string
+        .split('')
+        .map((item) => {
+            return item === '1'
+                ? 'a'
+                : item === '2'
+                    ? 'e'
+                    : item === '3'
+                        ? 'i'
+                        : item === '4'
+                            ? 'o'
+                            : item === '5'
+                                ? 'u'
+                                : item
+        })
+        .join('')
+}
