@@ -36,3 +36,11 @@ function solve(s) {
         )
     return Math.max(...result)
 }
+
+function findOdd(A) {
+    const result = A
+        .map((item) => A.filter((i) => i === item))
+        .find((item) => item.length % 2 !== 0)
+
+    return result ? result[0] : 0
+}
