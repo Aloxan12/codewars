@@ -95,3 +95,12 @@ function highestRank(arr){
         one.length === two.length ? Math.max(...one, ...two) : one[0]
     return result
 }
+
+function alphabetPosition(text) {
+    return text
+        .replace(/[^a-zA-ZА-Яа-яЁё]/gi, '')
+        .toLowerCase()
+        .split('')
+        .map((item) => item.charCodeAt(0) - 96)
+        .join(' ')
+}
