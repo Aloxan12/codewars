@@ -82,3 +82,16 @@ function decode(string) {
         })
         .join('')
 }
+
+function highestRank(arr){
+    const sortArr = arr
+        .map((item) => arr.filter((i) => i === item))
+        .sort((a, b) => (a.length < b.length ? 1 : -1))
+
+    const array = Array.from(new Set(sortArr)).slice(0, 2)
+    const one = array[0]
+    const two = array[1]
+    const result =
+        one.length === two.length ? Math.max(...one, ...two) : one[0]
+    return result
+}
