@@ -104,3 +104,22 @@ function alphabetPosition(text) {
         .map((item) => item.charCodeAt(0) - 96)
         .join(' ')
 }
+
+function getOrder(input) {
+    const result = input
+        .replace(/burger/gi, '1burger ')
+        .replace(/milkshake/gi, '7milkshake ')
+        .replace(/fries/gi, '2fries ')
+        .replace(/chicken/gi, '3chicken ')
+        .replace(/pizza/gi, '4pizza ')
+        .replace(/sandwich/gi, '5sandwich ')
+        .replace(/onionrings/gi, '6onionrings ')
+        .replace(/coke/gi, '8coke ')
+
+    return result
+        .split(' ')
+        .sort()
+        .map((item) => item && item[1].toUpperCase() + item.slice(2))
+        .join(' ')
+        .slice(1)
+}
