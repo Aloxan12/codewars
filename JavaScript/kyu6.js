@@ -145,3 +145,17 @@ function upArray(arr){
     }
     return arr;
 }
+
+// function upArray(arr){ //не работает с длинными числами
+//       let result = 0
+//       const resultReturn = arr.find((item) => item <= -1 || item > 9)
+//       if (resultReturn || arr.length === 0) {
+//         return null
+//       } else {
+//         result = Number(+arr.join('') + 1)
+//         return result
+//           .toString()
+//           .split('')
+//           .map((item) => Number(item))
+//       }
+//     }
