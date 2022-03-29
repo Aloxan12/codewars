@@ -166,3 +166,8 @@ function solution(string) {
         .map((item) => (item === item.toUpperCase() ? ' ' + item : item))
         .join('')
 }
+
+//регулярка
+// function solution(string) {
+//    return str.replace(/([A-Z])/g, ' $1')
+// }
