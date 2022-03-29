@@ -123,3 +123,25 @@ function getOrder(input) {
         .join(' ')
         .slice(1)
 }
+
+function upArray(arr){
+    if (arr.some(e=>e>10||e<0)||!arr.length) return null;
+    for (let i=arr.length-1; i>=0; i--) {
+        if (i===arr.length-1) {
+            if (arr[i] === 9) {
+                arr[i] = 0;
+            } else {
+                arr[i] = arr[i]+1;
+            }
+        }
+        if (arr[i] === 0 || arr[i]===10) {
+            arr[i] = 0;
+            arr[i-1] = arr[i-1]+1;
+        }
+        if (arr[i-1] <= 9) break;
+    }
+    if (arr[0] === 0) {
+        arr.unshift(1);
+    }
+    return arr;
+}
