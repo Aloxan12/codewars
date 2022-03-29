@@ -159,3 +159,10 @@ function upArray(arr){
 //           .map((item) => Number(item))
 //       }
 //     }
+
+function solution(string) {
+    return string
+        .split('')
+        .map((item) => (item === item.toUpperCase() ? ' ' + item : item))
+        .join('')
+}
