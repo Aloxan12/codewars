@@ -83,7 +83,7 @@ function decode(string) {
         .join('')
 }
 
-function highestRank(arr){
+function highestRank(arr) {
     const sortArr = arr
         .map((item) => arr.filter((i) => i === item))
         .sort((a, b) => (a.length < b.length ? 1 : -1))
@@ -124,21 +124,21 @@ function getOrder(input) {
         .slice(1)
 }
 
-function upArray(arr){
-    if (arr.some(e=>e>10||e<0)||!arr.length) return null;
-    for (let i=arr.length-1; i>=0; i--) {
-        if (i===arr.length-1) {
+function upArray(arr) {
+    if (arr.some(e => e > 10 || e < 0) || !arr.length) return null;
+    for (let i = arr.length - 1; i >= 0; i--) {
+        if (i === arr.length - 1) {
             if (arr[i] === 9) {
                 arr[i] = 0;
             } else {
-                arr[i] = arr[i]+1;
+                arr[i] = arr[i] + 1;
             }
         }
-        if (arr[i] === 0 || arr[i]===10) {
+        if (arr[i] === 0 || arr[i] === 10) {
             arr[i] = 0;
-            arr[i-1] = arr[i-1]+1;
+            arr[i - 1] = arr[i - 1] + 1;
         }
-        if (arr[i-1] <= 9) break;
+        if (arr[i - 1] <= 9) break;
     }
     if (arr[0] === 0) {
         arr.unshift(1);
@@ -171,3 +171,24 @@ function solution(string) {
 // function solution(string) {
 //    return str.replace(/([A-Z])/g, ' $1')
 // }
+
+
+function count(string) {
+    if (string === '') {
+        return {}
+    } else {
+        const unique = Array.from(new Set(string))
+        const obj = {}
+        for (let i = 0; i < unique.length; i++) {
+            let sum = 0
+            obj[unique[i]] = sum
+            for (let j = 0; j < string.length; j++) {
+                if (unique[i] === string[j]) {
+                    sum++
+                    obj[unique[i]] = sum
+                }
+            }
+        }
+        return obj
+    }
+}
