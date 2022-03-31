@@ -192,3 +192,24 @@ function count(string) {
         return obj
     }
 }
+
+function decipherThis(str) {
+    const result = str
+        .split(' ')
+        .map((item) =>
+            item
+                .replace(/([a-z])/, ' $1')
+                .split(' ')
+                .map((item, i) =>
+                    i === 0
+                        ? String.fromCharCode(+item)
+                        : item.length <= 1
+                            ? item
+                            : item.replace(/(\S)(\S*)(\S)/g, '$3$2$1'),
+                )
+                .join(''),
+        )
+        .join(' ')
+
+    return result
+}
