@@ -17,3 +17,7 @@ export function simpleMultiplication(num: number): number{
 export function stringToNumber(str: string): number {
     return Number(str)
 }
+
+export const makeNegative = (num: number): number => {
+    return num > 0 ? -num : num
+};
