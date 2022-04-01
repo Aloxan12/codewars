@@ -213,3 +213,18 @@ function decipherThis(str) {
 
     return result
 }
+
+function abbreviate(str) {
+    return str
+        .replace(/([,])/g, ' , ')
+        .replace(/([-])/g, ' - ')
+        .split(' ')
+        .map((item) =>
+            item.length >= 4
+                ? item[0] + item.slice(1, -1).length + item.slice(-1)
+                : item,
+        )
+        .join(' ')
+        .replace(/ , /g, ',')
+        .replace(/ - /g, '-')
+}
