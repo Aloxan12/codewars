@@ -228,3 +228,23 @@ function abbreviate(str) {
         .replace(/ , /g, ',')
         .replace(/ - /g, '-')
 }
+
+function expandedForm(num) {
+    const result = num
+        .toString()
+        .split('')
+        .reverse()
+        .map((item, i, arr) => {
+            if (+item === 0) {
+                return
+            } else if (i === arr.length - 1) {
+                return `${+item * Math.pow(10, arr.length - 1)}`
+            } else {
+                return `${+item * Math.pow(10, i)}`
+            }
+        })
+        .reverse()
+        .filter((item) => item)
+        .join(' + ')
+    return result
+}
