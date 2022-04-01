@@ -21,3 +21,10 @@ export function stringToNumber(str: string): number {
 export const makeNegative = (num: number): number => {
     return num > 0 ? -num : num
 };
+
+export const digitize = (n: number): number[] => {
+    return `${n}`
+        .split('')
+        .reverse()
+        .map((item) => +item)
+}
