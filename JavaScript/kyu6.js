@@ -248,3 +248,21 @@ function expandedForm(num) {
         .join(' + ')
     return result
 }
+
+function duplicateEncode(word){
+    const lower = word.toLowerCase()
+
+    let result = []
+    for (let i = 0; i < lower.length; i++) {
+        result[lower[i]] = 0
+        for (let j = 0; j < lower.length; j++) {
+            if (lower[i] === lower[j]) {
+                result[lower[i]]++
+            }
+        }
+    }
+    return lower
+        .split('')
+        .map((item, i) => (result[item] > 1 ? ')' : '('))
+        .join('')
+}
