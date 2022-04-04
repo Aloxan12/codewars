@@ -266,3 +266,11 @@ function duplicateEncode(word){
         .map((item, i) => (result[item] > 1 ? ')' : '('))
         .join('')
 }
+
+var countBits = function(n) {
+    const result = n
+        .toString(2)
+        .split('')
+        .reduce((sum, num) => sum + Number(num), 0)
+    return result
+}
