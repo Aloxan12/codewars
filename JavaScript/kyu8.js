@@ -84,3 +84,11 @@ function wrap(value1) {
 function removeChar(str){
     return str.split('').splice(1, str.length - 2).join('')
 }
+
+function powersOfTwo(n){
+    const result = []
+    for (let i = 0; i <= n; i++) {
+        result[i] = Math.pow(2, i)
+    }
+    return result
+}
