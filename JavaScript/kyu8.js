@@ -72,3 +72,11 @@ class Kata {
         return length * width * height
     }
 }
+
+function wrap(value1) {
+    const result = {
+        value: null,
+    }
+    result.value = value1
+    return result
+}
