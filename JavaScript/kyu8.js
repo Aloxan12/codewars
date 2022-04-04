@@ -80,3 +80,7 @@ function wrap(value1) {
     result.value = value1
     return result
 }
+
+function removeChar(str){
+    return str.split('').splice(1, str.length - 2).join('')
+}
