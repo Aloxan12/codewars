@@ -66,3 +66,9 @@ function century(year) {
     }
     return year > century ? 0 : count
 }
+
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        return length * width * height
+    }
+}
