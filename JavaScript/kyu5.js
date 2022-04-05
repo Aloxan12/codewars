@@ -12,3 +12,16 @@ function interleave() {
     }
     return result
 }
+
+function incrementString (str){
+    let num = str.match(/\d+/) === null ? 0 : str.match(/\d+/)[0];
+    const length = `${num}`.length
+
+    num = (parseInt(num) + 1).toString();
+
+    while (num.length < length) {
+        num = "0" + num;
+    }
+
+    return str.replace(/[0-9]/g, '').concat(num);
+}
