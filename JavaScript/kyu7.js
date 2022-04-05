@@ -162,3 +162,21 @@ function sumTwoSmallestNumbers(numbers) {
         .slice(0, 2)
         .reduce((a, b) => a + b, 0)
 }
+
+function dotCalculator (equation) {
+    const newArr = equation.split(' ')
+    const num1 = newArr[0].length
+    const sign = newArr[1]
+    const num2 = newArr[2].length
+    let result = 0
+    if (sign === '*') {
+        result = num1 * num2
+    } else if (sign === '+') {
+        result = num1 + num2
+    } else if (sign === '-') {
+        result = num1 - num2
+    } else if (sign === '//') {
+        result = num1 / num2
+    }
+    return `${'.'.repeat(result)}`
+}
