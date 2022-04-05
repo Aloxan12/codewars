@@ -100,3 +100,7 @@ function opposite(number) {
 function multiply(a, b) {
     return a * b
 }
+
+function repeatStr (n, s) {
+    return s.repeat(n);
+}
