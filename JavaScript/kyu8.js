@@ -96,3 +96,7 @@ function powersOfTwo(n){
 function opposite(number) {
     return number * -1
 }
+
+function multiply(a, b) {
+    return a * b
+}
