@@ -120,3 +120,7 @@ function findNeedle(haystack) {
 function litres(time) {
     return Math.floor(time * 0.5)
 }
+
+function isDivisible(n, x, y) {
+    return (n / x) % 1 === 0 && (n / y) % 1 === 0
+}
