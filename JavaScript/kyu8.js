@@ -108,3 +108,7 @@ function repeatStr (n, s) {
 function isToday(date) {
     return new Date().toDateString() === date.toDateString()
 }
+
+function squareSum(numbers){
+    return numbers.reduce((a, b) => a + b ** 2, 0)
+}
