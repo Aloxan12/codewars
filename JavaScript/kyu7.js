@@ -209,3 +209,7 @@ function wallpaper(l, w, h) {
         ? numbers[0]
         : numbers[Math.ceil(((l * h * 2 + w * h * 2) * 1.15) / 5.2)]
 }
+
+function friend(friends){
+    return friends.filter(item => item.length === 4 && item)
+}
