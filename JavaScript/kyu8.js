@@ -1,11 +1,11 @@
-function multiply(a, b){
+function multiply(a, b) {
     return a * b
 }
 
 function even_or_odd(number) {
-    if(number % 2 === 0){
+    if (number % 2 === 0) {
         return 'Even'
-    }else{
+    } else {
         return 'Odd'
     }
 }
@@ -17,7 +17,7 @@ function DNAtoRNA(dna) {
         .replace(/[\s.,%]/g, '')
 }
 
-function greet(name){
+function greet(name) {
     return `Hello, ${name} how are you doing today?`
 }
 
@@ -25,24 +25,24 @@ function paperwork(n, m) {
     return n < 0 || m < 0 ? 0 : n * m
 }
 
-function solution(str){
+function solution(str) {
     return str.split("").reverse().join("");
 }
 
-function boolToWord( bool ){
+function boolToWord(bool) {
     return bool ? 'Yes' : 'No'
 }
 
-function boolToWord2( bool ){
+function boolToWord2(bool) {
     return `${bool}`
 }
 
-function lovefunc(flower1, flower2){
-    if( flower1 % 2 === 0 && flower2 % 2 !== 0){
+function lovefunc(flower1, flower2) {
+    if (flower1 % 2 === 0 && flower2 % 2 !== 0) {
         return true
-    }else if( flower1 % 2 !== 0 && flower2 % 2 === 0){
+    } else if (flower1 % 2 !== 0 && flower2 % 2 === 0) {
         return true
-    }else{
+    } else {
         return false
     }
 }
@@ -81,11 +81,11 @@ function wrap(value1) {
     return result
 }
 
-function removeChar(str){
+function removeChar(str) {
     return str.split('').splice(1, str.length - 2).join('')
 }
 
-function powersOfTwo(n){
+function powersOfTwo(n) {
     const result = []
     for (let i = 0; i <= n; i++) {
         result[i] = Math.pow(2, i)
@@ -101,7 +101,7 @@ function multiply(a, b) {
     return a * b
 }
 
-function repeatStr (n, s) {
+function repeatStr(n, s) {
     return s.repeat(n);
 }
 
@@ -109,7 +109,7 @@ function isToday(date) {
     return new Date().toDateString() === date.toDateString()
 }
 
-function squareSum(numbers){
+function squareSum(numbers) {
     return numbers.reduce((a, b) => a + b ** 2, 0)
 }
 
