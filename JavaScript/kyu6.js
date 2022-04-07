@@ -274,3 +274,17 @@ var countBits = function(n) {
         .reduce((sum, num) => sum + Number(num), 0)
     return result
 }
+
+function likes(names) {
+    return names.length === 1
+        ? `${names.join('')} likes this`
+        : names.length === 2
+            ? `${names.join(' and ')} like this`
+            : names.length === 3
+                ? `${names[0]}, ${names.slice(1).join(' and ')} like this`
+                : names.length > 3
+                    ? `${names.slice(0, 2).join(', ')} and ${
+                        names.length - 2
+                    } others like this`
+                    : 'no one likes this'
+}
