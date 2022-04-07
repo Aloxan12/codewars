@@ -104,3 +104,7 @@ function multiply(a, b) {
 function repeatStr (n, s) {
     return s.repeat(n);
 }
+
+function isToday(date) {
+    return new Date().toDateString() === date.toDateString()
+}
