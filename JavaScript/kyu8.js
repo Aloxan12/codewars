@@ -124,3 +124,7 @@ function litres(time) {
 function isDivisible(n, x, y) {
     return (n / x) % 1 === 0 && (n / y) % 1 === 0
 }
+
+function noSpace(x){
+    return x.replace(/([' '])/g, '')
+}
