@@ -81,7 +81,7 @@ const checkExam = (array1, array2) => {
     return result > 0 ? result : 0
 }
 
-function rowWeights(array){
+function rowWeights(array) {
     const arrOdd = array
         .filter((item, i) => i % 2 === 0)
         .reduce((a, b) => a + b, 0)
@@ -93,7 +93,7 @@ function rowWeights(array){
 }
 
 function vaporcode(string) {
-    return string.toUpperCase().replace(' ', '').split('').filter(item=> item !== ' ').join('  ')
+    return string.toUpperCase().replace(' ', '').split('').filter(item => item !== ' ').join('  ')
 }
 
 function getCount(str) {
@@ -127,7 +127,7 @@ function removeSmallest(numbers) {
     return newArr
 }
 
-function gimme (triplet) {
+function gimme(triplet) {
     const max = Math.max(...triplet)
     const min = Math.min(...triplet)
     return +triplet
@@ -145,7 +145,7 @@ const sequenceSum = (begin, end, step) => {
     return result
 }
 
-function minValue(values){
+function minValue(values) {
     let unique = [];
     for (let str of values) {
         if (!unique.includes(str)) {
@@ -163,7 +163,7 @@ function sumTwoSmallestNumbers(numbers) {
         .reduce((a, b) => a + b, 0)
 }
 
-function dotCalculator (equation) {
+function dotCalculator(equation) {
     const newArr = equation.split(' ')
     const num1 = newArr[0].length
     const sign = newArr[1]
@@ -210,6 +210,6 @@ function wallpaper(l, w, h) {
         : numbers[Math.ceil(((l * h * 2 + w * h * 2) * 1.15) / 5.2)]
 }
 
-function friend(friends){
+function friend(friends) {
     return friends.filter(item => item.length === 4 && item)
 }
