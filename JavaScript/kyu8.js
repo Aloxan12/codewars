@@ -112,3 +112,7 @@ function isToday(date) {
 function squareSum(numbers){
     return numbers.reduce((a, b) => a + b ** 2, 0)
 }
+
+function findNeedle(haystack) {
+    return `found the needle at position ${haystack.indexOf('needle')}`
+}
