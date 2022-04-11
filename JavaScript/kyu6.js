@@ -249,7 +249,7 @@ function expandedForm(num) {
     return result
 }
 
-function duplicateEncode(word){
+function duplicateEncode(word) {
     const lower = word.toLowerCase()
 
     let result = []
@@ -267,7 +267,7 @@ function duplicateEncode(word){
         .join('')
 }
 
-var countBits = function(n) {
+var countBits = function (n) {
     const result = n
         .toString(2)
         .split('')
