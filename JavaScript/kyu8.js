@@ -125,10 +125,10 @@ function isDivisible(n, x, y) {
     return (n / x) % 1 === 0 && (n / y) % 1 === 0
 }
 
-function noSpace(x){
+function noSpace(x) {
     return x.replace(/([' '])/g, '')
 }
 
-function countSheeps(arrayOfSheep){
-    return arrayOfSheep.filter(i=> i).length
+function countSheeps(arrayOfSheep) {
+    return arrayOfSheep.filter(i => i).length
 }
