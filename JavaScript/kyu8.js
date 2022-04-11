@@ -128,3 +128,7 @@ function isDivisible(n, x, y) {
 function noSpace(x){
     return x.replace(/([' '])/g, '')
 }
+
+function countSheeps(arrayOfSheep){
+    return arrayOfSheep.filter(i=> i).length
+}
