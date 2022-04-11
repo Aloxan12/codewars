@@ -288,3 +288,23 @@ function likes(names) {
                     } others like this`
                     : 'no one likes this'
 }
+
+function duplicateCount(text){
+    if (text === '') {
+        return 0
+    } else {
+        const unique = Array.from(new Set(text.toLowerCase()))
+        const obj = {}
+        for (let i = 0; i < unique.length; i++) {
+            let sum = 0
+            obj[unique[i]] = sum
+            for (let j = 0; j < text.length; j++) {
+                if (unique[i] === text[j].toLowerCase()) {
+                    sum++
+                    obj[unique[i]] = sum
+                }
+            }
+        }
+        return Object.values(obj).filter((item) => Number(item) > 1).length
+    }
+}
