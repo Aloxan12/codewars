@@ -50,3 +50,7 @@ export class Kata {
 export function removeChar(str: string): string {
     return str.slice(1, str.length - 1)
 }
+
+export const boolToWord = (bool: boolean): string => {
+    return bool ? 'Yes' : 'No'
+};
