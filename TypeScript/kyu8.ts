@@ -40,3 +40,9 @@ export function even_or_odd(n: number): string {
 export function positiveSum(arr:number[]):number {
     return arr.filter(i => i> 0).reduce((a,b)=> a + b, 0);
 }
+
+export class Kata {
+    static opposite(n: number) {
+        return n > 0 ? -n : n * -1
+    }
+}
