@@ -37,8 +37,8 @@ export function even_or_odd(n: number): string {
     return n % 2 === 0 ? 'Even' : 'Odd'
 }
 
-export function positiveSum(arr:number[]):number {
-    return arr.filter(i => i> 0).reduce((a,b)=> a + b, 0);
+export function positiveSum(arr: number[]): number {
+    return arr.filter(i => i > 0).reduce((a, b) => a + b, 0);
 }
 
 export class Kata {
@@ -48,5 +48,5 @@ export class Kata {
 }
 
 export function removeChar(str: string): string {
-    return str.slice(1, str.length -1)
+    return str.slice(1, str.length - 1)
 }
