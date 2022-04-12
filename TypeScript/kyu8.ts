@@ -54,3 +54,7 @@ export function removeChar(str: string): string {
 export const boolToWord = (bool: boolean): string => {
     return bool ? 'Yes' : 'No'
 };
+
+export function numberToString2(num: number): string {
+    return `${num}`
+}
