@@ -2,15 +2,15 @@ export function numberToString(num: number): string {
     return String(num)
 }
 
-export const summation = (num:number)=> {
+export const summation = (num: number) => {
     let result: number = 0
-    for(let i = 0; i<=num; i++){
-        result +=i
+    for (let i = 0; i <= num; i++) {
+        result += i
     }
     return result
 }
 
-export function simpleMultiplication(num: number): number{
+export function simpleMultiplication(num: number): number {
     return num % 2 === 0 ? num * 8 : num * 9;
 }
 
@@ -33,6 +33,6 @@ export function multiply(a: number, b: number): number {
     return a * b;
 }
 
-export function even_or_odd(n:number):string {
+export function even_or_odd(n: number): string {
     return n % 2 === 0 ? 'Even' : 'Odd'
 }
