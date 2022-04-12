@@ -58,3 +58,10 @@ export const boolToWord = (bool: boolean): string => {
 export function numberToString2(num: number): string {
     return `${num}`
 }
+
+// export function repeatStr(n: number, s: string): string {
+//     return s.repeat(n);
+// }
+export function repeatStr(n: number, s: string): string {
+    return s["repeat"](n);
+}
