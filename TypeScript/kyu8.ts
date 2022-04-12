@@ -28,3 +28,7 @@ export const digitize = (n: number): number[] => {
         .reverse()
         .map((item) => +item)
 }
+
+export function multiply(a: number, b: number): number {
+    return a * b;
+}
