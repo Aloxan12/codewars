@@ -36,3 +36,7 @@ export function multiply(a: number, b: number): number {
 export function even_or_odd(n: number): string {
     return n % 2 === 0 ? 'Even' : 'Odd'
 }
+
+export function positiveSum(arr:number[]):number {
+    return arr.filter(i => i> 0).reduce((a,b)=> a + b, 0);
+}
