@@ -46,3 +46,7 @@ export class Kata {
         return n > 0 ? -n : n * -1
     }
 }
+
+export function removeChar(str: string): string {
+    return str.slice(1, str.length -1)
+}
