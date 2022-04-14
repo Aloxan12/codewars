@@ -69,3 +69,7 @@ export function repeatStr(n: number, s: string): string {
 export function findSmallestInt(args: number[]): number {
     return Math.min(...args)
 }
+
+export function noSpace(x:string):string {
+    return x.split(' ').join('')
+}
