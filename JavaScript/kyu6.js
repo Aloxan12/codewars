@@ -308,3 +308,19 @@ function duplicateCount(text) {
         return Object.values(obj).filter((item) => Number(item) > 1).length
     }
 }
+
+function balance(left,right){
+    const leftResult = left
+        .split('')
+        .map((item) => (item === '!' ? 2 : 3))
+        .reduce((a, b) => a + b, 0)
+    const rightResult = right
+        .split('')
+        .map((item) => (item === '!' ? 2 : 3))
+        .reduce((a, b) => a + b, 0)
+    return leftResult > rightResult
+        ? 'Left'
+        : leftResult < rightResult
+            ? 'Right'
+            : leftResult === rightResult && 'Balance'
+}
