@@ -289,7 +289,7 @@ function likes(names) {
                     : 'no one likes this'
 }
 
-function duplicateCount(text){
+function duplicateCount(text) {
     if (text === '') {
         return 0
     } else {
