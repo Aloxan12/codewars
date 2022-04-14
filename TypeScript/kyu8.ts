@@ -73,3 +73,7 @@ export function findSmallestInt(args: number[]): number {
 export function noSpace(x:string):string {
     return x.split(' ').join('')
 }
+
+export function squareSum(numbers: number[]): number {
+    return numbers.map(num => Math.pow(num, 2)).reduce((a,b)=> a + b,0);
+}
