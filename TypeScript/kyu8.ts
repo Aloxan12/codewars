@@ -65,3 +65,7 @@ export function numberToString2(num: number): string {
 export function repeatStr(n: number, s: string): string {
     return s["repeat"](n);
 }
+
+export function findSmallestInt(args: number[]): number {
+    return Math.min(...args)
+}
