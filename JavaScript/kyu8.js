@@ -132,3 +132,7 @@ function noSpace(x) {
 function countSheeps(arrayOfSheep) {
     return arrayOfSheep.filter(i => i).length
 }
+
+function smash (words) {
+    return words.join(' ')
+};
