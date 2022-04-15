@@ -140,3 +140,11 @@ function smash (words) {
 function getAge(inputString){
     return Number(inputString.replace(/([a-z])/gi, ''))
 }
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    let result = 0
+    for (let i = 0; i < fuelLeft; i++) {
+        result += mpg
+    }
+    return result >= distanceToPump
+}
