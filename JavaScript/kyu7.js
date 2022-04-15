@@ -235,3 +235,12 @@ function findSum(n) {
     }
     return arr.reduce((a, b) => a + b, 0)
 }
+
+function counter(){
+    let count = 0;
+    function countUp() {
+        count ++;
+        return count;
+    }
+    return countUp;
+}
