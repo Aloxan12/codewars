@@ -254,3 +254,7 @@ function getSum( a,b ){
         return ((bigNum - smallNum + 1) * (bigNum + smallNum)) / 2
     }
 }
+
+function descendingOrder(n){
+    return Number(String(n).split('').sort().reverse().join(''))
+}
