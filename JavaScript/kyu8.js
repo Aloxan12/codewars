@@ -135,4 +135,8 @@ function countSheeps(arrayOfSheep) {
 
 function smash (words) {
     return words.join(' ')
-};
+}
+
+function getAge(inputString){
+    return Number(inputString.replace(/([a-z])/gi, ''))
+}
