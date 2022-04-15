@@ -213,3 +213,13 @@ function wallpaper(l, w, h) {
 function friend(friends) {
     return friends.filter(item => item.length === 4 && item)
 }
+
+function tetration(x,y){
+    return y === 0
+        ? 1
+        : y === 1
+            ? x
+            : y === 2
+                ? Math.pow(x, x)
+                : y === 3 && x ** Math.pow(x, x)
+}
