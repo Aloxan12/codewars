@@ -258,3 +258,7 @@ function getSum( a,b ){
 function descendingOrder(n){
     return Number(String(n).split('').sort().reverse().join(''))
 }
+
+var isSquare = function(n){
+    return Number.isInteger(Math.sqrt(n))
+}
