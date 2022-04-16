@@ -267,3 +267,10 @@ function addBinary(a,b) {
     let sum = a + b
     return sum.toString(2);
 }
+
+function unusedDigits() {
+    const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    const argument = [...arguments].join('').split('').map((a) => a.toString())
+
+    return numbers.filter((a) => !argument.includes(a.toString())).join('')
+}
