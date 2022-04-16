@@ -262,3 +262,8 @@ function descendingOrder(n){
 var isSquare = function(n){
     return Number.isInteger(Math.sqrt(n))
 }
+
+function addBinary(a,b) {
+    let sum = a + b
+    return sum.toString(2);
+}
