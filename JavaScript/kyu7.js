@@ -286,3 +286,16 @@ function battle(x, y) {
         .reduce((a, b) => a + b, 0)
     return one === two ? 'Tie!' : one > two ? x : y
 }
+
+
+function center (strng, width, fill = ' ') {
+    if (strng.length >= width) return strng
+    const widthStr = Math.ceil((width - strng.length) / 2)
+
+    let result = ''
+    result += fill.repeat(widthStr)
+    result += strng
+    result += fill.repeat(width - strng.length - widthStr)
+
+    return result
+}
