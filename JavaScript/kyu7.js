@@ -302,7 +302,7 @@ function center(strng, width, fill = ' ') {
     return result
 }
 
-function evenAndOdd(num){
+function evenAndOdd(num) {
     const even = String(num)
         .split('')
         .filter((item) => +item % 2 === 0)
@@ -315,7 +315,7 @@ function evenAndOdd(num){
     return [+even || 0, +odd || 0]
 }
 
-function isNice(arr){
+function isNice(arr) {
     if (arr.length === 0) {
         return false
     } else {
@@ -330,7 +330,7 @@ function isNice(arr){
     }
 }
 
-function maskify(cc){
+function maskify(cc) {
     return cc.length < 5
         ? cc
         : cc
@@ -339,6 +339,6 @@ function maskify(cc){
             .join('')
 }
 
-function findShort(s){
+function findShort(s) {
     return Math.min(...s.split(' ').map((item) => item.length))
 }
