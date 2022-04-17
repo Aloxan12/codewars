@@ -301,3 +301,16 @@ function center(strng, width, fill = ' ') {
 
     return result
 }
+
+function evenAndOdd(num){
+    const even = String(num)
+        .split('')
+        .filter((item) => +item % 2 === 0)
+        .join('')
+    const odd = String(num)
+        .split('')
+        .filter((item) => +item % 2 !== 0)
+        .join('')
+
+    return [+even || 0, +odd || 0]
+}
