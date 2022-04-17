@@ -329,3 +329,12 @@ function isNice(arr){
         return result.length === arr.length
     }
 }
+
+function maskify(cc){
+    return cc.length < 5
+        ? cc
+        : cc
+            .split('')
+            .map((item, i, arr) => (i < arr.length - 4 ? '#' : item))
+            .join('')
+}
