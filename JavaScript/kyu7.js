@@ -214,7 +214,7 @@ function friend(friends) {
     return friends.filter(item => item.length === 4 && item)
 }
 
-function tetration(x,y){
+function tetration(x, y) {
     return y === 0
         ? 1
         : y === 1
@@ -236,16 +236,18 @@ function findSum(n) {
     return arr.reduce((a, b) => a + b, 0)
 }
 
-function counter(){
+function counter() {
     let count = 0;
+
     function countUp() {
-        count ++;
+        count++;
         return count;
     }
+
     return countUp;
 }
 
-function getSum( a,b ){
+function getSum(a, b) {
     if (a === b) {
         return a
     } else {
@@ -255,15 +257,15 @@ function getSum( a,b ){
     }
 }
 
-function descendingOrder(n){
+function descendingOrder(n) {
     return Number(String(n).split('').sort().reverse().join(''))
 }
 
-var isSquare = function(n){
+var isSquare = function (n) {
     return Number.isInteger(Math.sqrt(n))
 }
 
-function addBinary(a,b) {
+function addBinary(a, b) {
     let sum = a + b
     return sum.toString(2);
 }
@@ -288,7 +290,7 @@ function battle(x, y) {
 }
 
 
-function center (strng, width, fill = ' ') {
+function center(strng, width, fill = ' ') {
     if (strng.length >= width) return strng
     const widthStr = Math.ceil((width - strng.length) / 2)
 
