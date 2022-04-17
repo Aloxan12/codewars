@@ -338,3 +338,7 @@ function maskify(cc){
             .map((item, i, arr) => (i < arr.length - 4 ? '#' : item))
             .join('')
 }
+
+function findShort(s){
+    return Math.min(...s.split(' ').map((item) => item.length))
+}
