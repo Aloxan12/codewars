@@ -274,3 +274,15 @@ function unusedDigits() {
 
     return numbers.filter((a) => !argument.includes(a.toString())).join('')
 }
+
+function battle(x, y) {
+    const one = x
+        .split('')
+        .map((item, i) => item.charCodeAt(0) - 64)
+        .reduce((a, b) => a + b, 0)
+    const two = y
+        .split('')
+        .map((item, i) => item.charCodeAt(0) - 64)
+        .reduce((a, b) => a + b, 0)
+    return one === two ? 'Tie!' : one > two ? x : y
+}
