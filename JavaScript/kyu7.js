@@ -314,3 +314,18 @@ function evenAndOdd(num){
 
     return [+even || 0, +odd || 0]
 }
+
+function isNice(arr){
+    if (arr.length === 0) {
+        return false
+    } else {
+        let result = []
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr.some((item) => arr[i] + 1 === item || arr[i] - 1 === item)) {
+                result.push(arr[i])
+            }
+        }
+        return result.length === arr.length
+    }
+}
