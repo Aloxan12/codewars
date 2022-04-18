@@ -115,3 +115,7 @@ export function basicOp(operation: string, value1: number, value2: number): numb
 export function abbrevName(name: string): string {
     return name.split(' ').map(item => item[0].toUpperCase()).join('.')
 }
+
+export function greet(name: string): string {
+    return `Hello, ${name} how are you doing today?`
+}
