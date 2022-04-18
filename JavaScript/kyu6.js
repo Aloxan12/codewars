@@ -309,7 +309,7 @@ function duplicateCount(text) {
     }
 }
 
-function balance(left,right){
+function balance(left, right) {
     const leftResult = left
         .split('')
         .map((item) => (item === '!' ? 2 : 3))
