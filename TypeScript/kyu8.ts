@@ -70,19 +70,19 @@ export function findSmallestInt(args: number[]): number {
     return Math.min(...args)
 }
 
-export function noSpace(x:string):string {
+export function noSpace(x: string): string {
     return x.split(' ').join('')
 }
 
 export function squareSum(numbers: number[]): number {
-    return numbers.map(num => Math.pow(num, 2)).reduce((a,b)=> a + b,0);
+    return numbers.map(num => Math.pow(num, 2)).reduce((a, b) => a + b, 0);
 }
 
 export function countSheeps(arrayOfSheep: (boolean | undefined | null)[]) {
     return arrayOfSheep.filter(i => !!i).length
 }
 
-export function isDivisible(n:number, x:number, y:number):boolean {
+export function isDivisible(n: number, x: number, y: number): boolean {
     return (n / x) % 1 === 0 && (n / y) % 1 === 0
 }
 
@@ -101,13 +101,13 @@ export function litres(time: number): number {
 }
 
 export function basicOp(operation: string, value1: number, value2: number): number {
-    if(operation === '+'){
+    if (operation === '+') {
         return value1 + value2
-    }else if(operation === '-'){
+    } else if (operation === '-') {
         return value1 - value2
-    }else if(operation === '*'){
+    } else if (operation === '*') {
         return value1 * value2
-    }else{
+    } else {
         return value1 / value2
     }
 }
