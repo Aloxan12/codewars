@@ -95,3 +95,7 @@ export const centuryFromYear = (year: number): number => {
     }
     return year > century ? 0 : count
 };
+
+export function litres(time: number): number {
+    return Math.floor(time * 0.5);
+}
