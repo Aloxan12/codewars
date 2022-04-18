@@ -13,7 +13,7 @@ function interleave() {
     return result
 }
 
-function incrementString (str){
+function incrementString(str) {
     let num = str.match(/\d+/) === null ? 0 : str.match(/\d+/)[0];
     const length = `${num}`.length
 
