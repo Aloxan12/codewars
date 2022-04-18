@@ -119,3 +119,7 @@ export function abbrevName(name: string): string {
 export function greet(name: string): string {
     return `Hello, ${name} how are you doing today?`
 }
+
+export function invert(array: number[]): number[] {
+    return array.map(i => -i);
+}
