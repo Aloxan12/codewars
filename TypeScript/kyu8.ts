@@ -81,3 +81,7 @@ export function squareSum(numbers: number[]): number {
 export function countSheeps(arrayOfSheep: (boolean | undefined | null)[]) {
     return arrayOfSheep.filter(i => !!i).length
 }
+
+export function isDivisible(n:number, x:number, y:number):boolean {
+    return (n / x) % 1 === 0 && (n / y) % 1 === 0
+}
