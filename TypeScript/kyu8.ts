@@ -77,3 +77,7 @@ export function noSpace(x:string):string {
 export function squareSum(numbers: number[]): number {
     return numbers.map(num => Math.pow(num, 2)).reduce((a,b)=> a + b,0);
 }
+
+export function countSheeps(arrayOfSheep: (boolean | undefined | null)[]) {
+    return arrayOfSheep.filter(i => !!i).length
+}
