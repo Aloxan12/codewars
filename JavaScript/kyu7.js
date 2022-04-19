@@ -343,7 +343,7 @@ function findShort(s) {
     return Math.min(...s.split(' ').map((item) => item.length))
 }
 
-function nthChar(words){
+function nthChar(words) {
     return words.map((item, i) => item[i]).join('') || ''
 }
 
