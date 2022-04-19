@@ -325,7 +325,7 @@ function balance(left, right) {
             : leftResult === rightResult && 'Balance'
 }
 
-function letterCount(text){
+function letterCount(text) {
     const unique = Array.from(new Set(text.toLowerCase()))
     const obj = {}
     for (let i = 0; i < unique.length; i++) {
