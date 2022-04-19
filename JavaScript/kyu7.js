@@ -346,3 +346,14 @@ function findShort(s) {
 function nthChar(words){
     return words.map((item, i) => item[i]).join('') || ''
 }
+
+function hydrate(s) {
+    const result = s
+        .replace(/[(a-z)]/gi, '')
+        .split('')
+        .filter((item) => parseInt(item) && parseInt(item))
+        .reduce((a, b) => a + +b, 0)
+    return result === 1
+        ? `${result} glass of water`
+        : `${result} glasses of water`
+}
