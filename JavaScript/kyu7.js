@@ -357,3 +357,15 @@ function hydrate(s) {
         ? `${result} glass of water`
         : `${result} glasses of water`
 }
+
+function XO(str) {
+    const o = str
+        .toLowerCase()
+        .split('')
+        .filter((item) => item === 'o')
+    const x = str
+        .toLowerCase()
+        .split('')
+        .filter((item) => item === 'x')
+    return x.length === o.length
+}
