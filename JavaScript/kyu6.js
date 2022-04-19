@@ -324,3 +324,19 @@ function balance(left, right) {
             ? 'Right'
             : leftResult === rightResult && 'Balance'
 }
+
+function letterCount(text){
+    const unique = Array.from(new Set(text.toLowerCase()))
+    const obj = {}
+    for (let i = 0; i < unique.length; i++) {
+        let sum = 0
+        obj[unique[i]] = sum
+        for (let j = 0; j < text.length; j++) {
+            if (unique[i] === text[j].toLowerCase()) {
+                sum++
+                obj[unique[i]] = sum
+            }
+        }
+    }
+    return obj
+}
