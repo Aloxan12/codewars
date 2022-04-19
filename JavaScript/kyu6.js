@@ -340,3 +340,9 @@ function letterCount(text) {
     }
     return obj
 }
+
+function evilTwin(obj) {
+    const result = Object.create(obj)
+    result.hasGoatee = () => true
+    return result
+}
