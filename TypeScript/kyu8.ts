@@ -153,3 +153,11 @@ export function greet3(name) {
         return "Hello, my love!";
     return "Hello, " + name + "!";
 }
+
+export const reverseSeq = (n: number): number[] => {
+    let result = [];
+    for(let i = n; i > 0; i--){
+        result.push(i)
+    }
+    return result
+};
