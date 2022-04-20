@@ -143,3 +143,7 @@ export function reverseWords(str: string): string {
 export const check = (a: (number | string)[], x: number | string): boolean => {
     return //`${a.find(item => item === x)}` !== 'undefined' ? true : false
 }
+
+export function findAverage(array: number[]): number {
+    return array.length === 0 ? 0 : array.reduce((a, b)=> a + b,0) / array.length;
+}
