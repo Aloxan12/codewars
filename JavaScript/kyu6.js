@@ -347,7 +347,7 @@ function evilTwin(obj) {
     return result
 }
 
-const uniqueInOrder =(iterable)=>{
+const uniqueInOrder = (iterable) => {
     const result = String(iterable)
         .replace(/([,])/g, '')
         .split('')
