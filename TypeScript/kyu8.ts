@@ -139,3 +139,7 @@ export function countPositivesSumNegatives(input: number[] | null){
 export function reverseWords(str: string): string {
     return str.split(' ').reverse().join(' ')
 }
+
+export const check = (a: (number | string)[], x: number | string): boolean => {
+    return //`${a.find(item => item === x)}` !== 'undefined' ? true : false
+}
