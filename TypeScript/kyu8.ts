@@ -125,3 +125,13 @@ export const greet2 =()=> "hello world!"
 export function invert(array: number[]): number[] {
     return array.map(i => -i);
 }
+
+export function countPositivesSumNegatives(input: number[] | null){
+    if(input === null){
+        return []
+    }else{
+        const neg = input.filter(i => i < 0).reduce((acc, elem) => acc + elem, 0)
+        const pos = input.filter(i => i > 0).length
+        return neg === 0 && pos === 0 ? [] : [pos, neg]
+    }
+}
