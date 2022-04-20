@@ -346,3 +346,11 @@ function evilTwin(obj) {
     result.hasGoatee = () => true
     return result
 }
+
+const uniqueInOrder =(iterable)=>{
+    const result = String(iterable)
+        .replace(/([,])/g, '')
+        .split('')
+        .filter((item, i, arr) => arr[i] !== arr[i + 1] && item)
+    return typeof iterable[0] === 'string' ? result : result.map((item) => +item)
+}
