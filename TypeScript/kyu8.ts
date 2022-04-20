@@ -120,6 +120,8 @@ export function greet(name: string): string {
     return `Hello, ${name} how are you doing today?`
 }
 
+export const greet2 =()=> "hello world!"
+
 export function invert(array: number[]): number[] {
     return array.map(i => -i);
 }
