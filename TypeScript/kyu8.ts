@@ -135,3 +135,7 @@ export function countPositivesSumNegatives(input: number[] | null){
         return neg === 0 && pos === 0 ? [] : [pos, neg]
     }
 }
+
+export function reverseWords(str: string): string {
+    return str.split(' ').reverse().join(' ')
+}
