@@ -179,11 +179,11 @@ export function getAverage(marks: number[]): number {
     return Math.floor(marks.reduce((a, b) => a + b, 0) / marks.length);
 }
 
-export function paperwork(n: number, m :number): number{
+export function paperwork(n: number, m: number): number {
     return n <= 0 || m <= 0 ? 0 : n * m;
 }
 
-export const booleanToString = (b:boolean):string => {
+export const booleanToString = (b: boolean): string => {
     return `${b}`
 };
 
@@ -195,16 +195,16 @@ export function bmi(weight: number, height: number): string {
                 : bmi > 30 ? "Obese" : ''
 }
 
-export const arrayPlusArray = (arr1 : number[], arr2 : number[]) : number => {
-    return [...arr1, ...arr2].reduce((a,b)=> a+b, 0)
+export const arrayPlusArray = (arr1: number[], arr2: number[]): number => {
+    return [...arr1, ...arr2].reduce((a, b) => a + b, 0)
 }
 
 export function hero(bullets: number, dragons: number): boolean {
     return bullets / dragons >= 2;
 }
 
-export function betterThanAverage(classPoints: number[], yourPoints: number) : boolean {
-    return yourPoints > classPoints.reduce((a,b)=> a + b, yourPoints) / (classPoints.length + 1);
+export function betterThanAverage(classPoints: number[], yourPoints: number): boolean {
+    return yourPoints > classPoints.reduce((a, b) => a + b, yourPoints) / (classPoints.length + 1);
 }
 
 
