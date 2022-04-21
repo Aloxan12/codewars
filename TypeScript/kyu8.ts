@@ -186,3 +186,11 @@ export function paperwork(n: number, m :number): number{
 export const booleanToString = (b:boolean):string => {
     return `${b}`
 };
+
+export function bmi(weight: number, height: number): string {
+    const bmi = weight / Math.pow(height, 2)
+    return bmi <= 18.5 ? 'Underweight'
+        : bmi <= 25.0 ? "Normal"
+            : bmi <= 30.0 ? "Overweight"
+                : bmi > 30 ? "Obese" : ''
+}
