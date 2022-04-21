@@ -203,6 +203,9 @@ export function hero(bullets: number, dragons: number): boolean {
     return bullets / dragons >= 2;
 }
 
+export function betterThanAverage(classPoints: number[], yourPoints: number) : boolean {
+    return yourPoints > classPoints.reduce((a,b)=> a + b, yourPoints) / (classPoints.length + 1);
+}
 
 
 
