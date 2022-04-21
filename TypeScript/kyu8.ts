@@ -194,3 +194,7 @@ export function bmi(weight: number, height: number): string {
             : bmi <= 30.0 ? "Overweight"
                 : bmi > 30 ? "Obese" : ''
 }
+
+export const arrayPlusArray = (arr1 : number[], arr2 : number[]) : number => {
+    return [...arr1, ...arr2].reduce((a,b)=> a+b, 0)
+}
