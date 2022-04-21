@@ -207,7 +207,9 @@ export function betterThanAverage(classPoints: number[], yourPoints: number): bo
     return yourPoints > classPoints.reduce((a, b) => a + b, yourPoints) / (classPoints.length + 1);
 }
 
-
+export function grow(arr: number[]): number {
+    return arr.reduce((a,b)=> a * b, 1)
+}
 
 
 
