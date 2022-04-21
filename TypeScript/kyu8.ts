@@ -145,34 +145,36 @@ export const check = (a: (number | string)[], x: number | string): boolean => {
 }
 
 export function findAverage(array: number[]): number {
-    return array.length === 0 ? 0 : array.reduce((a, b)=> a + b,0) / array.length;
+    return array.length === 0 ? 0 : array.reduce((a, b) => a + b, 0) / array.length;
 }
 
 export function greet3(name) {
-    if(name === "Johnny")
+    if (name === "Johnny")
         return "Hello, my love!";
     return "Hello, " + name + "!";
 }
 
 export const reverseSeq = (n: number): number[] => {
     let result = [];
-    for(let i = n; i > 0; i--){
+    for (let i = n; i > 0; i--) {
         result.push(i)
     }
     return result
 };
 
-export const fakeBin = (x:string):string => {
+export const fakeBin = (x: string): string => {
     const splitString = x.split('')
     const joinInt = []
-    for (let index =0; index < splitString.length; index ++)
-    {
-        if(parseInt(splitString[index]) <5){ joinInt.push(0) }
-        else if(parseInt(splitString[index]) >= 5){ joinInt.push(1)}
+    for (let index = 0; index < splitString.length; index++) {
+        if (parseInt(splitString[index]) < 5) {
+            joinInt.push(0)
+        } else if (parseInt(splitString[index]) >= 5) {
+            joinInt.push(1)
+        }
     }
     return joinInt.join('')
 }
 
-export function getAverage(marks:number[]):number{
-    return Math.floor(marks.reduce((a,b)=> a + b,0) / marks.length);
+export function getAverage(marks: number[]): number {
+    return Math.floor(marks.reduce((a, b) => a + b, 0) / marks.length);
 }
