@@ -198,3 +198,27 @@ export function bmi(weight: number, height: number): string {
 export const arrayPlusArray = (arr1 : number[], arr2 : number[]) : number => {
     return [...arr1, ...arr2].reduce((a,b)=> a+b, 0)
 }
+
+export function hero(bullets: number, dragons: number): boolean {
+    return bullets / dragons >= 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
