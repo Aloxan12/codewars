@@ -208,15 +208,15 @@ export function betterThanAverage(classPoints: number[], yourPoints: number): bo
 }
 
 export function grow(arr: number[]): number {
-    return arr.reduce((a,b)=> a * b, 1)
+    return arr.reduce((a, b) => a * b, 1)
 }
 
 export function lovefunc(flower1: number, flower2: number): boolean {
-    if(flower1 % 2 === 0 && flower2 % 2 !== 0){
+    if (flower1 % 2 === 0 && flower2 % 2 !== 0) {
         return true
-    }else if(flower1 % 2 !== 0 && flower2 % 2 === 0){
+    } else if (flower1 % 2 !== 0 && flower2 % 2 === 0) {
         return true
-    }else{
+    } else {
         return false
     }
 }
