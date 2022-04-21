@@ -161,3 +161,15 @@ export const reverseSeq = (n: number): number[] => {
     }
     return result
 };
+
+export const fakeBin = (x:string):string => {
+    const splitString = x.split('')
+    const joinInt = []
+    for (let index =0; index < splitString.length; index ++)
+    {
+        if(parseInt(splitString[index]) <5){ joinInt.push(0) }
+        else if(parseInt(splitString[index]) >= 5){ joinInt.push(1)}
+    }
+    return joinInt.join('')
+
+}
