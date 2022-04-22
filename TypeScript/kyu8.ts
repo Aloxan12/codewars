@@ -239,6 +239,12 @@ export function DNAtoRNA(dna: string): string {
     return result
 }
 
+function bonusTime(salary, bonus) {
+    let result = salary;
+    if (bonus) result *= 10;
+    return "£" + result;
+}
+
 
 
 
