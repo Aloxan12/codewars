@@ -225,10 +225,19 @@ export function makeUpperCase(str: string): string{
     return str.toUpperCase();
 }
 
-export function greet4(name: string): string {
-    return `Hello, ${name} how are you doing today?`
+export function DNAtoRNA(dna: string): string {
+    let result = ''
+    for(let i = 0; i<dna.length; i++){
+        if(dna[i] === 'U'){
+            result += 'T'
+        }else if(dna[i] === 'T'){
+            result += 'U'
+        }else{
+            result += dna[i]
+        }
+    }
+    return result
 }
-
 
 
 
