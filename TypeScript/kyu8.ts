@@ -221,6 +221,10 @@ export function lovefunc(flower1: number, flower2: number): boolean {
     }
 }
 
+export function makeUpperCase(str: string): string{
+    return str.toUpperCase();
+}
+
 
 
 
