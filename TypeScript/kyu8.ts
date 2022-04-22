@@ -225,7 +225,9 @@ export function makeUpperCase(str: string): string{
     return str.toUpperCase();
 }
 
-
+export function greet4(name: string): string {
+    return `Hello, ${name} how are you doing today?`
+}
 
 
 
