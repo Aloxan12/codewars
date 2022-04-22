@@ -239,10 +239,12 @@ export function DNAtoRNA(dna: string): string {
     return result
 }
 
-function bonusTime(salary, bonus) {
-    let result = salary;
-    if (bonus) result *= 10;
-    return "£" + result;
+export class Kata1 {
+    public static bonusTime(salary:number, bonus:boolean):string {
+        let result = salary;
+        if (bonus) result *= 10;
+        return "£" + result;
+    }
 }
 
 
