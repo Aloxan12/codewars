@@ -221,18 +221,18 @@ export function lovefunc(flower1: number, flower2: number): boolean {
     }
 }
 
-export function makeUpperCase(str: string): string{
+export function makeUpperCase(str: string): string {
     return str.toUpperCase();
 }
 
 export function DNAtoRNA(dna: string): string {
     let result = ''
-    for(let i = 0; i<dna.length; i++){
-        if(dna[i] === 'U'){
+    for (let i = 0; i < dna.length; i++) {
+        if (dna[i] === 'U') {
             result += 'T'
-        }else if(dna[i] === 'T'){
+        } else if (dna[i] === 'T') {
             result += 'U'
-        }else{
+        } else {
             result += dna[i]
         }
     }
@@ -240,7 +240,7 @@ export function DNAtoRNA(dna: string): string {
 }
 
 export class Kata1 {
-    public static bonusTime(salary:number, bonus:boolean):string {
+    public static bonusTime(salary: number, bonus: boolean): string {
         let result = salary;
         if (bonus) result *= 10;
         return "£" + result;
