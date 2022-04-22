@@ -370,7 +370,7 @@ function XO(str) {
     return x.length === o.length
 }
 
-function isIsogram(str){
+function isIsogram(str) {
     str = str.toLowerCase();
 
     for (let i = 0; i < str.length; i++) {
