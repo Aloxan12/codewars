@@ -385,3 +385,23 @@ function isIsogram(str){
 function sumOfMinimums(arr) {
     return arr.map((item) => Math.min(...item)).reduce((a, b) => a + b, 0)
 }
+
+function accum(s) {
+    return s
+        .split('')
+        .map(
+            (item, i) => item[0].toUpperCase() + item[0].toLowerCase().repeat(i),
+        )
+        .join('-')
+}
+
+
+
+
+
+
+
+
+
+
+
