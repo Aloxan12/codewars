@@ -361,7 +361,7 @@ function persistence(num) {
         : 0;
 }
 
-function order(words){
+function order(words) {
     return words
         .split(' ')
         .map((item) => item.replace(/([a-z])/gi, '') + item)
