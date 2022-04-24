@@ -438,7 +438,7 @@ function spacify(str) {
     return str.split('').join(' ')
 }
 
-function swap(str){
+function swap(str) {
     return str
         .split('')
         .map((item) =>
@@ -446,7 +446,7 @@ function swap(str){
         ).join('')
 }
 
-function filterLongWords(sentence, n){
+function filterLongWords(sentence, n) {
     return sentence
         .split(' ')
         .filter((item) => item.length > n)
