@@ -438,7 +438,13 @@ function spacify(str) {
     return str.split('').join(' ')
 }
 
-
+function swap(str){
+    return str
+        .split('')
+        .map((item) =>
+            item === item.toUpperCase() ? item.toLowerCase() : item.toUpperCase(),
+        ).join('')
+}
 
 
 
