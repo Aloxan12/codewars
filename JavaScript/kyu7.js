@@ -399,7 +399,7 @@ function disemvowel(str) {
     return str.replace(/[aeiou]/gi, '');
 }
 
-function fourSeven(n){
+function fourSeven(n) {
     const result = {
         4: '7',
         7: '4',
@@ -407,7 +407,7 @@ function fourSeven(n){
     return result[n] || 0
 }
 
-function validatePIN (pin) {
+function validatePIN(pin) {
     return pin.length < 4 || pin.length === 5 || pin.length > 6
         ? false
         : pin
