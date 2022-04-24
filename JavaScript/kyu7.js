@@ -399,6 +399,14 @@ function disemvowel(str) {
     return str.replace(/[aeiou]/gi, '');
 }
 
+function fourSeven(n){
+    const result = {
+        4: '7',
+        7: '4',
+    }
+    return result[n] || 0
+}
+
 
 
 
