@@ -446,7 +446,11 @@ function swap(str){
         ).join('')
 }
 
-
+function filterLongWords(sentence, n){
+    return sentence
+        .split(' ')
+        .filter((item) => item.length > n)
+}
 
 
 
