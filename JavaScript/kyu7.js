@@ -419,7 +419,7 @@ function validatePIN(pin) {
             : false
 }
 
-function solve(eq){
+function solve(eq) {
     return eq
         .split(/([*+-/])/)
         .reverse()
