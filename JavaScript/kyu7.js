@@ -407,6 +407,18 @@ function fourSeven(n){
     return result[n] || 0
 }
 
+function validatePIN (pin) {
+    return pin.length < 4 || pin.length === 5 || pin.length > 6
+        ? false
+        : pin
+            .replace(/[a-z]/gi, ' false ')
+            .replace(/[^0-9]/, ' false ')
+            .split(' ')
+            .find((item) => item === 'false') === undefined
+            ? true
+            : false
+}
+
 
 
 
