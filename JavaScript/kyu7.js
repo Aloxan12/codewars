@@ -434,7 +434,9 @@ function getLargerNumbers(a, b) {
     return result
 }
 
-
+function spacify(str) {
+    return str.split('').join(' ')
+}
 
 
 
