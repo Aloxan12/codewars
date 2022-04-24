@@ -452,6 +452,14 @@ function filterLongWords(sentence, n) {
         .filter((item) => item.length > n)
 }
 
+function cookingTime(eggs) {
+    let result = 0
+    for (let i = 0; i < eggs; i += 8) {
+        result += 5
+    }
+    return result
+}
+
 
 
 
