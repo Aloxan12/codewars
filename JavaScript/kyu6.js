@@ -360,3 +360,12 @@ function persistence(num) {
         ? 1 + persistence(`${num}`.split('').reduce((a, b) => a * b))
         : 0;
 }
+
+function order(words){
+    return words
+        .split(' ')
+        .map((item) => item.replace(/([a-z])/gi, '') + item)
+        .sort()
+        .map((item) => item.slice(1))
+        .join(' ')
+}
