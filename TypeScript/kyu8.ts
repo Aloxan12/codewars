@@ -255,6 +255,14 @@ export function monkeyCount(n: number) {
     return res
 }
 
+export function sumArray(array:number[] | null):number {
+    if(array !== null){
+        return array.sort((a,b)=> a > b ? 1 : -1).slice(1, -1).reduce((a,b)=> a+b, 0);
+    }else{
+        return 0
+    }
+}
+
 
 
 
