@@ -263,6 +263,10 @@ export function sumArray(array:number[] | null):number {
     }
 }
 
+export const max = (list: number[]): number => {
+    return Math.max(...list)
+}
+
 
 
 
