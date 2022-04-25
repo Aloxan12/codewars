@@ -249,16 +249,16 @@ export class Kata1 {
 
 export function monkeyCount(n: number) {
     let res = []
-    for(let i = 1; i <= n; i++){
+    for (let i = 1; i <= n; i++) {
         res.push(i)
     }
     return res
 }
 
-export function sumArray(array:number[] | null):number {
-    if(array !== null){
-        return array.sort((a,b)=> a > b ? 1 : -1).slice(1, -1).reduce((a,b)=> a+b, 0);
-    }else{
+export function sumArray(array: number[] | null): number {
+    if (array !== null) {
+        return array.sort((a, b) => a > b ? 1 : -1).slice(1, -1).reduce((a, b) => a + b, 0);
+    } else {
         return 0
     }
 }
