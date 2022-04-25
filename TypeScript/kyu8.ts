@@ -267,6 +267,10 @@ export const max = (list: number[]): number => {
     return Math.max(...list)
 }
 
+export const min = (list: number[]): number => {
+    return Math.min(...list)
+};
+
 
 
 
