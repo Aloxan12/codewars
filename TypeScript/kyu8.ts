@@ -280,11 +280,11 @@ export const zeroFuel = (distance: number, mpg: number, fuelLeft: number): boole
 };
 
 export function countSheep(num: number): string {
-    if(num === 0){
+    if (num === 0) {
         return ''
-    }else{
+    } else {
         let result = ''
-        for(let i = 1; i<=num;i++){
+        for (let i = 1; i <= num; i++) {
             result += `${i} sheep...`
         }
         return result
