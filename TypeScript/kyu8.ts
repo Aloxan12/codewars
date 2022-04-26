@@ -291,9 +291,9 @@ export function countSheep(num: number): string {
     }
 }
 
-export function smash (words: string[]): string {
+export function smash(words: string[]): string {
     return words.join(' ')
-};
+}
 
 
 
