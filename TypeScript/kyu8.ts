@@ -275,6 +275,9 @@ export function areYouPlayingBanjo(name: string): string {
     return name[0].toLowerCase() === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
 }
 
+export const zeroFuel = (distance: number, mpg: number, fuelLeft: number): boolean => {
+    return distance / mpg <= fuelLeft
+};
 
 
 
