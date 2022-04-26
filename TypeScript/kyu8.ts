@@ -295,7 +295,9 @@ export function smash(words: string[]): string {
     return words.join(' ')
 }
 
-
+export function sumMix(x: any[]): number {
+    return x.reduce((a,b)=> a+ +b,0)
+}
 
 
 
