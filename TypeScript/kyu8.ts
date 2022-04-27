@@ -326,6 +326,10 @@ export function firstNonConsecutive(arr: number[]): null | number {
     return null;
 }
 
+export function doubleInteger (i: number): number {
+    return i*2
+}
+
 
 
 
