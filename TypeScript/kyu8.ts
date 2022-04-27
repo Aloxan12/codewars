@@ -330,7 +330,7 @@ export function doubleInteger(i: number): number {
     return i * 2
 }
 
-export function greet4 (name: string, owner: string): string{
+export function greet4(name: string, owner: string): string {
     return name !== owner ? 'Hello guest' : 'Hello boss';
 }
 
