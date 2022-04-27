@@ -313,6 +313,10 @@ export function rps(p1: string, p2: string): string {
     }
 }
 
+export function stringToArray(s: string): string[] {
+    return s.split(' ')
+}
+
 
 
 
