@@ -346,8 +346,12 @@ export function feast(beast: string, dish: string): boolean {
     return one === two
 }
 
+// export function setAlarm(employed: boolean, vacation: boolean) {
+//     return employed && !vacation ? true : false
+// }
+
 export function setAlarm(employed: boolean, vacation: boolean) {
-    return employed && !vacation ? true : false
+    return employed && !vacation
 }
 
 
