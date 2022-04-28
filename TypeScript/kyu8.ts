@@ -334,6 +334,11 @@ export function greet4(name: string, owner: string): string {
     return name !== owner ? 'Hello guest' : 'Hello boss';
 }
 
+export function rentalCarCost(d: number): number {
+    let day = d >= 3 && d < 7 ? 20 : 0;
+    let week = d >= 7 ? 50 : 0;
+    return (d * 40) - day - week;
+}
 
 
 
