@@ -340,6 +340,12 @@ export function rentalCarCost(d: number): number {
     return (d * 40) - day - week;
 }
 
+export function feast(beast:string, dish:string):boolean {
+    const one = beast[0] + beast[beast.length -1]
+    const two = dish[0] + dish[dish.length -1]
+    return one === two
+}
+
 
 
 
