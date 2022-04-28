@@ -354,7 +354,7 @@ export function setAlarm(employed: boolean, vacation: boolean) {
     return employed && !vacation
 }
 
-export function doubleChar(str: string): string{
+export function doubleChar(str: string): string {
     return str.split('').map(i => i + i).join('')
 }
 
