@@ -368,7 +368,7 @@ export function oddCount(n: number) {
 }
 
 export function toAlternatingCase(s: string): string {
-    return s.split('').map(i=> i === i.toUpperCase() ? i.toLowerCase() : i.toUpperCase()).join('')
+    return s.split('').map(i => i === i.toUpperCase() ? i.toLowerCase() : i.toUpperCase()).join('')
 }
 
 
