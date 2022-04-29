@@ -358,12 +358,12 @@ export function doubleChar(str: string): string {
     return str.split('').map(i => i + i).join('')
 }
 
-export function enough(cap:  number, on: number, wait: number): number {
+export function enough(cap: number, on: number, wait: number): number {
     const res = cap - on
     return res - wait > 0 ? 0 : -(res - wait)
 }
 
-export function oddCount(n: number){
+export function oddCount(n: number) {
     return Math.floor(n / 2)
 }
 
