@@ -363,7 +363,9 @@ export function enough(cap:  number, on: number, wait: number): number {
     return res - wait > 0 ? 0 : -(res - wait)
 }
 
-
+export function oddCount(n: number){
+    return Math.floor(n / 2)
+}
 
 
 
