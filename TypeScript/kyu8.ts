@@ -377,8 +377,8 @@ function get_age(age: string): number {
     return parseInt(age)
 }
 
-function greetLanguage(language) {
-    var obj = {
+function greetLanguage(language: string | null) {
+    const obj = {
         english: 'Welcome',
         czech: 'Vitejte',
         danish: 'Velkomst',
