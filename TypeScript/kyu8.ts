@@ -413,4 +413,7 @@ export function findDifference(a: [number, number, number], b: [number, number, 
     return result > 0 ? result : -result
 }
 
+export function twoSort(s: string[]): string {
+    return s.sort()[0].split('').join('***')
+}
 
