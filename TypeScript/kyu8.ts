@@ -408,6 +408,9 @@ export function checkForFactor(base: number, factor: number) {
     return base % factor === 0
 }
 
-
+export function findDifference(a: [number, number, number], b: [number, number, number]): number{
+    const result = (a.reduce((a,b)=> a*b) - b.reduce((a,b)=> a*b))
+    return result > 0 ? result : -result
+}
 
 
