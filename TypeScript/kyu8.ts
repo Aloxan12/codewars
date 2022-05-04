@@ -404,7 +404,9 @@ export function switchItUp(intNumber:number):string {
     return ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"][intNumber]
 }
 
-
+export function checkForFactor(base: number, factor: number) {
+    return base % factor === 0
+}
 
 
 
