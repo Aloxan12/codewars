@@ -133,11 +133,11 @@ function countSheeps(arrayOfSheep) {
     return arrayOfSheep.filter(i => i).length
 }
 
-function smash (words) {
+function smash(words) {
     return words.join(' ')
 }
 
-function getAge(inputString){
+function getAge(inputString) {
     return Number(inputString.replace(/([a-z])/gi, ''))
 }
 
@@ -149,6 +149,6 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return result >= distanceToPump
 }
 
-function switchItUp(number){
-    return ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"][number]
+function switchItUp(number) {
+    return ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"][number]
 }
