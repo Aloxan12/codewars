@@ -432,6 +432,9 @@ export function howMuchILoveYou(petals: number): string {
 }
 
 
-export function squareOrSquareRoot(array:number[]) : number[] {
-    return array.map(n=> Math.sqrt(n)%1 === 0 ? Math.sqrt(n) : Math.pow(n, 2));
+export function squareOrSquareRoot(array: number[]): number[] {
+    return array.map(n => Math.sqrt(n) % 1 === 0 ? Math.sqrt(n) : Math.pow(n, 2));
 }
+
+
+
