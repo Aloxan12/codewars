@@ -417,3 +417,4 @@ export function twoSort(s: string[]): string {
     return s.sort()[0].split('').join('***')
 }
 
+export const multiply2 =(a: number, b:number)=> a*b
