@@ -420,3 +420,13 @@ export function twoSort(s: string[]): string {
 export const multiply2 = (a: number, b: number) => a * b
 
 
+export function howMuchILoveYou(petals: number): string{
+    return [
+        'not at all',
+        'I love you',
+        'a little',
+        'a lot',
+        'passionately',
+        'madly',
+    ][petals % 6]
+}
