@@ -436,7 +436,7 @@ export function squareOrSquareRoot(array: number[]): number[] {
     return array.map(n => Math.sqrt(n) % 1 === 0 ? Math.sqrt(n) : Math.pow(n, 2));
 }
 
-export function well(x: string[]): string{
+export function well(x: string[]): string {
     const len = x.filter(i => i === 'good').length
     return len < 1 ? 'Fail!' : len < 3 ? 'Publish!' : 'I smell a series!'
 }
