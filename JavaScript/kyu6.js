@@ -394,3 +394,14 @@ function spinWords(string) {
             .join('') : item)
         .join(' ')
 }
+
+function digital_root(n) {
+    if (n < 10) {
+        return n
+    } else {
+        const result = String(n)
+            .split('')
+            .reduce((a, b) => a + +b, 0)
+        return digital_root(result)
+    }
+}
