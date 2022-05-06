@@ -376,3 +376,12 @@ function findOutlier(integers) {
 
     return evenArr.length < oddArr.length ? evenArr[0] : oddArr[0]
 }
+
+function arrayDiff(a, b) {
+    const result = []
+    for (let i = 0; i < a.length; i++) {
+        const find = b.find((item) => item === a[i])
+        find === undefined && result.push(a[i])
+    }
+    return result
+}
