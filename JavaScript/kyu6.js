@@ -370,7 +370,7 @@ function order(words) {
         .join(' ')
 }
 
-function findOutlier(integers){
+function findOutlier(integers) {
     const evenArr = integers.filter((item) => item % 2 === 0)
     const oddArr = integers.filter((item) => item % 2 !== 0)
 
