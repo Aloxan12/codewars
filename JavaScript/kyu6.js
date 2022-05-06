@@ -385,3 +385,7 @@ function arrayDiff(a, b) {
     }
     return result
 }
+
+function spinWords(string){
+    return string.split(' ').map(item => item.length > 4 ? item.split('').reverse().join('') : item).join(' ')
+}
