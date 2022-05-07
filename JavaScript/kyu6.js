@@ -412,7 +412,7 @@ function createPhoneNumber(numbers) {
         .join('')}-${numbers.slice(6).join('')}`
 }
 
-function solution(number){
+function solution(number) {
     let result = []
     for (let i = 0; i < number; i++) {
         ;(i % 3 === 0 && result.push(i)) || (i % 5 === 0 && result.push(i))
