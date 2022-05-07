@@ -411,3 +411,11 @@ function createPhoneNumber(numbers) {
         .slice(3, 6)
         .join('')}-${numbers.slice(6).join('')}`
 }
+
+function solution(number){
+    let result = []
+    for (let i = 0; i < number; i++) {
+        ;(i % 3 === 0 && result.push(i)) || (i % 5 === 0 && result.push(i))
+    }
+    return result.reduce((a, b) => a + b, 0)
+}
