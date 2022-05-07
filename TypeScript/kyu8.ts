@@ -448,3 +448,7 @@ export function index(array: number[], n: number): number {
 export function fixTheMeerkat(arr: string[]): string[] {
     return arr.reverse();
 }
+
+export function goals (laLigaGoals:number, copaDelReyGoals:number, championsLeagueGoals:number): number {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
