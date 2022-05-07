@@ -444,3 +444,7 @@ export function well(x: string[]): string {
 export function index(array: number[], n: number): number {
     return Math.pow(array[n], n) || -1;
 }
+
+export function fixTheMeerkat(arr: string[]): string[] {
+    return arr.reverse();
+}
