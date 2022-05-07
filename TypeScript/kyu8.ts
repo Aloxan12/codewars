@@ -449,6 +449,6 @@ export function fixTheMeerkat(arr: string[]): string[] {
     return arr.reverse();
 }
 
-export function goals (laLigaGoals:number, copaDelReyGoals:number, championsLeagueGoals:number): number {
+export function goals(laLigaGoals: number, copaDelReyGoals: number, championsLeagueGoals: number): number {
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
