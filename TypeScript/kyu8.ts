@@ -456,3 +456,7 @@ export function goals(laLigaGoals: number, copaDelReyGoals: number, championsLea
 export const testEven = (n: number): boolean => {
     return n % 2 === 0
 }
+
+export function move(pos: number, roll: number): number {
+    return pos + roll * 2
+}
