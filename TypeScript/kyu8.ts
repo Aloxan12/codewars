@@ -465,6 +465,6 @@ export function getRealFloor(n: number): number {
     return n <= 0 ? n : n < 13 ? n - 1 : n - 2
 }
 
-export function shortLongShort  (a:string, b:string) {
+export function shortLongShort(a: string, b: string) {
     return a.length > b.length ? b + a + b : a + b + a
 }
