@@ -453,6 +453,6 @@ export function goals(laLigaGoals: number, copaDelReyGoals: number, championsLea
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
 
-export const testEven = (n : number) : boolean => {
-    return n%2 === 0
+export const testEven = (n: number): boolean => {
+    return n % 2 === 0
 }
