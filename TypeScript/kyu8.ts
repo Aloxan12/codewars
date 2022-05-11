@@ -452,3 +452,7 @@ export function fixTheMeerkat(arr: string[]): string[] {
 export function goals(laLigaGoals: number, copaDelReyGoals: number, championsLeagueGoals: number): number {
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
+
+export const testEven = (n : number) : boolean => {
+    return n%2 === 0
+}
