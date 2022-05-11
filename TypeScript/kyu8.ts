@@ -460,3 +460,7 @@ export const testEven = (n: number): boolean => {
 export function move(pos: number, roll: number): number {
     return pos + roll * 2
 }
+
+export function getRealFloor(n: number): number {
+    return n <=0 ? n : n < 13 ? n -1 : n - 2
+}
