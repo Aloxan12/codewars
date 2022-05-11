@@ -462,5 +462,5 @@ export function move(pos: number, roll: number): number {
 }
 
 export function getRealFloor(n: number): number {
-    return n <=0 ? n : n < 13 ? n -1 : n - 2
+    return n <= 0 ? n : n < 13 ? n - 1 : n - 2
 }
