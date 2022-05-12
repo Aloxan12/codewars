@@ -476,3 +476,11 @@ export function isUpperCase(str: string) {
 export function saleHotdogs(n: number): number {
     return n < 5 ? 100 * n : n >= 5 && n < 10 ? 95 * n : n >= 10 ? 90 * n : 0;
 }
+
+export function between(a: number, b: number): number[] {
+    let result: number[] = []
+    for(let i = a; i<=b; i++){
+        result.push(i)
+    }
+    return result;
+}
