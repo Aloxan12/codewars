@@ -479,7 +479,7 @@ export function saleHotdogs(n: number): number {
 
 export function between(a: number, b: number): number[] {
     let result: number[] = []
-    for(let i = a; i<=b; i++){
+    for (let i = a; i <= b; i++) {
         result.push(i)
     }
     return result;
