@@ -488,3 +488,7 @@ export function between(a: number, b: number): number[] {
 var a = "code";
 var b = "wa.rs";
 export var name = a + b;
+
+export function sayHello(name: string): string {
+    return `Hello, ${name}`
+}
