@@ -492,3 +492,7 @@ export var name = a + b;
 export function sayHello(name: string): string {
     return `Hello, ${name}`
 }
+
+export const square = (n: number): number =>{
+    return Math.pow(n, 2)
+}
