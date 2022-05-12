@@ -484,3 +484,7 @@ export function between(a: number, b: number): number[] {
     }
     return result;
 }
+
+var a = "code";
+var b = "wa.rs";
+export var name = a + b;
