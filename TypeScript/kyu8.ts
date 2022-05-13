@@ -517,12 +517,12 @@ export function findMultiples(integer: number, limit: number): number[] {
     return result
 }
 
-export function hexToDec(hexString:string):number{
+export function hexToDec(hexString: string): number {
     return parseInt(hexString, 16);
 }
 
 export class XOR {
-    public static xor(a:boolean, b:boolean):boolean {
+    public static xor(a: boolean, b: boolean): boolean {
         return a !== b
     }
 }
