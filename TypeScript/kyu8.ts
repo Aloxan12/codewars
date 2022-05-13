@@ -496,3 +496,9 @@ export function sayHello(name: string): string {
 export const square = (n: number): number => {
     return Math.pow(n, 2)
 }
+
+export function hello(name = ''): string {
+    return `Hello, ${name ? name.split('')
+        .map((w, i)=> i === 0 ? w.toUpperCase(): w.toLowerCase())
+        .join('') : 'World'}!`;
+}
