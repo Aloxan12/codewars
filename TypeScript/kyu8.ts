@@ -506,3 +506,13 @@ export function helloOrWorld(name = ''): string {
 export function remove(s: string): string {
     return s[s.length - 1] === '!' ? s.slice(0, -1) : s
 }
+
+export function findMultiples(integer: number, limit: number): number[] {
+    let result = []
+    for(let i = integer; i<=limit; i++){
+        if(i % integer === 0){
+            result.push(i)
+        }
+    }
+    return result
+}
