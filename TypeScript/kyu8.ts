@@ -509,8 +509,8 @@ export function remove(s: string): string {
 
 export function findMultiples(integer: number, limit: number): number[] {
     let result = []
-    for(let i = integer; i<=limit; i++){
-        if(i % integer === 0){
+    for (let i = integer; i <= limit; i++) {
+        if (i % integer === 0) {
             result.push(i)
         }
     }
