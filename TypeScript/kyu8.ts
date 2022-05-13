@@ -499,6 +499,6 @@ export const square = (n: number): number => {
 
 export function helloOrWorld(name = ''): string {
     return `Hello, ${name ? name.split('')
-        .map((w, i)=> i === 0 ? w.toUpperCase(): w.toLowerCase())
+        .map((w, i) => i === 0 ? w.toUpperCase() : w.toLowerCase())
         .join('') : 'World'}!`;
 }
