@@ -528,11 +528,11 @@ export class XOR {
 }
 
 export function weatherInfo(temp: number): string {
-    const c = (temp - 32) * (5/9)
+    const c = (temp - 32) * (5 / 9)
     if (c < 0)
-        return (Math.round(c*1e5)/1e5 + " is freezing temperature")
+        return (Math.round(c * 1e5) / 1e5 + " is freezing temperature")
     else
-        return (Math.round(c*1e5)/1e5 + " is above freezing temperature")
+        return (Math.round(c * 1e5) / 1e5 + " is above freezing temperature")
 }
 
 export function convertToCelsius(temperature: number): number {
