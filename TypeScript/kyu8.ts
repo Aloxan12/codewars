@@ -539,3 +539,7 @@ export function convertToCelsius(temperature: number): number {
     const celsius = Math.round(((temperature - 32) + (5 / 9)))
     return celsius
 }
+
+export function mouthSize(animal: string): string {
+    return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
+}
