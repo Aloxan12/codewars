@@ -537,5 +537,5 @@ export function weatherInfo(temp: number): string {
 
 export function convertToCelsius(temperature: number): number {
     const celsius = Math.round(((temperature - 32) + (5 / 9)))
-    return temperature
+    return celsius
 }
