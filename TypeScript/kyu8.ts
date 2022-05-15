@@ -528,6 +528,6 @@ export class XOR {
 }
 
 export function convertToCelsius(temperature: number): number {
-    const celsius = Math.round(((temperature - 32) + (5/9)))
+    const celsius = Math.round(((temperature - 32) + (5 / 9)))
     return temperature
 }
