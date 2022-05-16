@@ -559,7 +559,7 @@ export function dutyFree(normPrice: number, discount: number, hol: number): numb
 }
 
 export class Kata2 {
-    public static buildString(...template:string[]):string {
+    public static buildString(...template: string[]): string {
         return `I like ${template.join(', ')}!`;
     }
 }
