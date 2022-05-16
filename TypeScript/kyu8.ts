@@ -575,3 +575,15 @@ export function flip(dir: string, arr: number[]): number[] {
         ? arr.sort((a, b) => a > b ? 1 : -1)
         : arr.sort((a, b) => a > b ? -1 : 1);
 }
+
+export function getDrinkByProfession(profession:string){
+    const obj = {
+        "jabroni":"Patron Tequila",
+        "school counselor":"Anything with Alcohol",
+        "programmer":"Hipster Craft Beer",
+        "bike gang member":"Moonshine",
+        "politician":"Your tax dollars",
+        "rapper":"Cristal",
+    }
+    return obj[profession.toLowerCase()] || 'Beer'
+}
