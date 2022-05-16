@@ -550,10 +550,10 @@ export function warnTheSheep(queue: string[]): string {
         : `Oi! Sheep number ${queue.length - 1 - index}! You are about to be eaten by a wolf!`
 }
 
-export const addFive = (num : number) : number => {
+export const addFive = (num: number): number => {
     return num + 5;
 }
 
-export function dutyFree(normPrice: number, discount: number, hol: number): number{
+export function dutyFree(normPrice: number, discount: number, hol: number): number {
     return Math.floor(hol / normPrice / discount * 100)
 }
