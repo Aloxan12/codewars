@@ -557,3 +557,9 @@ export const addFive = (num: number): number => {
 export function dutyFree(normPrice: number, discount: number, hol: number): number {
     return Math.floor(hol / normPrice / discount * 100)
 }
+
+export class Kata2 {
+    public static buildString(...template:string[]):string {
+        return `I like ${template.join(', ')}!`;
+    }
+}
