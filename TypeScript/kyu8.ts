@@ -569,3 +569,9 @@ export function apple(x: number | string): string {
         ? 'It\'s hotter than the sun!!'
         : 'Help yourself to a honeycomb Yorkie for the glovebox.';
 }
+
+export function flip(dir: string, arr: number[]): number[] {
+    return dir === 'R'
+        ? arr.sort((a,b) => a > b ? 1 : -1)
+        : arr.sort((a,b) => a > b ? -1 : 1);
+}
