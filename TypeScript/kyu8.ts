@@ -549,3 +549,7 @@ export function warnTheSheep(queue: string[]): string {
     return index === queue.length - 1 ? "Pls go away and stop eating my sheep"
         : `Oi! Sheep number ${queue.length - 1 - index}! You are about to be eaten by a wolf!`
 }
+
+export const addFive = (num : number) : number => {
+    return num + 5;
+}
