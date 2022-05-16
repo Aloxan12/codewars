@@ -553,3 +553,7 @@ export function warnTheSheep(queue: string[]): string {
 export const addFive = (num : number) : number => {
     return num + 5;
 }
+
+export function dutyFree(normPrice: number, discount: number, hol: number): number{
+    return Math.floor(hol / normPrice / discount * 100)
+}
