@@ -572,6 +572,6 @@ export function apple(x: number | string): string {
 
 export function flip(dir: string, arr: number[]): number[] {
     return dir === 'R'
-        ? arr.sort((a,b) => a > b ? 1 : -1)
-        : arr.sort((a,b) => a > b ? -1 : 1);
+        ? arr.sort((a, b) => a > b ? 1 : -1)
+        : arr.sort((a, b) => a > b ? -1 : 1);
 }
