@@ -610,3 +610,7 @@ export function correct(s: string): string {
         .replace(/5/g, 'S')
         .replace(/1/g, 'I')
 }
+
+export function twiceAsOld(dadYearsOld: number, sonYearsOld: number): number {
+    return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
