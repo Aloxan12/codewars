@@ -591,3 +591,7 @@ export function getDrinkByProfession(profession: string) {
 export function main(verb: string, noun: string): string {
     return verb + noun
 }
+
+export function stringToNumber2(str: string): number {
+    return +str
+}
