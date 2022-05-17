@@ -588,6 +588,6 @@ export function getDrinkByProfession(profession: string) {
     return obj[profession.toLowerCase()] || 'Beer'
 }
 
-export function main (verb: string, noun: string): string{
+export function main(verb: string, noun: string): string {
     return verb + noun
 }
