@@ -604,7 +604,7 @@ export function updateLight(current: string): string {
             : 'green'
 }
 
-export function correct(s: string): string{
+export function correct(s: string): string {
     return s
         .replace(/0/g, 'O')
         .replace(/5/g, 'S')
