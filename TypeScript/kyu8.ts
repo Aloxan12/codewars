@@ -595,3 +595,11 @@ export function main(verb: string, noun: string): string {
 export function stringToNumber2(str: string): number {
     return +str
 }
+
+export function updateLight(current: string): string {
+    return current === 'green'
+        ? 'yellow'
+        : current === 'yellow'
+            ? 'red'
+            : 'green'
+}
