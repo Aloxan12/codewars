@@ -628,3 +628,7 @@ export function expressionsMatter(a: number, b: number, c: number): number {
 export function cockroachSpeed(s: number): number {
     return Math.floor(s / 0.036);
 }
+
+export function isDivideBy(number: number, a: number, b: number): boolean {
+    return number/a % 1 === 0 && number/b % 1 === 0
+}
