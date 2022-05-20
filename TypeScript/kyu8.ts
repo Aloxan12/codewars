@@ -634,11 +634,11 @@ export function isDivideBy(number: number, a: number, b: number): boolean {
 }
 
 // Sum Numbers
-function sum (numbers) {
+function sum(numbers) {
     "use strict";
-    return numbers.reduce((a,b)=> a + b,0)
-};
+    return numbers.reduce((a, b) => a + b, 0)
+}
 
-export function plural(n:number):boolean {
+export function plural(n: number): boolean {
     return n !== 1
 }
