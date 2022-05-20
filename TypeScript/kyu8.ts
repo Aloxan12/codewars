@@ -632,3 +632,10 @@ export function cockroachSpeed(s: number): number {
 export function isDivideBy(number: number, a: number, b: number): boolean {
     return number / a % 1 === 0 && number / b % 1 === 0
 }
+
+
+// Sum Numbers
+function sum (numbers) {
+    "use strict";
+    return numbers.reduce((a,b)=> a + b,0)
+};
