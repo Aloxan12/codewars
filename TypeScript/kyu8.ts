@@ -621,7 +621,6 @@ export function hoopCount(n: number): string {
         : "Keep at it until you get it"
 }
 
-
 export function expressionsMatter(a: number, b: number, c: number): number {
-    return Math.max( a+b+c, (a+b)*c, a*(b+c), a*b*c ) ;
+    return Math.max(a + b + c, (a + b) * c, a * (b + c), a * b * c);
 }
