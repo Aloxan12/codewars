@@ -630,5 +630,5 @@ export function cockroachSpeed(s: number): number {
 }
 
 export function isDivideBy(number: number, a: number, b: number): boolean {
-    return number/a % 1 === 0 && number/b % 1 === 0
+    return number / a % 1 === 0 && number / b % 1 === 0
 }
