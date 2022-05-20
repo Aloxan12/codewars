@@ -625,6 +625,6 @@ export function expressionsMatter(a: number, b: number, c: number): number {
     return Math.max(a + b + c, (a + b) * c, a * (b + c), a * b * c);
 }
 
-export function cockroachSpeed(s: number): number{
+export function cockroachSpeed(s: number): number {
     return Math.floor(s / 0.036);
 }
