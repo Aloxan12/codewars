@@ -643,4 +643,5 @@ export function plural(n: number): boolean {
     return n !== 1
 }
 
+// @ts-ignore
 export const arr = (n: number = 0): number[] => Array.from({length: n}, (_, i) => i);
