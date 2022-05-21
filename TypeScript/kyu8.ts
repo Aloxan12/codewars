@@ -642,3 +642,5 @@ function sum(numbers) {
 export function plural(n: number): boolean {
     return n !== 1
 }
+
+export const arr = (n: number = 0): number[] => Array.from({length: n}, (_, i) => i);
