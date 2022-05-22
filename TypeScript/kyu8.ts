@@ -656,5 +656,5 @@ export function findNeedle(haystack: any[]): string {
 }
 
 export const distinct = (a: number[]): number[] => {
-    return Array.from(new Set(a))
+    return [...new Set(a)]
 }
