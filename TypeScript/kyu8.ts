@@ -654,3 +654,7 @@ export function gooseFilter(birds: string[]): string[] {
 export function findNeedle(haystack: any[]): string {
     return `found the needle at position ${haystack.indexOf('needle')}`
 }
+
+export const distinct = (a: number[]): number[] => {
+    return Array.from(new Set(a))
+}
