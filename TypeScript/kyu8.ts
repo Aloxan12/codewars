@@ -646,11 +646,11 @@ export function plural(n: number): boolean {
 // @ts-ignore
 export const arr = (n: number = 0): number[] => Array.from({length: n}, (_, i) => i);
 
-export function gooseFilter (birds: string[]): string[] {
-    const geese = {"African": 1, "Roman Tufted": 2, "Toulouse":3, "Pilgrim":4, "Steinbacher":5};
-    return birds.filter(x=>!geese[x]);
+export function gooseFilter(birds: string[]): string[] {
+    const geese = {"African": 1, "Roman Tufted": 2, "Toulouse": 3, "Pilgrim": 4, "Steinbacher": 5};
+    return birds.filter(x => !geese[x]);
 }
 
-export function findNeedle(haystack: any[]):string {
+export function findNeedle(haystack: any[]): string {
     return `found the needle at position ${haystack.indexOf('needle')}`
 }
