@@ -672,6 +672,6 @@ export function isPalindrome(line: string): boolean {
     return `${line}` === `${line.split('').reverse().join('')}`
 }
 
-export function howManyLightsabersDoYouOwn(name?: any): number {
+export function howManyLightsabersDoYouOwn(name?: string): number {
     return name === 'Zach' ? 18 : 0
 }
