@@ -675,3 +675,7 @@ export function isPalindrome(line: string): boolean {
 export function howManyLightsabersDoYouOwn(name?: string): number {
     return name === 'Zach' ? 18 : 0
 }
+
+export function usdcny(usd: number): string {
+    return `${(usd*6.75).toFixed(2)} Chinese Yuan`
+}
