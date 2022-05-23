@@ -663,3 +663,7 @@ export const distinct = (a: number[]): number[] => {
 export function maps(x: number[]): number[] {
     return x.map(i => i * 2);
 }
+
+export const squareArea = (num : number) : number =>  {
+    return Number(Math.pow(2 * num / 3.1416, 2).toFixed(2))
+}
