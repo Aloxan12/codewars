@@ -659,3 +659,7 @@ export const distinct = (a: number[]): number[] => {
     // @ts-ignore
     return [...new Set(a)]
 }
+
+export function maps(x: number[]): number[]{
+    return x.map(i=>i*2);
+}
