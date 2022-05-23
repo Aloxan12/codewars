@@ -667,3 +667,7 @@ export function maps(x: number[]): number[] {
 export const squareArea = (num: number): number => {
     return Number(Math.pow(2 * num / 3.1416, 2).toFixed(2))
 }
+
+export function isPalindrome(line: string): boolean {
+    return `${line}` === `${line.split('').reverse().join('')}`
+}
