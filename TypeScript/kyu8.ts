@@ -671,3 +671,7 @@ export const squareArea = (num: number): number => {
 export function isPalindrome(line: string): boolean {
     return `${line}` === `${line.split('').reverse().join('')}`
 }
+
+export function howManyLightsabersDoYouOwn(name?: any): number {
+    return name === 'Zach' ? 18 : 0
+}
