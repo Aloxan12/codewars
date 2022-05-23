@@ -660,6 +660,6 @@ export const distinct = (a: number[]): number[] => {
     return [...new Set(a)]
 }
 
-export function maps(x: number[]): number[]{
-    return x.map(i=>i*2);
+export function maps(x: number[]): number[] {
+    return x.map(i => i * 2);
 }
