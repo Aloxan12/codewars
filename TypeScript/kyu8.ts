@@ -634,7 +634,7 @@ export function isDivideBy(number: number, a: number, b: number): boolean {
 }
 
 // Sum Numbers
-function sum(numbers) {
+function sum(numbers: number[]) {
     "use strict";
     return numbers.reduce((a, b) => a + b, 0)
 }
