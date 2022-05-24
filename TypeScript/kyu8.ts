@@ -702,3 +702,16 @@ export function remove2(s: string): string {
 export function past(h: number, m: number, s: number): number {
     return ((h * 3600) + (m * 60) + s) * 1000
 }
+
+export function getGrade(a: number, b: number, c: number): string {
+    const result = (a + b + c)/3
+    return  90 <= result
+        ? 'A'
+        : 80 <= result && result< 90
+            ? 'B'
+            : 70 <= result && result < 80
+                ? 'C'
+                : 60 <= result && result < 70
+                    ? 'D'
+                    : 'F'
+}
