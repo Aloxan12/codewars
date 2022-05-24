@@ -679,3 +679,11 @@ export function howManyLightsabersDoYouOwn(name?: string): number {
 export function usdcny(usd: number): string {
     return `${(usd * 6.75).toFixed(2)} Chinese Yuan`
 }
+
+export function nextId(ids: number[]): number {
+    for (let i = 0;; i++)
+        { // @ts-ignore
+            if (!ids.includes(i))
+                        return i;
+        }
+}
