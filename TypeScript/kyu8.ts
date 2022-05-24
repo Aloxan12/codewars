@@ -686,3 +686,7 @@ export function nextId(ids: number[]): number {
             return i;
     }
 }
+
+export const iceBrickVolume = (radius: number, bottleLength: number, rimLength: number): number => {
+    return (bottleLength - rimLength) * 2 * radius ** 2
+}
