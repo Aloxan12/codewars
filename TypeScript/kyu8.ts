@@ -681,9 +681,8 @@ export function usdcny(usd: number): string {
 }
 
 export function nextId(ids: number[]): number {
-    for (let i = 0;; i++)
-        { // @ts-ignore
-            if (!ids.includes(i))
-                        return i;
-        }
+    for (let i = 0; ; i++) { // @ts-ignore
+        if (!ids.includes(i))
+            return i;
+    }
 }
