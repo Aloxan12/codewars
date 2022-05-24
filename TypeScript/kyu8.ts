@@ -690,3 +690,7 @@ export function nextId(ids: number[]): number {
 export const iceBrickVolume = (radius: number, bottleLength: number, rimLength: number): number => {
     return (bottleLength - rimLength) * 2 * radius ** 2
 }
+
+export function quarterOf(month: number): number {
+    return month >= 1 && month <= 3 ? 1 : month >= 4 && month <= 6 ? 2 : month >= 7 && month <= 9 ? 3 : 4
+}
