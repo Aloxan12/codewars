@@ -704,10 +704,10 @@ export function past(h: number, m: number, s: number): number {
 }
 
 export function getGrade(a: number, b: number, c: number): string {
-    const result = (a + b + c)/3
-    return  90 <= result
+    const result = (a + b + c) / 3
+    return 90 <= result
         ? 'A'
-        : 80 <= result && result< 90
+        : 80 <= result && result < 90
             ? 'B'
             : 70 <= result && result < 80
                 ? 'C'
