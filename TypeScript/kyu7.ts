@@ -34,7 +34,7 @@ export class Kata3 {
 
 export class Kata4 {
     static highAndLow(numbers: string): string {
-        const arr = numbers.split(' ').map(i=> +i)
+        const arr = numbers.split(' ').map(i => +i)
         return `${Math.max(...arr)} ${Math.min(...arr)}`
     }
 }
