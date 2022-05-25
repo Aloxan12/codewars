@@ -16,3 +16,12 @@ export class Kata {
         return vowelsCount
     }
 }
+
+export class Kata1 {
+    static squareDigits(num: number): number {
+        return +num.toString()
+            .split('')
+            .map((item) => Math.pow(+item, 2))
+            .join('')
+    }
+}
