@@ -42,3 +42,9 @@ export class Kata4 {
 export function descendingOrder(n: number): number {
     return +`${n}`.split('').sort().reverse().join('')
 }
+
+export function accum(s: string): string {
+    return s.split('')
+        .map((item, index) => item.toUpperCase() + item.toLowerCase().repeat(index))
+        .join('-')
+}
