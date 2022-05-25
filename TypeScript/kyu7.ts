@@ -31,3 +31,10 @@ export class Kata3 {
         return str.replace(/[aeiou]/gi, '');
     }
 }
+
+export class Kata4 {
+    static highAndLow(numbers: string): string {
+        const arr = numbers.split(' ').map(i=> +i)
+        return `${Math.max(...arr)} ${Math.min(...arr)}`
+    }
+}
