@@ -38,3 +38,7 @@ export class Kata4 {
         return `${Math.max(...arr)} ${Math.min(...arr)}`
     }
 }
+
+export function descendingOrder(n: number): number {
+    return +`${n}`.split('').sort().reverse().join('')
+}
