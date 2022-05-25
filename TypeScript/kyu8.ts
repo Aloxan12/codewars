@@ -717,5 +717,5 @@ export function getGrade(a: number, b: number, c: number): string {
 }
 
 export const otherAngle = (a: number, b: number): number => {
-    return  180 - (a + b);
+    return 180 - (a + b);
 }
