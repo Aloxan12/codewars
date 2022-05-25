@@ -25,3 +25,9 @@ export class Kata1 {
             .join('')
     }
 }
+
+export class Kata3 {
+    static disemvowel(str: string): string {
+        return str.replace(/[aeiou]/gi, '');
+    }
+}
