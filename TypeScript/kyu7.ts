@@ -48,3 +48,14 @@ export function accum(s: string): string {
         .map((item, index) => item.toUpperCase() + item.toLowerCase()) // repeat(index)
         .join('-')
 }
+
+export class Challenge {
+    static getMiddle(s:string) {
+        const arr = s.split("");
+        while (arr.length > 2) {
+            arr.pop();
+            arr.shift();
+        }
+        return arr.join("");
+    }
+}
