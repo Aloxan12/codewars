@@ -50,7 +50,7 @@ export function accum(s: string): string {
 }
 
 export class Challenge {
-    static getMiddle(s:string) {
+    static getMiddle(s: string) {
         const arr = s.split("");
         while (arr.length > 2) {
             arr.pop();
