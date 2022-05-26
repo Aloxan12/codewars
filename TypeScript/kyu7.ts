@@ -44,6 +44,7 @@ export function descendingOrder(n: number): number {
 }
 
 export function accum(s: string): string {
+    // @ts-ignore
     return s.split('')
         .map((item, index) => item.toUpperCase() + item.toLowerCase().repeat(index))
         .join('-')
