@@ -67,3 +67,7 @@ export default function isSquare(n: number): boolean {
 export function findShort(s: string): number {
     return Math.min(...s.split(' ').map(i => i.length))
 }
+
+String.prototype.toJadenCase = function () {
+    return this.split(' ').map(i => i[0].toUpperCase() + i.slice(1)).join(' ')
+};
