@@ -63,3 +63,7 @@ export class Challenge {
 export default function isSquare(n: number): boolean {
     return Math.sqrt(n) % 1 === 0
 };
+
+export function findShort(s: string): number {
+    return Math.min(...s.split(' ').map(i => i.length))
+}
