@@ -72,3 +72,21 @@ export function findShort(s: string): number {
 const toJadenCase = function () {
     return this.split(' ').map(i => i[0].toUpperCase() + i.slice(1)).join(' ')
 };
+
+export class Kata5 {
+    static dnaStrand(dna: string) {
+        return dna.split('')
+            .map((item) =>
+                item === 'A'
+                    ? 'T'
+                    : item === 'T'
+                        ? 'A'
+                        : item === 'C'
+                            ? 'G'
+                            : item === 'G'
+                                ? 'C'
+                                : '',
+            )
+            .join('')
+    }
+}
