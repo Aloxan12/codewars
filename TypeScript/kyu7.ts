@@ -101,3 +101,13 @@ function sumTwoSmallestNumbers(numbers: number[]) {
         .slice(0, 2)
         .reduce((a, b) => a + b, 0)
 }
+
+function getSum( a,b ){
+    if (a === b) {
+        return a
+    } else {
+        const smallNum = Math.min(a, b)
+        const bigNum = Math.max(a, b)
+        return ((bigNum - smallNum + 1) * (bigNum + smallNum)) / 2
+    }
+}
