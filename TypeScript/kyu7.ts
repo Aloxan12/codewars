@@ -94,3 +94,10 @@ export class Kata5 {
 function maskify(cc: string) {
     return cc.length <= 4 ? cc : cc.slice(0, -4).split('').map(i => '#').join('') + cc.slice(-4)
 }
+
+function sumTwoSmallestNumbers(numbers) {
+    return numbers
+        .sort((a, b) => (a > b ? 1 : -1))
+        .slice(0, 2)
+        .reduce((a, b) => a + b, 0)
+}
