@@ -95,7 +95,7 @@ function maskify(cc: string) {
     return cc.length <= 4 ? cc : cc.slice(0, -4).split('').map(i => '#').join('') + cc.slice(-4)
 }
 
-function sumTwoSmallestNumbers(numbers) {
+function sumTwoSmallestNumbers(numbers: number[]) {
     return numbers
         .sort((a, b) => (a > b ? 1 : -1))
         .slice(0, 2)
