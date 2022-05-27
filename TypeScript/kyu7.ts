@@ -102,7 +102,7 @@ function sumTwoSmallestNumbers(numbers: number[]) {
         .reduce((a, b) => a + b, 0)
 }
 
-function getSum( a: number,b: number ){
+function getSum(a: number, b: number) {
     if (a === b) {
         return a
     } else {
