@@ -90,3 +90,7 @@ export class Kata5 {
             .join('')
     }
 }
+
+function maskify(cc) {
+    return cc.length <=4 ? cc: cc.slice(0,-4).split('').map(i=> '#').join('') + cc.slice(-4)
+}
