@@ -91,6 +91,6 @@ export class Kata5 {
     }
 }
 
-function maskify(cc) {
+function maskify(cc: string) {
     return cc.length <= 4 ? cc : cc.slice(0, -4).split('').map(i => '#').join('') + cc.slice(-4)
 }
