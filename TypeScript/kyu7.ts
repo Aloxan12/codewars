@@ -112,7 +112,7 @@ function getSum(a: number, b: number) {
     }
 }
 
-function longest(s1, s2) {
+function longest(s1: string, s2: string) {
     const str = s1 + s2
     return [...new Set(str.split(''))].sort().join('')
 }
