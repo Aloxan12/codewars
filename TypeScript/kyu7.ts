@@ -122,6 +122,6 @@ function longest(s1: string, s2: string) {
     return arr.join('')
 }
 
-function friend(friends) {
+function friend(friends: string[]) {
     return friends.filter(i => i.length === 4)
 }
