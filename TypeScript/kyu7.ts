@@ -114,5 +114,7 @@ function getSum(a: number, b: number) {
 
 function longest(s1: string, s2: string) {
     const str = s1 + s2
-    return [...new Set(str.split(''))].sort().join('')
+    //return [...new Set(str.split(''))].sort().join('')
+    const arr = str.split('').sort().filter((val, ind, arr) => arr.indexOf(val) === ind);
+    return arr.join('')
 }
