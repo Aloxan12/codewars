@@ -117,7 +117,7 @@ function longest(s1: string, s2: string) {
     //return [...new Set(str.split(''))].sort().join('')
     const arr = str
         .split('')
-        .sort()
-        .filter((val, ind, arr) => arr.indexOf(val) === ind);
+        .filter((val, ind, arr) => arr.indexOf(val) === ind)
+        .sort();
     return arr.join('')
 }
