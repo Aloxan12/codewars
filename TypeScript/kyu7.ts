@@ -111,3 +111,8 @@ function getSum(a: number, b: number) {
         return ((bigNum - smallNum + 1) * (bigNum + smallNum)) / 2
     }
 }
+
+function longest(s1, s2) {
+    const str = s1 + s2
+    return [...new Set(str.split(''))].sort().join('')
+}
