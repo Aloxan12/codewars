@@ -125,3 +125,18 @@ function longest(s1: string, s2: string) {
 function friend(friends: string[]) {
     return friends.filter(i => i.length === 4)
 }
+
+export class G964 {
+
+    public static nbYear = (startPopulation, growthPercentage, newBorns, populationToReach) => {
+        let currentPopulation = startPopulation;
+        let years = 0;
+
+        while (currentPopulation < populationToReach) {
+            currentPopulation +=  Math.floor(currentPopulation*(growthPercentage/100)) + newBorns;
+            years += 1;
+        }
+
+        return years;
+    }
+}
