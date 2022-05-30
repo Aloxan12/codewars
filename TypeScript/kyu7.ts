@@ -133,7 +133,7 @@ export class G964 {
         let years = 0;
 
         while (currentPopulation < populationToReach) {
-            currentPopulation +=  Math.floor(currentPopulation*(growthPercentage/100)) + newBorns;
+            currentPopulation += Math.floor(currentPopulation * (growthPercentage / 100)) + newBorns;
             years += 1;
         }
 
