@@ -157,3 +157,17 @@ export function xo(str: string) {
     return str.split('').filter(i => i.toLowerCase() === 'x').length ===
         str.split('').filter(i => i.toLowerCase() === 'o').length
 }
+
+export class Kata {
+    static validatePin(pin: string): boolean {
+        return pin.length < 4 || pin.length === 5 || pin.length > 6
+            ? false
+            : pin
+                .replace(/[a-z]/gi, ' false ')
+                .replace(/[^0-9]/, ' false ')
+                .split(' ')
+                .find((item) => item === 'false') === undefined
+                ? true
+                : false
+    }
+}
