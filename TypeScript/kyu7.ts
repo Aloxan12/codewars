@@ -165,9 +165,6 @@ export class Kata6 {
             : pin
                 .replace(/[a-z]/gi, ' false ')
                 .replace(/[^0-9]/, ' false ')
-                .split(' ')
-                .find((item) => item === 'false') === undefined
-                ? true
-                : false
+                .split(' ').find((item) => item === 'false') === undefined
     }
 }
