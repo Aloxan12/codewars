@@ -152,3 +152,8 @@ export function isIsogram(str: string): boolean {
     }
     return true;
 }
+
+export function xo(str: string) {
+    return str.split('').filter(i => i.toLowerCase() === 'x').length ===
+        str.split('').filter(i => i.toLowerCase() === 'o').length
+}
