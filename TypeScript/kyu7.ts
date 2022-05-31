@@ -158,7 +158,7 @@ export function xo(str: string) {
         str.split('').filter(i => i.toLowerCase() === 'o').length
 }
 
-export class Kata {
+export class Kata6 {
     static validatePin(pin: string): boolean {
         return pin.length < 4 || pin.length === 5 || pin.length > 6
             ? false
