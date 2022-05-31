@@ -159,12 +159,12 @@ export function xo(str: string) {
 }
 
 export class Kata6 {
-    static validatePin(pin: string): boolean {
+    static validatePin(pin: string): boolean | string[] {
         return pin.length < 4 || pin.length === 5 || pin.length > 6
             ? false
             : pin
                 .replace(/[a-z]/gi, ' false ')
                 .replace(/[^0-9]/, ' false ')
-                .split(' ').find((item) => item === 'false') === undefined
+                .split(' ') // .find((item) => item === 'false') === undefined
     }
 }
