@@ -168,3 +168,7 @@ export class Kata6 {
                 .split(' ') // .find((item) => item === 'false') === undefined
     }
 }
+
+export function isTriangle(a: number, b: number, c: number): boolean {
+    return (a + b > c) && (b + c > a) && (c + a > b)
+}
