@@ -176,3 +176,7 @@ export function isTriangle(a: number, b: number, c: number): boolean {
 export function rowSumOddNumbers(n: number): number {
     return Math.pow(n, 3)
 }
+
+export function number(busStops: [number, number][]): number {
+    return busStops.reduce( (peoplesInBus, currentBusStop) => peoplesInBus + currentBusStop[0] - currentBusStop[1], 0);
+}
