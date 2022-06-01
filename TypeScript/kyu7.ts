@@ -172,3 +172,7 @@ export class Kata6 {
 export function isTriangle(a: number, b: number, c: number): boolean {
     return (a + b > c) && (b + c > a) && (c + a > b)
 }
+
+export function rowSumOddNumbers(n: number): number {
+    return Math.pow(n, 3)
+}
