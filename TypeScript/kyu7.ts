@@ -178,5 +178,5 @@ export function rowSumOddNumbers(n: number): number {
 }
 
 export function number(busStops: [number, number][]): number {
-    return busStops.reduce( (peoplesInBus, currentBusStop) => peoplesInBus + currentBusStop[0] - currentBusStop[1], 0);
+    return busStops.reduce((peoplesInBus, currentBusStop) => peoplesInBus + currentBusStop[0] - currentBusStop[1], 0);
 }
