@@ -25,9 +25,3 @@ function incrementString(str) {
 
     return str.replace(/[0-9]/g, '').concat(num);
 }
-
-console.log(fnf)
-
-var fnf = 'hello'
-
-console.log(fnf)
