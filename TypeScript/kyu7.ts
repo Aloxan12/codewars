@@ -192,3 +192,13 @@ export function solution(str: string, ending: string): boolean {
 export function reverseWords(str: string): string {
     return str.split(' ').map(i => i.split('').reverse().join('')).join(' ');
 }
+
+export function dontGiveMeFive(start:number, end:number) : number{
+    let count = 0
+    for (let i = start; i <= end; i++) {
+        if (!/5/.test(`${i}`)) {
+            count++
+        }
+    }
+    return count
+}
