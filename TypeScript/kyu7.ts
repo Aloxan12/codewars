@@ -180,3 +180,7 @@ export function rowSumOddNumbers(n: number): number {
 export function number(busStops: [number, number][]): number {
     return busStops.reduce((peoplesInBus, currentBusStop) => peoplesInBus + currentBusStop[0] - currentBusStop[1], 0);
 }
+
+export function oddOrEven(array: number[]) {
+    return array.reduce((a,b)=> a + b, 0) % 2 === 0 ? 'even' : 'odd'
+}
