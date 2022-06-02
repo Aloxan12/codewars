@@ -185,3 +185,6 @@ export function oddOrEven(array: number[]) {
     return array.reduce((a, b) => a + b, 0) % 2 === 0 ? 'even' : 'odd'
 }
 
+export function solution(str: string, ending: string): boolean {
+    return ending === '' ? true : str.slice(-ending.length) === ending
+}
