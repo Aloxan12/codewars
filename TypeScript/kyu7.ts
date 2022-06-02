@@ -188,3 +188,7 @@ export function oddOrEven(array: number[]) {
 export function solution(str: string, ending: string): boolean {
     return ending === '' ? true : str.slice(-ending.length) === ending
 }
+
+export function reverseWords(str: string): string {
+    return str.split(' ').map(i => i.split('').reverse().join('')).join(' ');
+}
