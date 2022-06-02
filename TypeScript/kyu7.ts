@@ -203,6 +203,6 @@ export function dontGiveMeFive(start: number, end: number): number {
     return count
 }
 
-export function breakChocolate(n:number, m:number): number {
-    return ((n * m) - 1) > 1 ? ((n *m) -1) : 0
+export function breakChocolate(n: number, m: number): number {
+    return ((n * m) - 1) > 1 ? ((n * m) - 1) : 0
 }
