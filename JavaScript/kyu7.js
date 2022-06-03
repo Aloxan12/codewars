@@ -465,7 +465,3 @@ function sortReindeer(reindeerNames) {
         a.split(' ')[1].localeCompare(b.split(' ')[1]),
     )
 }
-
-
-
-
