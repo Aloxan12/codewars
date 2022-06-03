@@ -207,4 +207,12 @@ export function breakChocolate(n: number, m: number): number {
     return ((n * m) - 1) > 1 ? ((n * m) - 1) : 0
 }
 
-
+export function divisors(n: number) {
+    let output = 0;
+    for (let i=1; i<=n; i++) {
+        if (n % i === 0) {
+            output++;
+        }
+    }
+    return output;
+}
