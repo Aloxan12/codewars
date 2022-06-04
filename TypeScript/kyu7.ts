@@ -217,6 +217,6 @@ export function divisors(n: number) {
     return output;
 }
 
-export function smallEnough(a: number[], limit: number): boolean{
+export function smallEnough(a: number[], limit: number): boolean {
     return Math.max(...a) <= limit
 }
