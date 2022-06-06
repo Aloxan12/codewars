@@ -227,5 +227,5 @@ export function solution2(nums: number[]): number[] {
 
 export const minValue = (values: number[]): number => {
     // @ts-ignore
-    return +[...new Set(values)].sort((a, b) => a- b).join('');
+    return +[...new Set(values)].sort((a, b) => a - b).join('');
 };
