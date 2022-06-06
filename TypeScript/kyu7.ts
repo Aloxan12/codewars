@@ -224,3 +224,7 @@ export function smallEnough(a: number[], limit: number): boolean {
 export function solution2(nums: number[]): number[] {
     return nums.sort((a, b) => a - b)
 }
+
+export const minValue = (values: number[]): number => {
+    return +[...new Set(values)].sort((a, b) => a- b).join('');
+};
