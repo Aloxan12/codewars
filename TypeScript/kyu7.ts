@@ -220,3 +220,7 @@ export function divisors(n: number) {
 export function smallEnough(a: number[], limit: number): boolean {
     return Math.max(...a) <= limit
 }
+
+export function solution2(nums: number[]): number[] {
+    return nums.sort((a, b) => a - b)
+}
