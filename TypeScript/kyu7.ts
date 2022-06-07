@@ -234,9 +234,9 @@ export function solve(s: string) {
     let lowerNum = 0;
     let upperNum = 0;
 
-    for(let i = 0; i <= s.length-1; i += 1){
+    for (let i = 0; i <= s.length - 1; i += 1) {
 
-        if(s[i] === s[i].toLowerCase()) {
+        if (s[i] === s[i].toLowerCase()) {
             lowerNum += 1;
         } else {
             upperNum += 1;
