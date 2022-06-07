@@ -250,7 +250,7 @@ export class G9644 {
 
     public static mxdiflg = (a1, a2) => {
         let array = [];
-        if(a1.length && a2.length) {
+        if (a1.length && a2.length) {
             a1.forEach(str1 => a2.forEach(str2 => array.push(Math.abs(str1.length - str2.length))))
             return Math.max.apply(null, array);
         }
