@@ -264,7 +264,8 @@ export class G9644 {
 
 export function removeDuplicateWords(s: string): string {
     // @ts-ignore
-    return [...new Set(s.split(' '))].join(' ')
+    //return [...new Set(s.split(' '))].join(' ')
+    return (s.split(' ').filter((val, ind, arr) => arr.indexOf(val) === ind)).join(' ')
 }
 
 export function checkCoupon(enteredCode: string, correctCode: string, currentDate: string, expirationDate: string): boolean {
