@@ -257,3 +257,7 @@ export class G9644 {
         return -1;
     }
 }
+
+export function removeDuplicateWords(s: string): string {
+    return [...new Set(s.split(' '))].join(' ')
+}
