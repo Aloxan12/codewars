@@ -259,5 +259,6 @@ export class G9644 {
 }
 
 export function removeDuplicateWords(s: string): string {
+    // @ts-ignore
     return [...new Set(s.split(' '))].join(' ')
 }
