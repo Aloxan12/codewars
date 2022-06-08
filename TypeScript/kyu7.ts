@@ -262,3 +262,7 @@ export function removeDuplicateWords(s: string): string {
     // @ts-ignore
     return [...new Set(s.split(' '))].join(' ')
 }
+
+export function checkCoupon(enteredCode: string, correctCode: string, currentDate: string, expirationDate: string): boolean {
+    return enteredCode === correctCode && new Date(currentDate) <= new Date(expirationDate)
+}
