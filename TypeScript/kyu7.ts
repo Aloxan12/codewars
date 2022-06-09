@@ -269,3 +269,8 @@ export function removeDuplicateWords(s: string): string {
 export function checkCoupon(enteredCode: string, correctCode: string, currentDate: string, expirationDate: string): boolean {
     return enteredCode === correctCode && new Date(currentDate) <= new Date(expirationDate)
 }
+
+export function factorial(n: number): number {
+    if (n <= 1) return 1;
+    return n * factorial(n-1)
+}
