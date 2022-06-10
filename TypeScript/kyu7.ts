@@ -274,3 +274,16 @@ export function factorial(n: number): number {
     if (n <= 1) return 1;
     return n * factorial(n - 1)
 }
+
+export function isSortedAndHow(array:number[]): string {
+    const sortedArray = array.slice().sort((a, b) => a - b);
+
+    if (JSON.stringify(sortedArray) === JSON.stringify(array)) {
+        return 'yes, ascending';
+    }
+    if (JSON.stringify(sortedArray.reverse()) === JSON.stringify(array)) {
+        return 'yes, descending';
+    }
+
+    return 'no';
+}
