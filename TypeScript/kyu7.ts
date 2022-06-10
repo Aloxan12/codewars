@@ -275,7 +275,7 @@ export function factorial(n: number): number {
     return n * factorial(n - 1)
 }
 
-export function isSortedAndHow(array:number[]): string {
+export function isSortedAndHow(array: number[]): string {
     const sortedArray = array.slice().sort((a, b) => a - b);
 
     if (JSON.stringify(sortedArray) === JSON.stringify(array)) {
