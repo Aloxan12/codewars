@@ -415,8 +415,6 @@ function validatePIN(pin) {
             .replace(/[^0-9]/, ' false ')
             .split(' ')
             .find((item) => item === 'false') === undefined
-            ? true
-            : false
 }
 
 function solve(eq) {
