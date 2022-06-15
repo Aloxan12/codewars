@@ -287,3 +287,9 @@ export function isSortedAndHow(array: number[]): string {
 
     return 'no';
 }
+
+export function capitalize(s: string) {
+    const even = s.split('').map((item,i) => i % 2 === 0 ? item.toUpperCase() : item).join('')
+    const odd = s.split('').map((item,i) => i % 2 === 0 ? item : item.toUpperCase()).join('')
+    return [even, odd]
+}
