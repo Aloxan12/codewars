@@ -295,5 +295,5 @@ export function capitalize(s: string) {
 }
 
 export function flattenAndSort(inputArray: number[][]): number[] {
-    return inputArray.reduce((acc,curr)=>[...acc,...curr],[]).sort((a,b)=>a-b);
+    return inputArray.reduce((acc, curr) => [...acc, ...curr], []).sort((a, b) => a - b);
 }
