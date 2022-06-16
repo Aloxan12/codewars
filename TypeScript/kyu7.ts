@@ -293,3 +293,7 @@ export function capitalize(s: string) {
     const odd = s.split('').map((item, i) => i % 2 === 0 ? item : item.toUpperCase()).join('')
     return [even, odd]
 }
+
+export function flattenAndSort(inputArray: number[][]): number[] {
+    return inputArray.reduce((acc,curr)=>[...acc,...curr],[]).sort((a,b)=>a-b);
+}
