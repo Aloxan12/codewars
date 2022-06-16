@@ -297,3 +297,7 @@ export function capitalize(s: string) {
 export function flattenAndSort(inputArray: number[][]): number[] {
     return inputArray.reduce((acc, curr) => [...acc, ...curr], []).sort((a, b) => a - b);
 }
+
+export function twoOldestAges(ages: number[]): number[] {
+    return ages.sort((a,b)=> b - a).slice(0, 2).reverse();
+}
