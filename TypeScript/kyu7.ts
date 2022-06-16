@@ -299,5 +299,5 @@ export function flattenAndSort(inputArray: number[][]): number[] {
 }
 
 export function twoOldestAges(ages: number[]): number[] {
-    return ages.sort((a,b)=> b - a).slice(0, 2).reverse();
+    return ages.sort((a, b) => b - a).slice(0, 2).reverse();
 }
