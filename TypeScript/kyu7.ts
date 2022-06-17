@@ -305,3 +305,17 @@ export function twoOldestAges(ages: number[]): number[] {
 export function maxMultiple(divisor: number, bound: number): number {
     return bound - bound % divisor;
 }
+
+export function checkExam(array1: string[], array2: string[]): number {
+    let result = 0
+    for (let i = 0; i < array1.length; i++) {
+        if (array2[i] !== '') {
+            if (array1[i] === array2[i]) {
+                result = result + 4
+            } else if (array1[i] !== array2[i]) {
+                result = result - 1
+            }
+        }
+    }
+    return result > 0 ? result : 0
+}
