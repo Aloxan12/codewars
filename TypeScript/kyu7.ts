@@ -319,3 +319,7 @@ export function checkExam(array1: string[], array2: string[]): number {
     }
     return result > 0 ? result : 0
 }
+
+export const getEvenNumbers = (numbersArray : number[]) : number[] => {
+    return numbersArray.filter((item)=> item % 2 === 0)
+}
