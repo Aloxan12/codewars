@@ -327,3 +327,7 @@ export const getEvenNumbers = (numbersArray: number[]): number[] => {
 export function adjacentElementsProduct(arr: number[]): number {
     return Math.max(...arr.slice(1).map((x, i) => x * arr[i]))
 }
+
+export function bump(x: string): string{
+    return x.split('').filter(i => i === 'n').length > 15 ? "Car Dead" : "Woohoo!"
+}
