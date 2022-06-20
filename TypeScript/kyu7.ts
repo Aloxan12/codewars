@@ -323,3 +323,7 @@ export function checkExam(array1: string[], array2: string[]): number {
 export const getEvenNumbers = (numbersArray: number[]): number[] => {
     return numbersArray.filter((item) => item % 2 === 0)
 }
+
+export function adjacentElementsProduct(arr: number[]): number{
+    return Math.max(...arr.slice(1).map((x, i) => x * arr[i]))
+}
