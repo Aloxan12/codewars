@@ -334,6 +334,6 @@ export function bump(x: string): string {
 
 export function sumCubes(n: number): number {
     return [...Array(n)]
-        .map((i, index) => Math.pow(index+1, 3))
-        .reduce((a,b)=> a + b,0)
+        .map((i, index) => Math.pow(index + 1, 3))
+        .reduce((a, b) => a + b, 0)
 }
