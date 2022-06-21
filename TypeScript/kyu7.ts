@@ -331,3 +331,9 @@ export function adjacentElementsProduct(arr: number[]): number {
 export function bump(x: string): string {
     return x.split('').filter(i => i === 'n').length > 15 ? "Car Dead" : "Woohoo!"
 }
+
+export function sumCubes(n: number): number {
+    return [...Array(n)]
+        .map((i, index) => Math.pow(index+1, 3))
+        .reduce((a,b)=> a + b,0)
+}
