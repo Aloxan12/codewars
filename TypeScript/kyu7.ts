@@ -337,3 +337,7 @@ export function sumCubes(n: number): number {
         .map((i, index) => Math.pow(index + 1, 3))
         .reduce((a, b) => a + b, 0)
 }
+
+export function countRedBeads(n: number): number {
+    return n < 2 ? 0 : (n * 2) - 2;
+}
