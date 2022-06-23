@@ -343,5 +343,6 @@ export function countRedBeads(n: number): number {
 }
 
 export function generateShape(int: number): string {
+    // @ts-ignore
     return int < 2 ? "+".repeat(int) : "+".repeat(int) + `\n${"+".repeat(int)}`.repeat(int-1)
 }
