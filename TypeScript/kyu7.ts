@@ -341,3 +341,7 @@ export function sumCubes(n: number): number {
 export function countRedBeads(n: number): number {
     return n < 2 ? 0 : (n * 2) - 2;
 }
+
+export function generateShape(int: number): string {
+    return int < 2 ? "+".repeat(int) : "+".repeat(int) + `\n${"+".repeat(int)}`.repeat(int-1)
+}
