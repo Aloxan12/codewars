@@ -350,7 +350,7 @@ export function generateShape(int: number): string {
 export class G964_2 {
     public static movie(card: number, ticket: number, perc: number): number {
         let i: number = 0
-        while(Math.ceil(card) >= ticket * i){
+        while (Math.ceil(card) >= ticket * i) {
             card += ticket * perc ** i
             i++
         }
