@@ -346,3 +346,14 @@ export function generateShape(int: number): string {
     // @ts-ignore
     return int < 2 ? "+".repeat(int) : "+".repeat(int) + `\n${"+".repeat(int)}`.repeat(int - 1)
 }
+
+export class G964_2 {
+    public static movie(card: number, ticket: number, perc: number): number {
+        let i: number = 0
+        while(Math.ceil(card) >= ticket * i){
+            card += ticket * perc ** i
+            i++
+        }
+        return i - 1
+    };
+}
