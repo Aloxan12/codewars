@@ -477,8 +477,8 @@ const check = (str) =>{
         .replace(/nine/g, '9')
 }
 
-// function yandexTest(a,b){
-//     const check =
-//     const firstNum = a
-//
-// }
+function yandexTest(a,b){
+    const firstNum = check(a)
+    const secondNum = check(b)
+
+}
