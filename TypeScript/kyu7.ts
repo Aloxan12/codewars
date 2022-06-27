@@ -357,3 +357,11 @@ export class G964_2 {
         return i - 1
     };
 }
+
+const factorial2 = (n: number) => (n < 0 ? null : (n === 0 ? 1 : n * factorial(--n)))
+
+export const strongNumber = (num: number): string => {
+    return  [...String(num).split('')].map(Number).reduce((total, digit) => total + factorial2(digit), 0) === num
+        ? 'STRONG!!!!'
+        : 'Not Strong !!'
+};
