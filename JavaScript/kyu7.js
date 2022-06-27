@@ -480,5 +480,7 @@ const check = (str) =>{
 function yandexTest(a,b){
     const firstNum = check(a)
     const secondNum = check(b)
-
+    return +firstNum === +secondNum ? '=' : +firstNum > +secondNum ? '>' : '<'
 }
+
+console.log(yandexTest('one', 'one'))
