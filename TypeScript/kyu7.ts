@@ -367,7 +367,7 @@ export const strongNumber = (num: number): string => {
 };
 
 export function containAllRots(str: string, arr: string[]): boolean {
-    for (var i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
         if (arr.indexOf(str.slice(i) + str.slice(0, i)) === -1) {
             return false
         }
