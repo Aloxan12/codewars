@@ -375,8 +375,9 @@ export function containAllRots(str: string, arr: string[]): boolean {
     return true
 }
 
-export function add(num1: number, num2: number): number {
-    if (num1 < num2) return add(num2, num1);
-    let a = num1.toString(), b = num2.toString().padStart(a.length, '0');
-    return +[...a].reduce((str, c, i) => str + (+c + +b[i]), '');
-}
+// export function add(num1: number, num2: number): number {
+//     if (num1 < num2) return add(num2, num1);
+//     // @ts-ignore
+//     let a = num1.toString(), b = num2.toString().padStart(a.length, '0');
+//     return +[...a].reduce((str, c, i) => str + (+c + +b[i]), '');
+// }
