@@ -384,6 +384,7 @@ export function containAllRots(str: string, arr: string[]): boolean {
 
 export class Kata7 {
     static findLongest(array: number[]): number {
+        // @ts-ignore
         return array.find(item => `${item}`.length === Math.max(...array.map(i => `${i}`.length)))!
     }
 }
