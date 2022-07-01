@@ -388,3 +388,10 @@ export class Kata7 {
         return array.find(item => `${item}`.length === Math.max(...array.map(i => `${i}`.length)))!
     }
 }
+
+export class G964_3 {
+    public static printerError(s: string): string {
+        let r = s.replace(/[a-m]/g, '');
+        return r.length+'/'+s.length;
+    }
+}
