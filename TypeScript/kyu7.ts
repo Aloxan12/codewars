@@ -392,6 +392,6 @@ export class Kata7 {
 export class G964_3 {
     public static printerError(s: string): string {
         let r = s.replace(/[a-m]/g, '');
-        return r.length+'/'+s.length;
+        return r.length + '/' + s.length;
     }
 }
