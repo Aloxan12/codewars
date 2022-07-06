@@ -398,10 +398,10 @@ export class G964_3 {
 
 export class G964_4 {
     public static nbDig(n: number, d: number): number {
-        let res = 0 ;
-        for (var g=0;g<=n;g++){
-            var square=(g*g+"").split("");
-            square.forEach((s)=> +s==+d?res++:null)
+        let res = 0;
+        for (var g = 0; g <= n; g++) {
+            var square = (g * g + "").split("");
+            square.forEach((s) => +s == +d ? res++ : null)
         }
         return res;
     }
