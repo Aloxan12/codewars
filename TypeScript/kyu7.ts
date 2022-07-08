@@ -406,3 +406,7 @@ export class G964_4 {
         return res;
     }
 }
+
+export function angle(n: number): number {
+    return (n - 2) * 180;
+}
