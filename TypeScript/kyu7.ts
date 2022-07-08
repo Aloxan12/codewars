@@ -412,5 +412,5 @@ export function angle(n: number): number {
 }
 
 export function rowWeights(arr: number[]) {
-    return arr.reduce((a,b,i)=>(a[i%2]+=b,a),[0,0])
+    return arr.reduce((a, b, i) => (a[i % 2] += b, a), [0, 0])
 }
