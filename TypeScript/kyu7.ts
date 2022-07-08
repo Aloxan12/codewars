@@ -410,3 +410,7 @@ export class G964_4 {
 export function angle(n: number): number {
     return (n - 2) * 180;
 }
+
+export function rowWeights(arr: number[]) {
+    return arr.reduce((a,b,i)=>(a[i%2]+=b,a),[0,0])
+}
