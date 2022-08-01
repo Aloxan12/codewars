@@ -416,5 +416,6 @@ export function rowWeights(arr: number[]) {
 }
 
 export function isPowerOfTwo(n: number): boolean {
+    // @ts-ignore
     return Number.isInteger(Math.log2(n))
 }
