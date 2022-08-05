@@ -423,3 +423,12 @@ export function isPowerOfTwo(n: number): boolean {
 export function predictAge(age1: number, age2: number, age3: number, age4: number, age5: number, age6: number, age7: number, age8: number): number {
     return Math.floor(Math.sqrt([age1, age2, age3, age4, age5, age6, age7, age8].map(i => i * i).reduce((a, b) => a + b, 0)) / 2)
 }
+
+export function sumTriangularNumbers(n:number):number {
+    let sum=0,total=0;
+    for(let i=0;i<=n;i++){
+        sum+=i*1
+        total+=sum
+    }
+    return total
+}
