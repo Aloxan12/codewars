@@ -433,7 +433,7 @@ export function sumTriangularNumbers(n: number): number {
     return total
 }
 
-export function SeriesSum(n:number):string{
+export function SeriesSum(n: number): string {
     let result = 0;
     let reverage = 1;
     for (let i = 0; i < n; i++) {
