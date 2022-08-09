@@ -459,9 +459,7 @@ export function noOdds(values: number[]): number[] {
 }
 
 export class G964_8 {
-
     public static gps = (s, x) => {
-
         if (x.length <= 1) {
             return 0;
         }
@@ -469,7 +467,6 @@ export class G964_8 {
         for (let i = 0; i < x.length - 1; i++) {
             output.push((x[i + 1] - x[i]) * 3600 / s);
         }
-
         return Math.max(...output);
     }
 }
