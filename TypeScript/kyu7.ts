@@ -474,3 +474,10 @@ export class G964_8 {
 export function evenNumbers(array: number[], n: number): number[] {
     return array.filter(item => item % 2 === 0).reverse().slice(0, n).reverse()
 }
+
+export function averages(numbers: number[] | null): number[] {
+    return numbers ? numbers
+            .map((number, index, array) => (number + array[index + 1]) / 2)
+            .slice(0, -1)
+        : []
+}
