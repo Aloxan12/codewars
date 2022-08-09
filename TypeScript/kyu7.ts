@@ -453,3 +453,7 @@ export function vowelIndices(word: string): number[] {
         .map((item, index) => (item.toLowerCase() === 'a' || item.toLowerCase() === 'e' || item.toLowerCase() === 'u' || item.toLowerCase() === 'o' || item.toLowerCase() === 'i' || item.toLowerCase() === 'u' || item.toLowerCase() === 'o' || item.toLowerCase() === 'y' ? index + 1 : -1))
         .filter((item) => item >= 0)
 }
+
+export function noOdds(values: number[]): number[] {
+    return values.filter(item => item % 2 === 0)
+}
