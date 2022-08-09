@@ -446,3 +446,10 @@ export function SeriesSum(n: number): string {
     }
     return result.toFixed(2);
 }
+
+export function vowelIndices(word: string): number[] {
+    return word
+        .split('')
+        .map((item, index) => (item.toLowerCase() === 'a' || item.toLowerCase() === 'e' || item.toLowerCase() === 'u' || item.toLowerCase() === 'o' || item.toLowerCase() === 'i' || item.toLowerCase() === 'u' || item.toLowerCase() === 'o' || item.toLowerCase() === 'y' ? index+1 : -1))
+        .filter((item) => item >= 0)
+}
