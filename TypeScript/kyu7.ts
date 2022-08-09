@@ -470,3 +470,7 @@ export class G964_8 {
         return Math.max(...output);
     }
 }
+
+export function evenNumbers(array: number[], n: number): number[] {
+    return array.filter(item => item % 2 === 0).reverse().slice(0, n).reverse()
+}
