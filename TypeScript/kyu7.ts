@@ -491,3 +491,7 @@ export function evaporator(content: number, evapPerDay: number, threshold: numbe
     }
     return result;
 }
+
+export function repeater(str: string, n: number): string {
+    return str.repeat(n);
+}
