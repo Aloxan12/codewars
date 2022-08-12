@@ -481,3 +481,13 @@ export function averages(numbers: number[] | null): number[] {
             .slice(0, -1)
         : []
 }
+
+export function evaporator(content: number, evapPerDay: number, threshold: number): number {
+    let result = 0;
+    let percentage = 100;
+    while (percentage > threshold) {
+        percentage = percentage - percentage * (evapPerDay / 100);
+        result += 1;
+    }
+    return result;
+}
