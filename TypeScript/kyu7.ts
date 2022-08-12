@@ -493,5 +493,6 @@ export function evaporator(content: number, evapPerDay: number, threshold: numbe
 }
 
 export function repeater(str: string, n: number): string {
+    // @ts-ignore
     return str.repeat(n);
 }
