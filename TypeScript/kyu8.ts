@@ -719,3 +719,7 @@ export function getGrade(a: number, b: number, c: number): string {
 export const otherAngle = (a: number, b: number): number => {
     return 180 - (a + b);
 }
+
+export function divisibleBy(numbers: number[], divisor: number): number[] {
+    return numbers.filter((item) => item % divisor === 0)
+}
