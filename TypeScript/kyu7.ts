@@ -501,8 +501,8 @@ export function vertMirror(string: string) {
     return string.split('\n').map(item => item.split('').reverse().join('')).join('\n')
 }
 
-export function horMirror(strng: string) {
-    return strng.split('\n').reverse().join('\n')
+export function horMirror(string: string) {
+    return string.split('\n').reverse().join('\n')
 }
 
 export function oper(fct: (s: string) => string, s: string) {
