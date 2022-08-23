@@ -497,11 +497,9 @@ export function repeater(str: string, n: number): string {
     return str.repeat(n);
 }
 
-
-
-
-
-
+export function horMirror(strng: string) {
+    return strng.split('\n').reverse().join('\n')
+}
 export function oper(fct: (s: string) => string, s: string) {
     return fct(s)
 }
