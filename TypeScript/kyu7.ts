@@ -496,3 +496,12 @@ export function repeater(str: string, n: number): string {
     // @ts-ignore
     return str.repeat(n);
 }
+
+
+
+
+
+
+export function oper(fct: (s: string) => string, s: string) {
+    return fct(s)
+}
