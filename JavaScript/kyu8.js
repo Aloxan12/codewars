@@ -152,3 +152,7 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 function switchItUp(number) {
     return ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"][number]
 }
+
+function divisibleBy(numbers, divisor){
+    return numbers.filter((item) => item % divisor === 0)
+}
