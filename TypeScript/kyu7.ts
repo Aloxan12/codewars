@@ -497,8 +497,8 @@ export function repeater(str: string, n: number): string {
     return str.repeat(n);
 }
 
-export function vertMirror(strng: string) {
-    return strng.split('\n').map(item => item.split('').reverse().join('')).join('\n')
+export function vertMirror(string: string) {
+    return string.split('\n').map(item => item.split('').reverse().join('')).join('\n')
 }
 
 export function horMirror(strng: string) {
