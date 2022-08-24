@@ -508,3 +508,17 @@ export function horMirror(string: string) {
 export function oper(fct: (s: string) => string, s: string) {
     return fct(s)
 }
+
+export function addLetters(...letters: string[]) {
+    if (letters.length == 0) {
+        return 'z';
+    }
+    let sum = letters.reduce(
+        (acc, val) => {
+            let newAcc = acc + val.charCodeAt(0) - 96;
+            return newAcc > 26 ? newAcc - 26 : newAcc;
+        },
+        0
+    );
+    return String.fromCharCode(sum + 96);
+}
