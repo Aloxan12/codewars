@@ -528,3 +528,9 @@ export function inviteMoreWomen(L: number[]): boolean {
     const w = L.filter(item => item < 0).reduce((a, b) => a + b, 0)
     return m + w > 0
 }
+
+export function automorphic(n: number): string {
+    return Number(`${Math.pow(n, 2)}`.split('').slice(-`${n}`.length).join('')) === n
+        ? 'Automorphic'
+        : 'Not!!'
+}
