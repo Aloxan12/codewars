@@ -523,8 +523,8 @@ export function addLetters(...letters: string[]) {
     return String.fromCharCode(sum + 96);
 }
 
-export function inviteMoreWomen (L: number[]): boolean {
-    const m = L.filter(item=> item > 0).reduce((a,b)=> a + b,0)
-    const w = L.filter(item=> item < 0).reduce((a,b)=> a + b,0)
+export function inviteMoreWomen(L: number[]): boolean {
+    const m = L.filter(item => item > 0).reduce((a, b) => a + b, 0)
+    const w = L.filter(item => item < 0).reduce((a, b) => a + b, 0)
     return m + w > 0
 }
