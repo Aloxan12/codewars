@@ -538,3 +538,19 @@ export function automorphic(n: number): string {
 export const calc = (str: string): number => {
     return [...str.split('')].map(x => x.charCodeAt(0)).join('').split('').filter(x => x === '7').length * 6
 }
+
+export class Kata_1 {
+    static isNice(arr: number[]) {
+        if (arr.length <= 0) {
+            return false;
+        }
+
+        const result = arr.every(item => {
+            return arr.some(current => {
+                return item === current + 1 || item === current - 1;
+            });
+        });
+
+        return result;
+    }
+}
