@@ -551,3 +551,7 @@ export class Kata_1 {
         });
     }
 }
+
+export function sumDigits(n: number): number {
+    return `${Math.abs(n)}`.split('').reduce((a,b)=> a + +b, 0)
+}
