@@ -555,3 +555,11 @@ export class Kata_1 {
 export function sumDigits(n: number): number {
     return `${Math.abs(n)}`.split('').reduce((a, b) => a + +b, 0)
 }
+
+export class G964_5 {
+    public static partlist(arr: string[]): string[][] {
+        return arr.map((item, index, arr) => {
+            return [arr.slice(0, index).join(' '), arr.slice(index).join(' ')]
+        }).slice(1)
+    }
+}
