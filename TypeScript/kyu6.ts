@@ -14,3 +14,12 @@ export class Challenge {
 //         .find((item) => item.length % 2 !== 0)
 //     return result ? result[0] : 0
 // }
+
+export function spinWords(words: string): string {
+    return words.split(' ')
+        .map(item => item.length > 4 ? item
+            .split('')
+            .reverse()
+            .join('') : item)
+        .join(' ')
+}
