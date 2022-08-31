@@ -31,6 +31,7 @@ export const digitalRoot = (n: number): number => {
 export function arrayDiff(a: number[], b: number[]): number[] {
     const result = []
     for (let i = 0; i < a.length; i++) {
+        // @ts-ignore
         const find = b.find((item) => item === a[i])
         find === undefined && result.push(a[i])
     }
