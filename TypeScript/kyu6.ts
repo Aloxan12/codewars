@@ -27,3 +27,12 @@ export function spinWords(words: string): string {
 export const digitalRoot = (n: number): number => {
     return `${n}`.length === 1 ? n : digitalRoot(Number(`${n}`.split('').reduce((a, b) => a + +b, 0)))
 };
+
+export function arrayDiff(a: number[], b: number[]): number[] {
+    const result = []
+    for (let i = 0; i < a.length; i++) {
+        const find = b.find((item) => item === a[i])
+        find === undefined && result.push(a[i])
+    }
+    return result
+}
