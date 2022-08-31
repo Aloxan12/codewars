@@ -23,3 +23,7 @@ export function spinWords(words: string): string {
             .join('') : item)
         .join(' ')
 }
+
+export const digitalRoot = (n:number):number => {
+    return `${n}`.length === 1 ? n : digitalRoot(Number(`${n}`.split('').reduce((a,b)=> a + +b,0)))
+};
