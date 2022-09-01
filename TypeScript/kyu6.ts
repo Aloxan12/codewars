@@ -55,6 +55,5 @@ export const likes = (names: string[]): string => {
 export function findOutlier(integers: number[]): number {
     const evenArr = integers.filter((item) => item % 2 === 0)
     const oddArr = integers.filter((item) => item % 2 !== 0)
-
     return evenArr.length < oddArr.length ? evenArr[0] : oddArr[0]
 }
