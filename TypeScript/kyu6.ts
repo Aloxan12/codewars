@@ -38,7 +38,7 @@ export function arrayDiff(a: number[], b: number[]): number[] {
     return result
 }
 
-export const likes = (names : string[]) : string => {
+export const likes = (names: string[]): string => {
     return names.length === 1
         ? `${names.join('')} likes this`
         : names.length === 2
