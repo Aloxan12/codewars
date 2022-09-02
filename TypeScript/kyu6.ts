@@ -66,3 +66,10 @@ export function duplicateEncode(word: string) {
         return '(';
     }).join('')
 }
+
+export function countBits(n: number): number {
+    return n
+        .toString(2)
+        .split('')
+        .reduce((sum, num) => sum + Number(num), 0)
+}
