@@ -57,3 +57,12 @@ export function findOutlier(integers: number[]): number {
     const oddArr = integers.filter((item) => item % 2 !== 0)
     return evenArr.length < oddArr.length ? evenArr[0] : oddArr[0]
 }
+
+export function duplicateEncode(word: string){
+    return word.toLowerCase().split('').map(letter => {
+        if (word.toLowerCase().split('').filter(l => l === letter).length > 1) {
+            return ')';
+        }
+        return '(';
+    }).join('')
+}
