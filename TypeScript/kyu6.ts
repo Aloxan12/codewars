@@ -74,13 +74,12 @@ export function countBits(n: number): number {
         .reduce((sum, num) => sum + Number(num), 0)
 }
 
-
-export function duplicateCount(text: string): number{
+export function duplicateCount(text: string): number {
     if (text === '') {
         return 0
     } else {
         const unique = Array.from(new Set(text.toLowerCase()))
-        const obj:{[key in string]: number} = {}
+        const obj: { [key in string]: number } = {}
         for (let i = 0; i < unique.length; i++) {
             let sum = 0
             obj[unique[i]] = sum
