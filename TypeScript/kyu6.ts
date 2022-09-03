@@ -90,6 +90,7 @@ export function duplicateCount(text: string): number {
                 }
             }
         }
+        // @ts-ignore
         return Object.values(obj).filter((item) => Number(item) > 1).length
     }
 }
