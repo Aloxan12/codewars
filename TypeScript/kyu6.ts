@@ -95,3 +95,12 @@ export function duplicateCount(text: string): number {
         return Object.values(obj).filter((item) => Number(item) > 1).length
     }
 }
+
+export function order(words:string):string{
+    return words
+        .split(' ')
+        .map((item) => item.replace(/([a-z])/gi, '') + item)
+        .sort()
+        .map((item) => item.slice(1))
+        .join(' ')
+}
