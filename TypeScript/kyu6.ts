@@ -96,7 +96,7 @@ export function duplicateCount(text: string): number {
     }
 }
 
-export function order(words:string):string{
+export function order(words: string): string {
     return words
         .split(' ')
         .map((item) => item.replace(/([a-z])/gi, '') + item)
