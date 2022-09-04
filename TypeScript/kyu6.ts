@@ -106,10 +106,10 @@ export function order(words: string): string {
 }
 
 export function tribonacci([a, b, c]: [number, number, number], n: number): number[] {
-    if(n <= 3 ) {
+    if (n <= 3) {
         return [a, b, c].slice(0, n);
-    }else {
-        const s = tribonacci([a, b, c], n-1);
-        return [...s, s[s.length -1 ] + s[s.length - 2] + s[s.length - 3]];
+    } else {
+        const s = tribonacci([a, b, c], n - 1);
+        return [...s, s[s.length - 1] + s[s.length - 2] + s[s.length - 3]];
     }
 }
