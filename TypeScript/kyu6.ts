@@ -113,3 +113,9 @@ export function tribonacci([a, b, c]: [number, number, number], n: number): numb
         return [...s, s[s.length - 1] + s[s.length - 2] + s[s.length - 3]];
     }
 }
+
+function createPhoneNumber(numbers){
+    return `(${numbers.slice(0, 3).join('')}) ${numbers
+        .slice(3, 6)
+        .join('')}-${numbers.slice(6).join('')}`
+}
