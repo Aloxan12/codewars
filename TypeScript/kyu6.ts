@@ -119,3 +119,12 @@ function createPhoneNumber(numbers) {
         .slice(3, 6)
         .join('')}-${numbers.slice(6).join('')}`
 }
+
+export function persistence(num: number): number {
+    return `${num}`.length > 1
+        ? 1 +
+        persistence(
+            Number(`${num}`.split('').map(item => +item).reduce((a, b) => a * b)),
+        )
+        : 0
+}
