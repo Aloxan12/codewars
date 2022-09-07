@@ -131,7 +131,6 @@ export function persistence(num: number): number {
 
 export const isPangram = (phrase: string): boolean => {
     let result: string[] = []
-
     for (let str of phrase.replace(/[^A-Za-z]/g, '').split('').map(item => item.toLowerCase())) {
         // @ts-ignore
         if (!result.includes(str)) {
