@@ -128,3 +128,14 @@ export function persistence(num: number): number {
         )
         : 0
 }
+
+export const isPangram = (phrase: string): boolean => {
+    let result: string[] = []
+
+    for (let str of phrase.replace(/[^A-Za-z]/g, '').split('').map(item => item.toLowerCase())) {
+        if (!result.includes(str)) {
+            result.push(str)
+        }
+    }
+    return result.length >= 26
+}
