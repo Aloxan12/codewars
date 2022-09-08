@@ -482,3 +482,13 @@ function yandexTest(a,b){
     const secondNum = check(b)
     return +firstNum === +secondNum ? '=' : +firstNum > +secondNum ? '>' : '<'
 }
+
+function getSum( a,b ){
+    if (a === b) {
+        return a
+    } else {
+        const smallNum = Math.min(a, b)
+        const bigNum = Math.max(a, b)
+        return ((bigNum - smallNum + 1) * (bigNum + smallNum)) / 2
+    }
+}
