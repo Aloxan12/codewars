@@ -138,3 +138,13 @@ export const isPangram = (phrase: string): boolean => {
     }
     return result.length >= 26
 }
+
+export function findUniq(arr: number[]): number | undefined {
+    let obj: { [key in number]: number } = {}
+    arr.forEach((item) => (obj[item] = (obj[item] || 0) + 1))
+    for (let item in obj) {
+        if (obj[item] === 1) {
+            return +item
+        }
+    }
+}
