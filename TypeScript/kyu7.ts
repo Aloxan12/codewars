@@ -564,3 +564,15 @@ export class G964_5 {
     }
 }
 
+// function diffBig2(arr: number[]):number {
+//     const result = arr.reduce((o, v) => {
+//         // @ts-ignore
+//         let index = o.findIndex(el => el > v);
+//         return ((index > -1) ? o.splice(index, 0, v) : o.push(v)), o;
+//     }, []).reverse();
+//     return result.slice(0, 2).reduce((acc, el)=> acc - el)
+// }
+//
+// function diffBig2_02(arr: number[]):number {
+//     return arr.sort((a, b)=> b - a).slice(0, 2).reduce((acc, el)=> acc - el)
+// }

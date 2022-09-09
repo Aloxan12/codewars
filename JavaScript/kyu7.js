@@ -496,3 +496,11 @@ function getSum( a,b ){
 function diffBig2_02(arr) {
     return arr.sort((a, b)=> b - a).slice(0, 2).reduce((acc, el)=> acc - el)
 }
+
+function last_demo(x){
+    return x.split(' ').sort((a, b)=> {
+        return a[a.length - 1] > b[b.length - 1] ? 1 : -1
+    })
+}
+
+console.log('last', last_demo('man i need a taxi up to ubud'))
