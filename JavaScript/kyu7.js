@@ -503,4 +503,9 @@ function last_demo(x){
     })
 }
 
-console.log('last', last_demo('man i need a taxi up to ubud'))
+function last(x){
+    return x.split(" ")
+        .map(word => word.split("").reverse().join(""))
+        .sort((firstWord, secondWord) => firstWord[0] > secondWord[0] ? 1 : -1)
+        .map(word => word.split("").reverse().join(""))
+}
