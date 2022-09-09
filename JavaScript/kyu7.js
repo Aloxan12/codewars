@@ -492,3 +492,7 @@ function getSum( a,b ){
         return ((bigNum - smallNum + 1) * (bigNum + smallNum)) / 2
     }
 }
+
+function diffBig2_02(arr) {
+    return arr.sort((a, b)=> b - a).slice(0, 2).reduce((acc, el)=> acc - el)
+}
