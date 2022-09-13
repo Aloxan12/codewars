@@ -411,10 +411,10 @@ function validatePIN(pin) {
     return pin.length < 4 || pin.length === 5 || pin.length > 6
         ? false
         : pin
-            .replace(/[a-z]/gi, ' false ')
-            .replace(/[^0-9]/, ' false ')
-            .split(' ')
-            .find((item) => item === 'false') === undefined
+        .replace(/[a-z]/gi, ' false ')
+        .replace(/[^0-9]/, ' false ')
+        .split(' ')
+        .find((item) => item === 'false') === undefined
 }
 
 function solve(eq) {
@@ -464,7 +464,7 @@ function sortReindeer(reindeerNames) {
     )
 }
 
-const check = (str) =>{
+const check = (str) => {
     return str.replace(/zero/g, '0')
         .replace(/one/g, '1')
         .replace(/two/g, '2')
@@ -477,13 +477,13 @@ const check = (str) =>{
         .replace(/nine/g, '9')
 }
 
-function yandexTest(a,b){
+function yandexTest(a, b) {
     const firstNum = check(a)
     const secondNum = check(b)
     return +firstNum === +secondNum ? '=' : +firstNum > +secondNum ? '>' : '<'
 }
 
-function getSum( a,b ){
+function getSum(a, b) {
     if (a === b) {
         return a
     } else {
@@ -494,16 +494,16 @@ function getSum( a,b ){
 }
 
 function diffBig2_02(arr) {
-    return arr.sort((a, b)=> b - a).slice(0, 2).reduce((acc, el)=> acc - el)
+    return arr.sort((a, b) => b - a).slice(0, 2).reduce((acc, el) => acc - el)
 }
 
-function last_demo(x){
-    return x.split(' ').sort((a, b)=> {
+function last_demo(x) {
+    return x.split(' ').sort((a, b) => {
         return a[a.length - 1] > b[b.length - 1] ? 1 : -1
     })
 }
 
-function last(x){
+function last(x) {
     return x.split(" ")
         .map(word => word.split("").reverse().join(""))
         .sort((firstWord, secondWord) => firstWord[0] > secondWord[0] ? 1 : -1)
