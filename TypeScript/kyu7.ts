@@ -573,14 +573,13 @@ function diffBig2(arr: number[]): number {
     return result.slice(0, 2).reduce((acc, el) => acc - el)
 }
 
-function diffBig2_02(arr: number[]):number {
-    return arr.sort((a, b)=> b - a).slice(0, 2).reduce((acc, el)=> acc - el)
+function diffBig2_02(arr: number[]): number {
+    return arr.sort((a, b) => b - a).slice(0, 2).reduce((acc, el) => acc - el)
 }
 
 export class G964_6 {
     public static longest = (s1, s2) => {
         const str = s1 + s2
-        //return [...new Set(str.split(''))].sort().join('')
         const arr = str
             .split('')
             .filter((val, ind, arr) => arr.indexOf(val) === ind)
