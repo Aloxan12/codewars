@@ -509,3 +509,8 @@ function last(x) {
         .sort((firstWord, secondWord) => firstWord[0] > secondWord[0] ? 1 : -1)
         .map(word => word.split("").reverse().join(""))
 }
+
+function longest(s1, s2) {
+    const str = s1 + s2
+    return [...new Set(str.split(''))].sort().join('')
+}
