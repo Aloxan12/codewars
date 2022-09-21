@@ -148,3 +148,13 @@ export function findUniq(arr: number[]): number | undefined {
         }
     }
 }
+
+export function camelCase(str: string): string {
+    return str
+        .split(' ')
+        .map(
+            (item) =>
+                item.substring(0, 1).toUpperCase() + item.substring(1),
+        )
+        .join('')
+}
