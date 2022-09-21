@@ -726,10 +726,10 @@ export function divisibleBy(numbers: number[], divisor: number): number[] {
 
 export function humanYearsCatYearsDogYears(humanYears: number): [number, number, number] {
     return humanYears === 1
-        ? [1,15,15]
+        ? [1, 15, 15]
         : humanYears === 2
-            ? [2,24,24]
+            ? [2, 24, 24]
             : humanYears > 2
-                ? [humanYears, 24 + ((humanYears-2) * 4),24 + ((humanYears-2) * 5)]
-                : [0,0,0]
+                ? [humanYears, 24 + ((humanYears - 2) * 4), 24 + ((humanYears - 2) * 5)]
+                : [0, 0, 0]
 }
