@@ -149,7 +149,7 @@ export function findUniq(arr: number[]): number | undefined {
     }
 }
 
-export function camelCase (str: string): string {
+export function camelCase(str: string): string {
     return str
         .split(' ')
         .map(
