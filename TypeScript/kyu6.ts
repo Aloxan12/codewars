@@ -171,8 +171,11 @@ export const towerBuilder = (nFloors: number): string[] => {
     const result: string[] = []
     for (let i = 0; i < nFloors; i++) {
         result.push(
+            // @ts-ignore
             ' '.repeat(nFloors - i - 1) +
+            // @ts-ignore
             '*'.repeat(i * 2 + 1) +
+            // @ts-ignore
             ' '.repeat(nFloors - i - 1),
         )
     }
