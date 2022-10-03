@@ -746,7 +746,7 @@ export function sumOfDifferences(arr: number[]): number {
 export function arr2bin(arr: any[]): string {
     let sum = 0;
     arr.forEach(i => {
-        if(typeof i === 'number') {
+        if (typeof i === 'number') {
             sum += i;
         }
     });
