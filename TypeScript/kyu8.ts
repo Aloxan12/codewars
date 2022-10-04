@@ -753,6 +753,6 @@ export function arr2bin(arr: any[]): string {
     return sum.toString(2);
 }
 
-export function printArray(array:any[]): string{
+export function printArray(array: any[]): string {
     return array.join(',')
 }
