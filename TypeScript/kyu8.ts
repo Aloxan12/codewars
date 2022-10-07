@@ -758,8 +758,6 @@ export function printArray(array: any[]): string {
 }
 
 
-import { websites } from "./preloaded";
-
+let websites = []
 websites.push("codewars")
-
 export { websites };
