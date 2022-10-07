@@ -758,5 +758,5 @@ export function printArray(array: any[]): string {
 }
 
 export function shark(pontoonDistance: number, sharkDistance: number, youSpeed: number, sharkSpeed: number, dolphin: boolean): string {
-    return sharkDistance / (dolphin ? sharkSpeed / 2 : sharkSpeed) > pontoonDistance / youSpeed ?  "Alive!" :  "Shark Bait!"
+    return sharkDistance / (dolphin ? sharkSpeed / 2 : sharkSpeed) > pontoonDistance / youSpeed ? "Alive!" : "Shark Bait!"
 }
