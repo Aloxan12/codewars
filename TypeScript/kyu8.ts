@@ -757,7 +757,3 @@ export function printArray(array: any[]): string {
     return array.join(',')
 }
 
-
-let websites = []
-websites.push("codewars")
-export { websites };
