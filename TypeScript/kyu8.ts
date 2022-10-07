@@ -756,3 +756,10 @@ export function arr2bin(arr: any[]): string {
 export function printArray(array: any[]): string {
     return array.join(',')
 }
+
+
+import { websites } from "./preloaded";
+
+websites.push("codewars")
+
+export { websites };
