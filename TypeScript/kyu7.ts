@@ -587,3 +587,7 @@ export class G964_6 {
         return arr.join('')
     }
 }
+
+function filter_list(l) {
+    return l.filter(item => typeof item === 'number')
+}
