@@ -588,6 +588,6 @@ export class G964_6 {
     }
 }
 
-function filter_list(l) {
+function filter_list(l: (string | number | boolean)[]) {
     return l.filter(item => typeof item === 'number')
 }
