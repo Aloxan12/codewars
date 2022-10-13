@@ -514,3 +514,7 @@ function longest(s1, s2) {
     const str = s1 + s2
     return [...new Set(str.split(''))].sort().join('')
 }
+
+function filter_list(l) {
+    return l.filter(item => typeof item === 'number')
+}
