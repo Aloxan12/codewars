@@ -519,6 +519,6 @@ function filter_list(l) {
     return l.filter(item => typeof item === 'number')
 }
 
-function domainName_easy(url){
+function domainName_easy(url) {
     return url.replace(/(http:\/\/)|(https:\/\/)|(www)|(ru)|(.com)|(jp)|(\.co)|(co\.)|(net)|(\/+\w)|(org)|(\.)/g, '')
 }
