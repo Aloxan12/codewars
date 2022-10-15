@@ -592,27 +592,27 @@ function filter_list(l: (string | number | boolean)[]) {
     return l.filter(item => typeof item === 'number')
 }
 
-// function binaryArrayToNumber_for_4_length(arr: number[]): number {
-//     return arr
-//         .map((item, index) => {
-//             switch (index) {
-//                 case 0: {
-//                     return item * 8
-//                 }
-//                 case 1: {
-//                     return item * 4
-//                 }
-//                 case 2: {
-//                     return item * 2
-//                 }
-//                 case 3: {
-//                     return item
-//                 }
-//                 default: {
-//                     return 0
-//                 }
-//             }
-//         })
-//         .reduce((acc, ell) => acc + ell, 0)
-// }
+function binaryArrayToNumber_for_4_length(arr: number[]): number {
+    return arr
+        .map((item, index) => {
+            switch (index) {
+                case 0: {
+                    return item * 8
+                }
+                case 1: {
+                    return item * 4
+                }
+                case 2: {
+                    return item * 2
+                }
+                case 3: {
+                    return item
+                }
+                default: {
+                    return 0
+                }
+            }
+        })
+        .reduce((acc, ell) => acc + ell, 0)
+}
 
