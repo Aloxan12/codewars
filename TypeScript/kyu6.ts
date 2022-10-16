@@ -181,3 +181,10 @@ export const towerBuilder = (nFloors: number): string[] => {
     }
     return result
 }
+
+export function grabscrab(anagram: string, dictionary: string[]): string[] {
+    return dictionary.filter(
+        (item) =>
+            item.split('').sort().join('') === anagram.split('').sort().join(''),
+    )
+}
