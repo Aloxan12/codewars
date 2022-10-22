@@ -616,3 +616,15 @@ function binaryArrayToNumber_for_4_length(arr: number[]): number {
         .reduce((acc, ell) => acc + ell, 0)
 }
 
+
+export class Warrior {
+    private name: string
+    public health: number
+    constructor(name: string) {
+        this.name = name
+        this.health = 100
+    }
+    strike(enemy: Warrior, swings: number) {
+        enemy.health = Math.max(0, enemy.health - swings * 10)
+    }
+}
