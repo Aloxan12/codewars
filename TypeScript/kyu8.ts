@@ -778,5 +778,6 @@ export class SuccessServerResult {
 }
 
 export class ErrorServerResult {
-    constructor (public httpCode: number, public message:string) {}
+    constructor(public httpCode: number, public message: string) {
+    }
 }
