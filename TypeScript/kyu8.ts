@@ -1,3 +1,5 @@
+import {Warrior} from "./kyu7";
+
 export function numberToString(num: number): string {
     return String(num)
 }
@@ -769,3 +771,8 @@ export const howManyDalmatians = (number: number): string => {
 export function replaceDots(str: string): string {
     return str.replace(/\./g, '-');
 }
+
+export class SuccessServerResult {
+    constructor (public httpCode: number, public resultObject:Object) {}
+}
+
