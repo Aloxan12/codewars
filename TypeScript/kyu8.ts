@@ -773,6 +773,7 @@ export function replaceDots(str: string): string {
 }
 
 export class SuccessServerResult {
-    constructor (public httpCode: number, public resultObject:Object) {}
+    constructor(public httpCode: number, public resultObject: Object) {
+    }
 }
 
