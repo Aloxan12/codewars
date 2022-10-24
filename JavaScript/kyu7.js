@@ -522,3 +522,20 @@ function filter_list(l) {
 function domainName_easy(url) {
     return url.replace(/(http:\/\/)|(https:\/\/)|(www)|(ru)|(.com)|(jp)|(\.co)|(co\.)|(net)|(\/+\w)|(org)|(\.)/g, '')
 }
+
+
+const students= [
+    {id: 1, name: "Bob"},
+    {id: 2, name: "Alex"},
+    {id: 3, name: "Ann"},
+    {id: 4, name: "Charley"},
+]
+
+const friends = {
+    1: ["Oliver", "Jack", "Oscar",],
+    2: ["Jack", "Lewis", "Thomas",],
+    3: ["William", "Michael", "Lewis",],
+    4: ["Oscar", "James", "William",],
+}
+
+console.log(friends[1][3])
