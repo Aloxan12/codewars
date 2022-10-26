@@ -188,3 +188,4 @@ export function grabscrab(anagram: string, dictionary: string[]): string[] {
             item.split('').sort().join('') === anagram.split('').sort().join(''),
     )
 }
+
