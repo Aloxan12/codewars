@@ -431,11 +431,8 @@ function decodeMorse(morseCode) {
          '-.--': 'y',   '--..': 'z',  '/': ' ',
          '.----': '1',  '..---': '2',  '...--':'3',  '....-':'4',
          '.....': '5',  '-....': '6',  '--...':'7',  '---..':'8',
-         '----.': '9',  '-----': '0',
+         '----.': '9',  '-----': '0'
     }
 
-    return morseCode.split('   ').map(word => word.split(' ').map(letter => alphabet[letter]).join('').toUpperCase()).join(' ')
+    return morseCode.trim().replace(/···−−−···/g,'SOS   ').split('   ').map(word => word === 'SOS' ? 'SOS' : word.split(' ').map(letter => alphabet[letter]).join('').toUpperCase()).join(' ')
 }
-
-
-console.log(decodeMorse('.... . -.--   .--- ..- -.. .'))
