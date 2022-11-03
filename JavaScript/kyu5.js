@@ -26,17 +26,3 @@ function incrementString(str) {
     return str.replace(/[0-9]/g, '').concat(num);
 }
 
-// setTimeout(()=>{
-//     console.log('set')
-// },0)
-// console.log('log1')
-// Promise.resolve('promise').then(r=> console.log(r))
-// console.log('log2')
-//
-// function User(){}
-// User.prototype = {admin: false}
-// let user = new User()
-// User.prototype = {admin: true}
-// console.log(user.admin)
-console.log(typeof 1 === "number")
-
