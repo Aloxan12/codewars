@@ -630,3 +630,10 @@ export class Warrior {
         enemy.health = Math.max(0, enemy.health - swings * 10)
     }
 }
+
+export class Kata_19 {
+    public static head = a => a[0];
+    public static tail = a => a.slice(1);
+    public static init = a => a.slice(0, -1);
+    public static last = a => a[a.length - 1];
+}
