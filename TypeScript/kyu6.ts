@@ -189,3 +189,12 @@ export function grabscrab(anagram: string, dictionary: string[]): string[] {
     )
 }
 
+export function findMissingLetter(array:string[]):string{
+    let string = array.join("");
+    for (let i = 0; i < string.length; i++) {
+        if (string.charCodeAt(i + 1) - string.charCodeAt(i) != 1) {
+            return String.fromCharCode(string.charCodeAt(i) + 1);
+        }
+    }
+    return ''
+}
