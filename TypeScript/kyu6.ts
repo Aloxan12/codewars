@@ -198,3 +198,23 @@ export function findMissingLetter(array: string[]): string {
     }
     return ''
 }
+
+export class G964 {
+    public static digPow = (a: number, b: number) => {
+        let string = a.toString()
+        let len = string.length
+        let result = 0
+        for (let i = 0; i < len; i++) {
+            let numberser = parseInt(string.charAt(i), 10)
+            result += Math.pow(numberser, b + i)
+        }
+        let x = Math.pow(a, b)
+        if (result === x) {
+            return b
+        } else if (result % a === 0) {
+            return result / a
+        } else {
+            return -1
+        }
+    }
+}
