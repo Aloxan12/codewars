@@ -236,3 +236,25 @@ export function validBraces(braces: string): boolean {
     }
     return tracer.length === 0
 }
+
+export const high = (str: string): string => {
+    const resArr = str.split(' ').map(
+        (item) =>
+            item
+                .split('')
+                .map((letter) => `${letter}`.charCodeAt(0) - 96)
+                .reduce((a, b) => a + b, 0) +
+            ' ' +
+            item,
+    )
+    const max = Math.max(
+        ...resArr.map(
+            (item) =>
+                +item
+                    .split(' ')
+                    .filter((item) => !!+item)
+                    .join(''),
+        ),
+    )
+    return resArr.find((item) => item.includes(`${max}`))!.split(' ')[1]
+}
