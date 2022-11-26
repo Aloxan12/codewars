@@ -256,5 +256,6 @@ export const high = (str: string): string => {
                     .join(''),
         ),
     )
+    // @ts-ignore
     return resArr.find((item) => item.includes(`${max}`))!.split(' ')[1]
 }

@@ -436,3 +436,15 @@ function decodeMorse(morseCode) {
 
     return morseCode.trim().replace(/···−−−···/g,'SOS   ').split('   ').map(word => word === 'SOS' ? 'SOS' : word.split(' ').map(letter => alphabet[letter]).join('').toUpperCase()).join(' ')
 }
+
+const arr = ['ban', 'ora', 'grepf', 'ban', 'ban', 'ora']
+
+const mySuperSort =(arr)=>{
+    const obj = arr.reduce((acc,el)=> {
+        acc[el] = (acc[el] || 0) + 1
+        return acc
+    },{})
+
+    const newArr = Object.entries(obj).sort((a,b)=> a[1] < b[1] ? 1 : -1).map((item) => item[0] )
+    return newArr
+}
