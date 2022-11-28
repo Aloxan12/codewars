@@ -448,11 +448,3 @@ const mySuperSort =(arr)=>{
     const newArr = Object.entries(obj).sort((a,b)=> a[1] < b[1] ? 1 : -1).map((item) => item[0] )
     return newArr
 }
-
-
-const obj = arr.reduce((acc,el)=> {
-    acc[el] = (acc[el] || 0) + 1
-    return acc
-},{})
-
-console.log(undefined + 1)
