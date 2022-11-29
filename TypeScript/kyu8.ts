@@ -793,4 +793,3 @@ export function getResult(result: ErrorServerResult | SuccessServerResult) {
         return (result as ErrorServerResult).message
     }
 }
-
