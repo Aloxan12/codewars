@@ -25,3 +25,11 @@ function incrementString(str) {
 
     return str.replace(/[0-9]/g, '').concat(num);
 }
+
+let num = 10
+
+if(true){
+    let num = 20
+}
+console.log(num)
+num = 5
