@@ -793,3 +793,11 @@ export function getResult(result: ErrorServerResult | SuccessServerResult) {
         return (result as ErrorServerResult).message
     }
 }
+
+export function nthEven(n: number): number {
+    let result = 0
+    for(let i = 0; i < n; i++){
+        result = i * 2
+    }
+    return result
+}
