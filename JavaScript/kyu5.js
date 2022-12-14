@@ -25,3 +25,14 @@ function incrementString(str) {
 
     return str.replace(/[0-9]/g, '').concat(num);
 }
+
+const formatBytes = (bytes, decimals = 2) => {
+    if (bytes === 0) {
+        return 0
+    } else {
+        let mb = 1024*1024
+        let dm = decimals < 0 ? 0 : decimals
+        return Number((bytes/mb).toFixed(dm))
+    }
+}
+console.log(formatBytes(203194818 + 1365413))
