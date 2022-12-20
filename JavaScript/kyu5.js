@@ -25,3 +25,13 @@ function incrementString(str) {
 
     return str.replace(/[0-9]/g, '').concat(num);
 }
+
+const pos = {
+    empl: {
+        name: 'Alex'
+    }
+}
+
+pos.empl = null
+
+console.log('pos', pos.empl?.name)
