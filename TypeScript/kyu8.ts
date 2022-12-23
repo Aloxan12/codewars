@@ -801,9 +801,3 @@ export function nthEven(n: number): number {
     }
     return result
 }
-
-export function strCount(str: string, letter: string): number {
-    return str.split('').indexOf(letter)
-}
-
-console.log('strCount', strCount('Hello', 'l'))

@@ -450,20 +450,3 @@ function countSmileys(arr) {
     return arr
         .filter(item => /[; :]/.test(item[0]) && (/[- ~]/.test(item[1]) || /[D )]/.test(item[1])) && (item[2] ? /[D )]/.test(item[2]): true)).length
 }
-
-function solution(roman) {
-    const result = 0
-    const value = {
-        I: 1,
-        V: 5,
-        X: 10,
-        L: 50,
-        C: 100,
-        D: 500,
-        M: 1000,
-    }
-    const others = ["CD", "CM", "XL", "XC", "IV", "IX"];
-    return roman.split('').map((item, i)=> others.indexOf(`${item + roman[i + 1]}`) ? value[item] : value[item])
-}
-
-console.log(solution('XXI'))
