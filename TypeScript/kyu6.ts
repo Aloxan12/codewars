@@ -271,3 +271,11 @@ export function solution(number: number): string {
     }
     return roman;
 }
+
+export function narcissistic(value: number): boolean {
+    const newValue = `${value}`.split('').map(item => Math.pow(+item, 3)).reduce((acc, el)=> acc + el, 0)
+    console.log('newValue', newValue)
+    return value === newValue
+}
+
+console.log(narcissistic(7))
