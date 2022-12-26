@@ -450,3 +450,8 @@ function countSmileys(arr) {
     return arr
         .filter(item => /[; :]/.test(item[0]) && (/[- ~]/.test(item[1]) || /[D )]/.test(item[1])) && (item[2] ? /[D )]/.test(item[2]): true)).length
 }
+
+function narcissistic(value) {
+    const newValue = `${value}`.split('').map(item => Math.pow(+item, `${value}`.length)).reduce((acc, el)=> acc + el, 0)
+    return value === newValue
+}
