@@ -455,3 +455,11 @@ function narcissistic(value) {
     const newValue = `${value}`.split('').map(item => Math.pow(+item, `${value}`.length)).reduce((acc, el)=> acc + el, 0)
     return value === newValue
 }
+
+function longestConsec(strarr, k) {
+    const copyArr = [...strarr]
+    const sortedArr = strarr.sort((el1, el2)=> el1.length < el2.length ? 1 : -1).slice(0, k)
+    return copyArr.filter(item => !!sortedArr.find(i => i === item))
+}
+
+console.log(longestConsec(["it","wkppv","ixoyx", "3452", "zzzzzzzzzzzz"], 3))
