@@ -448,5 +448,5 @@ const mySuperSort = (arr) => {
 
 function countSmileys(arr) {
     return arr
-        .filter(item => /[; :]/.test(item[0]) && (/[- ~]/.test(item[1]) || /[D )]/.test(item[1])) && (item[2] ? /[D )]/.test(item[2]): true)).length
+        .filter(item => /[; :]/.test(item[0]) && (/[- ~]/.test(item[1]) || /[D )]/.test(item[1])) && (item[2] ? /[D )]/.test(item[2]) : true)).length
 }
