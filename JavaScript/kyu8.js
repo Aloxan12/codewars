@@ -155,18 +155,18 @@ function switchItUp(number) {
     return ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"][number]
 }
 
-function divisibleBy(numbers, divisor){
+function divisibleBy(numbers, divisor) {
     return numbers.filter((item) => item % divisor === 0)
 }
 
-function sameCase(a, b){
-    if(!/[A-Za-z]/.test(a) || !/[A-Za-z]/.test(b)){
+function sameCase(a, b) {
+    if (!/[A-Za-z]/.test(a) || !/[A-Za-z]/.test(b)) {
         return -1
-    }else if(/[A-Z]/.test(a) && /[A-Z]/.test(b)){
+    } else if (/[A-Z]/.test(a) && /[A-Z]/.test(b)) {
         return 1
-    }else if(/[a-z]/.test(a) && /[a-z]/.test(b)){
+    } else if (/[a-z]/.test(a) && /[a-z]/.test(b)) {
         return 1
-    }else {
+    } else {
         return 0
     }
 }
