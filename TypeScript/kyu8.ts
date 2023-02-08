@@ -801,3 +801,16 @@ export function nthEven(n: number): number {
     }
     return result
 }
+
+export function correctTail(body: string, tail: string): boolean {
+    if(!!body && !!tail){
+        const sub = body.substr(body.length - tail.length)
+        if (sub === tail) {
+            return true
+        } else {
+            return false
+        }
+    }else{
+        return false
+    }
+}
