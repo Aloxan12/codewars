@@ -803,14 +803,14 @@ export function nthEven(n: number): number {
 }
 
 export function correctTail(body: string, tail: string): boolean {
-    if(!!body && !!tail){
+    if (!!body && !!tail) {
         const sub = body.substr(body.length - tail.length)
         if (sub === tail) {
             return true
         } else {
             return false
         }
-    }else{
+    } else {
         return false
     }
 }
