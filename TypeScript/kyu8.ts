@@ -810,3 +810,7 @@ export function correctTail(body: string, tail: string): boolean {
         return false
     }
 }
+
+export function capitalizeWord(word: string): string {
+    return word[0].toUpperCase() + word.substring(1)
+}
