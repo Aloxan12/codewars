@@ -1,5 +1,3 @@
-import {high} from "../TypeScript/kyu6";
-
 function multiply(a, b) {
     return a * b
 }
@@ -170,3 +168,7 @@ function sameCase(a, b) {
         return 0
     }
 }
+
+Promise.resolve().then(()=>console.log('1')).then(()=> console.log(4)).then(()=> console.log(6))
+Promise.resolve().then(()=>console.log('2')).then(()=> console.log(5))
+Promise.resolve().then(()=>console.log('3'))
