@@ -451,9 +451,11 @@ function countSmileys(arr) {
         .filter(item => /[; :]/.test(item[0]) && (/[- ~]/.test(item[1]) || /[D )]/.test(item[1])) && (item[2] ? /[D )]/.test(item[2]) : true)).length
 }
 
-function factorial(n){
+
+// Рекурсия через цикл
+function factorial(n) {
     let result = 1
-    for (let i = n; i > 1; i--){
+    for (let i = n; i > 1; i--) {
         result *= i;
     }
     return result
