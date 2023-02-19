@@ -637,3 +637,13 @@ export class Kata_19 {
     public static init = a => a.slice(0, -1);
     public static last = a => a[a.length - 1];
 }
+
+export function tidyNumber(num: number) {
+    let s = '' + num;
+    for (let i = 1; i < s.length; i++) {
+        if (s[i] < s[i - 1]) {
+            return false;
+        }
+    }
+    return true;
+}
