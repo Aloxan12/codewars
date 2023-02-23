@@ -522,3 +522,11 @@ function filter_list(l) {
 function domainName_easy(url) {
     return url.replace(/(http:\/\/)|(https:\/\/)|(www)|(ru)|(.com)|(jp)|(\.co)|(co\.)|(net)|(\/+\w)|(org)|(\.)/g, '')
 }
+
+function diffBig2(arr) {
+    const result = arr.reduce((o, v) => {
+        let index = o.findIndex(el => el > v);
+        return ((index > -1) ? o.splice(index, 0, v) : o.push(v)), o;
+    }, []).reverse();
+    return result.slice(0, 2).reduce((acc, el)=> acc - el)
+}
