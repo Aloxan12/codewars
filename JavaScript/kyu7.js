@@ -530,3 +530,7 @@ function diffBig2(arr) {
     }, []).reverse();
     return result.slice(0, 2).reduce((acc, el)=> acc - el)
 }
+
+function productArray_2(nums) {
+    return nums.map((item, index, arr)=> arr.filter(i => item !== i ).reduce((acc, el)=> acc * el, 1))
+}
