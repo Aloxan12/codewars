@@ -647,3 +647,7 @@ export function tidyNumber(num: number) {
     }
     return true;
 }
+
+export function bigToSmall(arr: number[][]): string {
+    return arr.reduce((acc, el)=> [...acc, ...el], []).sort((a, b)=> b - a).join('>')
+}
