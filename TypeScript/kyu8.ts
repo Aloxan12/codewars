@@ -831,3 +831,8 @@ export const var12VoidFunction = (): void => {console.log("Voiddd")};
 export const var13Null: null = null;
 export const var14Undefined: undefined = undefined;
 export const var15NeverFunction = (): never => {throw new Error("it doesnt work")};
+
+export function parseF(s: string): number | null {
+    // @ts-ignore
+    return !Number.isNaN(Number(s)) ? +s: null;
+};
