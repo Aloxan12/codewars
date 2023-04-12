@@ -651,3 +651,7 @@ export function tidyNumber(num: number) {
 export function bigToSmall(arr: number[][]): string {
     return arr.reduce((acc, el)=> [...acc, ...el], []).sort((a, b)=> b - a).join('>')
 }
+
+export function finalGrade (exam: number, projects: number): number {
+    return exam > 90 || projects > 10 ? 100 : exam > 75 && projects > 4 ? 90 : exam > 50 && projects > 1 ? 75 : 0
+}
