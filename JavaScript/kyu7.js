@@ -532,11 +532,11 @@ function diffBig2(arr) {
 }
 
 function productArray_2(nums) {
-    return nums.map((item, index, arr)=> arr.filter(i => item !== i ).reduce((acc, el)=> acc * el, 1))
+    return nums.map((item, index, arr) => arr.filter(i => item !== i).reduce((acc, el) => acc * el, 1))
 }
 
-function bigToSmall(arr){
-    return arr.reduce((acc, el)=> [...acc, ...el], []).sort((a, b)=> b - a).join('>')
+function bigToSmall(arr) {
+    return arr.reduce((acc, el) => [...acc, ...el], []).sort((a, b) => b - a).join('>')
 }
 
 const binaryArrayToNumber = arr => {
