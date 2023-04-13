@@ -538,3 +538,10 @@ function productArray_2(nums) {
 function bigToSmall(arr){
     return arr.reduce((acc, el)=> [...acc, ...el], []).sort((a, b)=> b - a).join('>')
 }
+
+const binaryArrayToNumber = arr => {
+    return arr
+        .reverse()
+        .map((item, index) => (!!index ? item * Math.pow(2, index) : item))
+        .reduce((acc, ell) => acc + ell, 0)
+};
