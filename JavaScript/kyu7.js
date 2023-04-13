@@ -528,7 +528,7 @@ function diffBig2(arr) {
         let index = o.findIndex(el => el > v);
         return ((index > -1) ? o.splice(index, 0, v) : o.push(v)), o;
     }, []).reverse();
-    return result.slice(0, 2).reduce((acc, el)=> acc - el)
+    return result.slice(0, 2).reduce((acc, el) => acc - el)
 }
 
 function productArray_2(nums) {
