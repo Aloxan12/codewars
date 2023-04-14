@@ -539,9 +539,25 @@ function bigToSmall(arr) {
     return arr.reduce((acc, el) => [...acc, ...el], []).sort((a, b) => b - a).join('>')
 }
 
-const binaryArrayToNumber = arr => {
+const binaryArrayToNumber_2 = (arr) => {
     return arr
         .reverse()
         .map((item, index) => (!!index ? item * Math.pow(2, index) : item))
         .reduce((acc, ell) => acc + ell, 0)
 };
+
+const chooseBestSum = (km, city, ts)=>{
+    let result = 0
+    ts.sort((a,b)=> a > b ? 1 : -1)
+    for(let i = 0; i < ts.length; i++){
+        if((ts[i] + ts[i + 1] + ts[i + 2]) < km){
+            result = ts[i] + ts[i + 1] + ts[i + 2]
+        }else{
+            break
+        }
+    }
+    return result
+}
+
+const ts = [50, 55, 56, 57, 58]
+console.log(chooseBestSum(163, 3, ts))
