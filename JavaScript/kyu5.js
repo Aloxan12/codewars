@@ -25,3 +25,7 @@ function incrementString(str) {
 
     return str.replace(/[0-9]/g, '').concat(num);
 }
+
+function domainName(url){
+    return url.replace('http://','').replace('https://','').replace('www.','').split(/[/?#]/)[0].split('.')[0]
+}
