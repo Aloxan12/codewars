@@ -545,3 +545,7 @@ const binaryArrayToNumber_2 = (arr) => {
         .map((item, index) => (!!index ? item * Math.pow(2, index) : item))
         .reduce((acc, ell) => acc + ell, 0)
 };
+
+var number=function(array){
+    return array.map((item, index) => `${index + 1}: ${item}`)
+}
