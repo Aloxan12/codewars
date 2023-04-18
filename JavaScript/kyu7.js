@@ -546,6 +546,6 @@ const binaryArrayToNumber_2 = (arr) => {
         .reduce((acc, ell) => acc + ell, 0)
 };
 
-var number=function(array){
+var number = function (array) {
     return array.map((item, index) => `${index + 1}: ${item}`)
 }
