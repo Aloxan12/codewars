@@ -464,15 +464,18 @@ function factorial(n) {
 function puzzleTiles(width, height){
     let result = ''
     for(let i = 0; i < height; i++){
-        if(i % 2 === 0){
-            result += `  ${' _( )__'.repeat(width)}\n _|${'     _|'.repeat(width)}\n(_${'   _ (_'.repeat(width)}\n |${'__( )_|'.repeat(width)}${height > 1 ? '\n' : ''}`
+        if(i === 0){
+            result += `  ${' _( )__'.repeat(width)}\n _|${'     _|'.repeat(width)}\n(_${'   _ (_'.repeat(width)}\n |${'__( )_|'.repeat(width)}${height > 1 && height !== i ? '\n' : ''}`
         }
         if(i % 2 !== 0){
-            result += ` |_${'     |_'.repeat(width)}\n  _)${' _   _)'.repeat(width)}\n |${'__( )_|'.repeat(width)}${height > 2 ? '\n' : ''}`
+            result += ` |_${'     |_'.repeat(width)}\n  _)${' _   _)'.repeat(width)}\n |${'__( )_|'.repeat(width)}${height > 2 && height !== i + 1 ? '\n' : ''}`
+        }
+        if(i !== 0 && i % 2 === 0){
+            result += ` _|${'     _|'.repeat(width)}\n(_${'   _ (_'.repeat(width)}\n |${'__( )_|'.repeat(width)}${height > 1 && height !== i + 1 ? '\n' : ''}`
         }
     }
     return result
 }
 
-'   _( )__\n _|     _|\n(_   _ (_\n |__( )_|\n |_     |_\n  _) _   _)\n |__( )_|\n   _( )__\n _|     _|\n(_   _ (_\n |__( )_|\n |_     |_\n  _) _   _)\n |__( )_|\n   _( )__\n _|     _|\n(_   _ (_\n |__( )_|\n'
-'   _( )__\n _|     _|\n(_   _ (_\n |__( )_|\n |_     |_\n  _) _   _)\n |__( )_|\n _|     _|\n(_   _ (_\n |__( )_|\n |_     |_\n  _) _   _)\n |__( )_|\n _|     _|\n(_   _ (_\n |__( )_|'
+console.log(puzzleTiles(1, 5))
+
