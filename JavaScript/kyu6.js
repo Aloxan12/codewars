@@ -460,3 +460,21 @@ function factorial(n) {
     }
     return result
 }
+
+function puzzleTiles(width, height){
+    let result = ''
+    for(let i = 0; i < height; i++){
+        if(i % 2 === 0){
+            result += ` ${ ' _( )__'.repeat(width)}\n _|${'     _|'.repeat(width)}\n(_${'   _ (_'.repeat(width)}\n |${'__( )_|'.repeat(width)}\n`
+        }
+        if(i % 2 !== 0){
+            result += `|_${'     |_'.repeat(width)}\n  _)${' _   _)'.repeat(width)}\n|${'__( )_|'.repeat(width)}\n`
+        }
+        if (i === height - 1 && height % 2 === 0) {
+            result += '\n';
+        }
+    }
+    return result
+}
+
+console.log('', puzzleTiles(10, 2))
