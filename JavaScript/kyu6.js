@@ -461,21 +461,18 @@ function factorial(n) {
     return result
 }
 
-function puzzleTiles(width, height){
+function puzzleTiles(width, height) {
     let result = ''
-    for(let i = 0; i < height; i++){
-        if(i === 0){
+    for (let i = 0; i < height; i++) {
+        if (i === 0) {
             result += `  ${' _( )__'.repeat(width)}\n _|${'     _|'.repeat(width)}\n(_${'   _ (_'.repeat(width)}\n |${'__( )_|'.repeat(width)}${height > 1 && height !== i ? '\n' : ''}`
         }
-        if(i % 2 !== 0){
+        if (i % 2 !== 0) {
             result += ` |_${'     |_'.repeat(width)}\n  _)${' _   _)'.repeat(width)}\n |${'__( )_|'.repeat(width)}${height > 2 && height !== i + 1 ? '\n' : ''}`
         }
-        if(i !== 0 && i % 2 === 0){
+        if (i !== 0 && i % 2 === 0) {
             result += ` _|${'     _|'.repeat(width)}\n(_${'   _ (_'.repeat(width)}\n |${'__( )_|'.repeat(width)}${height > 1 && height !== i + 1 ? '\n' : ''}`
         }
     }
     return result
 }
-
-console.log(puzzleTiles(1, 5))
-
