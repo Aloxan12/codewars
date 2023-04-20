@@ -655,3 +655,7 @@ export function bigToSmall(arr: number[][]): string {
 export function finalGrade(exam: number, projects: number): number {
     return exam > 90 || projects > 10 ? 100 : exam > 75 && projects > 4 ? 90 : exam > 50 && projects > 1 ? 75 : 0
 }
+
+export function number_2(array: string[]): string[] {
+    return array.map((item, index) => `${index + 1}: ${item}`)
+}
