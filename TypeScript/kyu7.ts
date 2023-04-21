@@ -659,3 +659,10 @@ export function finalGrade(exam: number, projects: number): number {
 export function number_2(array: string[]): string[] {
     return array.map((item, index) => `${index + 1}: ${item}`)
 }
+
+const MORSE_CODE = {
+    'a':'b'
+}
+export function decodeMorse(morseCode: string): string {
+    return morseCode.trim().split('   ').map(word => word.split(' ').map(letter => MORSE_CODE[letter]).join('')).join(' ')
+}
