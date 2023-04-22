@@ -660,7 +660,7 @@ export function number_2(array: string[]): string[] {
     return array.map((item, index) => `${index + 1}: ${item}`)
 }
 
-const MORSE_CODE = {
+const MORSE_CODE = { // Библиотека
     'a':'b'
 }
 export function decodeMorse(morseCode: string): string {
