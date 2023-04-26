@@ -841,14 +841,14 @@ export function parseF(s: string): number | null {
     return !Number.isNaN(Number(s)) ? +s : null;
 };
 
-export function sameCase(a : string, b : string): number {
-    if(!/[A-Za-z]/.test(a) || !/[A-Za-z]/.test(b)){
+export function sameCase(a: string, b: string): number {
+    if (!/[A-Za-z]/.test(a) || !/[A-Za-z]/.test(b)) {
         return -1
-    }else if(/[A-Z]/.test(a) && /[A-Z]/.test(b)){
+    } else if (/[A-Z]/.test(a) && /[A-Z]/.test(b)) {
         return 1
-    }else if(/[a-z]/.test(a) && /[a-z]/.test(b)){
+    } else if (/[a-z]/.test(a) && /[a-z]/.test(b)) {
         return 1
-    }else {
+    } else {
         return 0
     }
 }
