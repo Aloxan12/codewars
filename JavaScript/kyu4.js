@@ -1,10 +1,10 @@
-function solveExpression (exp) {
+function solveExpression(exp) {
     let res = -1
-    for(let i = 0; i < 10; i++){
+    for (let i = 0; i < 10; i++) {
         const value = exp.replace(/\?/g, `${i}`)
         const answer = value.split('=')[1]
         const primer = eval(value.split('=')[0])
-        if(answer === primer.toString()){
+        if (answer === primer.toString()) {
             res = i;
             break;
         }
