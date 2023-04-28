@@ -1,13 +1,15 @@
-function countChange(money, coins) {
-    if(!money) return 0
-    let result = 0
+function solveExpression(exp) {
+    const regex = /(?<first>[-\d\?]*)(?<symbol>[*-\+])(?<second>[-\d\?]*)=(?<third>[-\d\?]*)/;
+    const str = '2+2=4';
+    const matches = str.match(regex);
 
-    for(let i = 0; i < coins.length; i++){
-        if(coins[i] === money){
-            result += 1
-        }
-    }
-    return result
+    const first = matches.groups.first; // '2'
+    const symbol = matches.groups.symbol; // '+'
+    const second = matches.groups.second; // '2'
+    const third = matches.groups.third;
+
+    const resultEval = eval(`${first} ${symbol} ${second}`);
 }
 
-console.log(countChange(4, [1, 2]))
+console.log(solveExpression('123*45?=5?088'))
+console.log(solveExpression('-123*45?=5?088'))
