@@ -12,6 +12,5 @@ function solveExpression(exp) {
     return res
 }
 
-// console.log(solveExpression('123*45?=5?088'))
 console.log(solveExpression('-5?*-1=5?'))
 console.log(solveExpression('??+??=??'))
