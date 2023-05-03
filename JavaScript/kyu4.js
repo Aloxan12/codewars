@@ -1,5 +1,12 @@
 
-const customEval = ()=>{}
+const customEval = (value)=>{
+    const regex = /(?<first>[-\d\?]*)(?<symbol>[*-\+])(?<second>[-\d\?]*)/;
+    const matches = value.match(regex);
+    const first = matches.groups.first; // '2'
+    const symbol = matches.groups.symbol; // '+'
+    const second = matches.groups.second; // '2'
+    return first + ' ' + symbol + " " + second
+}
 function solveExpression(exp) {
     let res = -1
     for (let i = 0; i < 10; i++) {
@@ -14,5 +21,6 @@ function solveExpression(exp) {
     return res
 }
 
-console.log(solveExpression('-5?*-1=5?'))
-console.log(solveExpression('??+??=??'))
+console.log(customEval('-51*-1'))
+//console.log(solveExpression('-5?*-1=5?'))
+//console.log(solveExpression('??+??=??'))
