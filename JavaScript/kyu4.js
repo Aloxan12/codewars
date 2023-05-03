@@ -26,5 +26,7 @@ function solveExpression(exp) {
     return res
 }
 
-console.log(solveExpression('-5?*-1=5?'))
-console.log(solveExpression('??+??=??'))
+// console.log(solveExpression('-5?*-1=5?'))
+// console.log(solveExpression('??+??=??'))
+// console.log(solveExpression('1+1=?'))
+console.log(solveExpression('?*11=??'))
