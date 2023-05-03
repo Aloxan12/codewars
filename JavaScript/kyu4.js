@@ -1,10 +1,10 @@
 
 const customEval = (value)=>{
-    const regex = /(?<first>[-\d\?]*)(?<symbol>[*-\+])(?<second>[-\d\?]*)/;
+    const regex = /(?<first>[-\d\?]*)(?<symbol>[*\-\+])(?<second>[-\d\?]*)/;
     const matches = value.match(regex);
-    const first = matches.groups.first; // '2'
-    const symbol = matches.groups.symbol; // '+'
-    const second = matches.groups.second; // '2'
+    const first = matches?.groups.first; // '2'
+    const symbol = matches?.groups.symbol; // '+'
+    const second = matches?.groups.second; // '2'
     return first + ' ' + symbol + " " + second
 }
 function solveExpression(exp) {
