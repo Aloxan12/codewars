@@ -837,8 +837,7 @@ export const var15NeverFunction = (): never => {
 };
 
 export function parseF(s: string): number | null {
-    // @ts-ignore
-    return !Number.isNaN(Number(s)) ? +s : null;
+    return !isNaN(Number(s)) ? +s : null;
 };
 
 export function sameCase(a: string, b: string): number {

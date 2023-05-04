@@ -1,4 +1,3 @@
-
 const customEval = (value)=>{
     const regex = /(?<first>[-]?[\d\?]*)(?<symbol>[*\-\+])(?<second>[-]?[\d\?]*)/;
     const matches = value.match(regex);
@@ -33,20 +32,6 @@ function solveExpression(exp) {
 
 // console.log(solveExpression('-5?*-1=5?'))
 // console.log(solveExpression('??+??=??'))
-// console.log(solveExpression('1+1=?'))
-// console.log(solveExpression('?*11=??'))
 // console.log(solveExpression('?*123?45=?'))
 // console.log(solveExpression('?24564+997177=1?21741'))
 // console.log(solveExpression('-7715?5--484?00=-28?9?5'))
-
-function exemple(){
-    for (let i = 0; i< 10; i++){
-        console.log('попали')
-        if(i === 2) {
-            console.log('выход')
-            return 2;
-        }
-    }
-}
-
-console.log('exemple', exemple())
