@@ -477,9 +477,6 @@ function puzzleTiles(width, height) {
     return result
 }
 
-// 5 1 2 + 4 * + 3 -
-// 5 + ((1 + 2) * 4) - 3
-
 function calcOperator (operator, value1, value2){
     switch (operator) {
         case '-': return value1-value2;
@@ -502,6 +499,3 @@ function calc(expr) {
     const result = expr.replace(/\d+ \d+ [+\-\*\/]/, (value)=> !!value ? `${calcResult(value)}` : '')
     return calc(result)
 }
-
-console.log(calc('5 1 2 + 4 * + 3 -'))
-console.log(calc('5 3 -'))
