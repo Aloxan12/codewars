@@ -490,16 +490,16 @@ function calcOperator (operator, value1, value2){
 }
 function calcResult(expr) {
     const arr = expr.split(' ')
-    if(arr.length === 0) return 0
     if(arr.length === 1) return Number(expr)
     const [value1, value2, operator] = arr
     return calcOperator(operator, Number(value1), Number(value2));
 }
 function calc(expr) {
+    if(!expr)return 0
     if(expr.split(' ').length <= 1){
-        return expr
+        return Number(expr)
     }
-    const result = expr.replace(/\d \d [+\-\*\/]/, (value)=> !!value ? `${calcResult(value)}` : '')
+    const result = expr.replace(/\d+ \d+ [+\-\*\/]/, (value)=> !!value ? `${calcResult(value)}` : '')
     return calc(result)
 }
 
