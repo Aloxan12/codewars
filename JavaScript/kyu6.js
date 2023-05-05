@@ -480,7 +480,7 @@ function puzzleTiles(width, height) {
 // 5 1 2 + 4 * + 3 -
 // 5 + ((1 + 2) * 4) - 3
 
-function calcResult (operator, value1, value2){
+function calcOperator (operator, value1, value2){
     switch (operator) {
         case '-': return value1-value2;
         case '*': return value1*value2;
@@ -488,13 +488,20 @@ function calcResult (operator, value1, value2){
         default: return value1+value2;
     }
 }
-function calc(expr) {
+function calcResult(expr) {
     const arr = expr.split(' ')
     if(arr.length === 0) return 0
     if(arr.length === 1) return Number(expr)
     const [value1, value2, operator] = arr
-    return calcResult(operator, Number(value1), Number(value2));
+    return calcOperator(operator, Number(value1), Number(value2));
+}
+function calc(expr) {
+    if(expr.split(' ').length <= 1){
+        return expr
+    }
+    const result = expr.replace(/\d \d [+\-\*\/]/, (value)=> !!value ? `${calcResult(value)}` : '')
+    return calc(result)
 }
 
-// console.log(calc('5 1 2 + 4 * + 3 -'))
+console.log(calc('5 1 2 + 4 * + 3 -'))
 console.log(calc('5 3 -'))

@@ -666,3 +666,26 @@ const MORSE_CODE = { // Библиотека
 export function decodeMorse(morseCode: string): string {
     return morseCode.trim().split('   ').map(word => word.split(' ').map(letter => MORSE_CODE[letter]).join('')).join(' ')
 }
+
+function calcOperator (operator: string, value1: number, value2: number){
+    switch (operator) {
+        case '-': return value1-value2;
+        case '*': return value1*value2;
+        case '/': return value1/value2;
+        default: return value1+value2;
+    }
+}
+function calcResult(expr: string) {
+    const arr = expr.split(' ')
+    if(arr.length === 0) return 0
+    if(arr.length === 1) return Number(expr)
+    const [value1, value2, operator] = arr
+    return calcOperator(operator, Number(value1), Number(value2));
+}
+function calc1(expr: string) {
+    if(expr.split(' ').length <= 1){
+        return expr
+    }
+    const result = expr.replace(/\d \d [+\-\*\/]/, (value)=> !!value ? `${calcResult(value)}` : '')
+    return calc(result)
+}
