@@ -476,3 +476,8 @@ function puzzleTiles(width, height) {
     }
     return result
 }
+
+function calc(expr) {
+    // TODO: Your awesome code here
+    return 0;
+}
