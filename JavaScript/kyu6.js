@@ -477,25 +477,31 @@ function puzzleTiles(width, height) {
     return result
 }
 
-function calcOperator (operator, value1, value2){
+function calcOperator(operator, value1, value2) {
     switch (operator) {
-        case '-': return value1-value2;
-        case '*': return value1*value2;
-        case '/': return value1/value2;
-        default: return value1+value2;
+        case '-':
+            return value1 - value2;
+        case '*':
+            return value1 * value2;
+        case '/':
+            return value1 / value2;
+        default:
+            return value1 + value2;
     }
 }
+
 function calcResult(expr) {
     const arr = expr.split(' ')
-    if(arr.length === 1) return Number(expr)
+    if (arr.length === 1) return Number(expr)
     const [value1, value2, operator] = arr
     return calcOperator(operator, Number(value1), Number(value2));
 }
+
 function calc(expr) {
-    if(!expr)return 0
-    if(expr.split(' ').length <= 1){
+    if (!expr) return 0
+    if (expr.split(' ').length <= 1) {
         return Number(expr)
     }
-    const result = expr.replace(/\d+ \d+ [+\-\*\/]/, (value)=> !!value ? `${calcResult(value)}` : '')
+    const result = expr.replace(/\d+ \d+ [+\-\*\/]/, (value) => !!value ? `${calcResult(value)}` : '')
     return calc(result)
 }
