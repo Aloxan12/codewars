@@ -178,3 +178,9 @@ function finalGrade(exam, projects) {
                 ? 75
                 : 0
 }
+
+function pillars(numPill, dist, width) {
+    return Math.abs((numPill - 1) * dist * 100 - 2 * width);
+}
+
+console.log('pillars', pillars(1,10,10))
