@@ -180,7 +180,9 @@ function finalGrade(exam, projects) {
 }
 
 function pillars(numPill, dist, width) {
-    return Math.abs((numPill - 1) * dist * 100 - 2 * width);
+    if(numPill < 2)return 0
+    return (100 * dist) - ((numPill - 2) * width)
 }
 
-console.log('pillars', pillars(1,10,10))
+console.log('pillars', pillars(2, 20, 25))
+console.log('pillars', pillars(11, 15, 30))
