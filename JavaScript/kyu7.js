@@ -549,3 +549,9 @@ const binaryArrayToNumber_2 = (arr) => {
 var number = function (array) {
     return array.map((item, index) => `${index + 1}: ${item}`)
 }
+
+function openOrSenior(data){
+    return data.map(item => item[0] >= 55 && item[1] > 7 ? 'Senior' : 'Open' )
+}
+
+console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]))
