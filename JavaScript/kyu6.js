@@ -505,3 +505,9 @@ function calc(expr) {
     const result = expr.replace(/\d+ \d+ [+\-\*\/]/, (value) => !!value ? `${calcResult(value)}` : '')
     return calc(result)
 }
+
+function toCamelCase(str){
+    return str.split(/[- _]/).map((item, index)=> !!index ? item[0].toUpperCase() + item.slice(1) : item).join('')
+}
+
+console.log(toCamelCase("the_stealth-warrior"))
