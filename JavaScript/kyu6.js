@@ -506,8 +506,6 @@ function calc(expr) {
     return calc(result)
 }
 
-function toCamelCase(str){
-    return str.split(/[- _]/).map((item, index)=> !!index ? item[0].toUpperCase() + item.slice(1) : item).join('')
+function toCamelCase(str) {
+    return str.split(/[- _]/).map((item, index) => !!index ? item[0].toUpperCase() + item.slice(1) : item).join('')
 }
-
-console.log(toCamelCase("the_stealth-warrior"))
