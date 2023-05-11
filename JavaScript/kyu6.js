@@ -511,5 +511,7 @@ function toCamelCase(str) {
 }
 
 function alphabetPosition(text) {
-    return text;
+    return text.replace(/[^A-Za-z]/g, '').toLowerCase().split('').map(item => item.charCodeAt(0) - 96).join(' ');
 }
+
+console.log(alphabetPosition('The sunset sets at twelve'))
