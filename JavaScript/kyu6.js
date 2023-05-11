@@ -509,3 +509,7 @@ function calc(expr) {
 function toCamelCase(str) {
     return str.split(/[- _]/).map((item, index) => !!index ? item[0].toUpperCase() + item.slice(1) : item).join('')
 }
+
+function alphabetPosition(text) {
+    return text;
+}
