@@ -527,7 +527,4 @@ function sortArray(array) {
 
 function solution(str){
     return !!str ? str.match(/.{1,2}/g).map(item => item.length === 1 ? `${item}_`: item) : []
-
 }
-
-console.log(solution('abcdefg'))
