@@ -515,9 +515,9 @@ function alphabetPosition(text) {
 }
 
 function sortArray(array) {
-    const oddArr = array.filter(item => item % 2 !== 0).sort((a, b)=> a > b ? 1 : -1)
+    const oddArr = array.filter(item => item % 2 !== 0).sort((a, b) => a > b ? 1 : -1)
     return array.map(item => {
-        if(item % 2 !== 0){
+        if (item % 2 !== 0) {
             const i = oddArr.shift()
             return i
         }
@@ -525,6 +525,6 @@ function sortArray(array) {
     })
 }
 
-function solution(str){
-    return !!str ? str.match(/.{1,2}/g).map(item => item.length === 1 ? `${item}_`: item) : []
+function solution(str) {
+    return !!str ? str.match(/.{1,2}/g).map(item => item.length === 1 ? `${item}_` : item) : []
 }
