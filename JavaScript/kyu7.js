@@ -554,4 +554,6 @@ function openOrSenior(data){
     return data.map(item => item[0] >= 55 && item[1] > 7 ? 'Senior' : 'Open' )
 }
 
-console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]))
+function findNextSquare(sq) {
+    return Math.sqrt(sq) % 1 === 0 ? (Math.sqrt(sq) + 1) ** 2 : -1;
+}
