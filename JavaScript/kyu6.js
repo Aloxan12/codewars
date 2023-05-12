@@ -524,3 +524,10 @@ function sortArray(array) {
         return item
     })
 }
+
+function solution(str){
+    return str.match(/.{1,2}/g).map(item => item.length === 1 ? `${item}_`: item)
+
+}
+
+console.log(solution('abcdefg'))
