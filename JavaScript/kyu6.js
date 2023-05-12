@@ -526,7 +526,7 @@ function sortArray(array) {
 }
 
 function solution(str){
-    return str.match(/.{1,2}/g).map(item => item.length === 1 ? `${item}_`: item)
+    return !!str ? str.match(/.{1,2}/g).map(item => item.length === 1 ? `${item}_`: item) : []
 
 }
 
