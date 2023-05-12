@@ -513,17 +513,3 @@ function toCamelCase(str) {
 function alphabetPosition(text) {
     return text.replace(/[^A-Za-z]/g, '').toLowerCase().split('').map(item => item.charCodeAt(0) - 96).join(' ');
 }
-
-function sortArray(array) {
-    const oddArr = array.filter(item => item % 2 === 1 && item > 0).sort((a, b)=> a > b ? 1 : -1)
-    return array.map(item => {
-        if(item % 2 === 1){
-            const i = oddArr.shift()
-            return i
-        }
-        return item
-    })
-}
-
-// console.log(sortArray([5, 3, 1, 8, 0]))
-console.log(sortArray([5, 3, 2, 8, 1, 4]))
