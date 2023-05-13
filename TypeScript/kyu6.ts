@@ -300,3 +300,7 @@ function calc(expr: string) {
     const result = expr.replace(/\d+ \d+ [+\-\*\/]/, (value) => !!value ? `${calcResult(value)}` : '')
     return calc(result)
 }
+
+function solution_2(str: string) {
+    return !!str ? str.match(/.{1,2}/g).map(item => item.length === 1 ? `${item}_` : item) : []
+}
