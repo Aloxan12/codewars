@@ -34,3 +34,9 @@ function moveZeros(arr) {
     const arrZero = arr.filter(item => item === 0)
     return [...arr.filter(item => item !== 0), ...arrZero]
 }
+
+function pigIt(str){
+    return str
+}
+
+console.log(pigIt('Pig latin is cool'))
