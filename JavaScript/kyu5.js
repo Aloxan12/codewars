@@ -43,9 +43,3 @@ function pigIt(str){
         return item
     }).join(' ')
 }
-
-function pigIt_2(str){
-    return str.replace(/\w+/g, (word)=> word.slice(1) + word[0] + 'ay')
-}
-
-console.log(pigIt_2('Pig latin is cool !'))
