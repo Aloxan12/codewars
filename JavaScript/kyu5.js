@@ -29,3 +29,8 @@ function incrementString(str) {
 function domainName(url) {
     return url.replace('http://', '').replace('https://', '').replace('www.', '').split(/[/?#]/)[0].split('.')[0]
 }
+
+function moveZeros(arr) {
+    const arrZero = arr.filter(item => item === 0)
+    return [...arr.filter(item => item !== 0), ...arrZero]
+}
