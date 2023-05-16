@@ -304,3 +304,15 @@ function calc(expr: string) {
 function solution_2(str: string) {
     return !!str ? str.match(/.{1,2}/g).map(item => item.length === 1 ? `${item}_` : item) : []
 }
+
+export function solution_3(roman: string): number {
+    let res: number = 0;
+    const romanMap: { [key: string]: number } = {M:1000, D:500, C:100, L:50, X:10, V:5, I:1};
+    const others: string[] = ["CD", "CM", "XL", "XC", "IV", "IX"];
+    for(let i=0; i < roman.length; i++){
+        others.indexOf(roman[i]+ roman[i+1]) === -1 ? res += romanMap[roman[i]] : res -= romanMap[roman[i]];
+    }
+    return res;
+}
+
+console.log(solution_3('XXI'))

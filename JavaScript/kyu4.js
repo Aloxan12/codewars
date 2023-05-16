@@ -42,15 +42,21 @@ function solveExpression(exp) {
 // Snail Sort
 
 snail = function(array) {
-    if(array.length < 3){
+    if(array.length < 2){
+        console.log('array', array)
         return array.reduce((acc, el)=> [...acc, ...el], [])
+    }
+    if(array.length === 2){
+        const [arr1, arr2] = array
+        return [...arr1, ...arr2.reverse()]
     }
     if(array.length === 3){
         const [arr1, arr2, arr3] = array
         return [...arr1, arr2.reverse()[0], ...arr3.reverse(), ...arr2.reverse().slice(0, -1)]
     }
     const result = []
-    array.map((item, index, arr) => {
+    const copyArr = [...array]
+    copyArr.map((item, index, arr) => {
         const lastInd = arr.length - 1
         if(index === 0){
             result.push(...item)
@@ -63,7 +69,7 @@ snail = function(array) {
             result.push(...item.reverse())
         }
     })
-    array.reverse().map((item, index, arr) => {
+    copyArr.reverse().map((item, index, arr) => {
         const lastInd = arr.length - 1
         if(index === 0)return item
         if(index !== 0 && index !== lastInd){
@@ -72,7 +78,6 @@ snail = function(array) {
         }
         if(index === lastInd)return item
     })
-    array.reverse()
     const trimmedArray = array.slice(1, -1);
     return [...result, ...snail(trimmedArray)]
 }
@@ -81,6 +86,3 @@ console.log(snail([[1]]))
 console.log(snail([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
 console.log(snail([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20], [21, 22, 23, 24, 25]]))
 console.log(snail([[1, 2, 3, 4, 5, 6], [20, 21, 22, 23, 24, 7], [19, 32, 33, 34, 25, 8], [18, 31, 36, 35, 26, 9], [17, 30, 29, 28, 27, 10], [16, 15, 14, 13, 12, 11]]))
-
-// [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 35 ]
-// [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ]
