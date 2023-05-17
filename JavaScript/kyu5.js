@@ -44,10 +44,26 @@ function pigIt(str){
     }).join(' ')
 }
 
-const colorFormatItem =(value)=>{}
+const obj = {
+    10: 'A',
+    11: 'B',
+    12: 'C',
+    13: 'D',
+    14: 'E',
+    15: 'F',
+}
+
+const colorFormatItem =(value)=>{
+    const whole = value / 16
+    const decimal = value % 16
+    return [obj[whole] || whole, obj[whole] ||decimal]
+}
 
 function rgb(r, g, b){
     if(r >= 255 && g >= 255 && b >= 255) return 'FFFFFF'
     if(r <= 0 && g <= 0 && b <= 0) return '000000'
-
+    const rValue = colorFormatItem(r)
+    const gValue = colorFormatItem(g)
+    const bValue = colorFormatItem(b)
+    return `${rValue}${gValue}${bValue}`
 }
