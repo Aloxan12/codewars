@@ -560,6 +560,10 @@ function findNextSquare(sq) {
 
 function divisors(integer) {
     const result = []
+    for (let i = 0; i<integer; i++){
+        (integer / i) % 1 === 0 && i > 1 && result.push(i)
+    }
+    return !!result.length ? result : `${integer} is prime`
 }
 
 console.log(divisors(13))
