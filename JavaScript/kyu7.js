@@ -557,3 +557,9 @@ function openOrSenior(data){
 function findNextSquare(sq) {
     return Math.sqrt(sq) % 1 === 0 ? (Math.sqrt(sq) + 1) ** 2 : -1;
 }
+
+function divisors(integer) {
+    const result = []
+}
+
+console.log(divisors(13))
