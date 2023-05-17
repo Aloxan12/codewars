@@ -43,3 +43,11 @@ function pigIt(str){
         return item
     }).join(' ')
 }
+
+const colorFormatItem =(value)=>{}
+
+function rgb(r, g, b){
+    if(r >= 255 && g >= 255 && b >= 255) return 'FFFFFF'
+    if(r <= 0 && g <= 0 && b <= 0) return '000000'
+
+}

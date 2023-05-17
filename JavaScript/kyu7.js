@@ -565,5 +565,3 @@ function divisors(integer) {
     }
     return !!result.length ? result : `${integer} is prime`
 }
-
-console.log(divisors(13))
