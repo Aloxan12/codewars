@@ -54,14 +54,14 @@ const obj = {
 }
 
 const colorFormatItem =(value)=>{
-    const whole = value / 16
+    value = value > 255 ? 255 : value
+    value = value < 0 ? 0 : value
+    const whole = Math.floor(value / 16)
     const decimal = value % 16
-    return [obj[whole] || whole, obj[whole] ||decimal]
+    return `${obj[whole] || whole}${obj[decimal] ||decimal}`
 }
 
 function rgb(r, g, b){
-    if(r >= 255 && g >= 255 && b >= 255) return 'FFFFFF'
-    if(r <= 0 && g <= 0 && b <= 0) return '000000'
     const rValue = colorFormatItem(r)
     const gValue = colorFormatItem(g)
     const bValue = colorFormatItem(b)
