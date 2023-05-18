@@ -535,7 +535,15 @@ const vowels = {
 }
 function reverseVowels(str) {
     const vowelArr = str.split('').filter(item => vowels[item.toUpperCase()]).reverse()
-    return str.split('')
+    let result = ''
+    for(let i = 0; i < str.length; i++){
+        if(vowels[str[i].toUpperCase()]){
+            result += vowelArr.shift()
+        }else{
+            result += str[i]
+        }
+    }
+    return result
 }
 
 console.log('result', reverseVowels('Reverse Vowels In A String'))
