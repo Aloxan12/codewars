@@ -528,3 +528,14 @@ function sortArray(array) {
 function solution(str) {
     return !!str ? str.match(/.{1,2}/g).map(item => item.length === 1 ? `${item}_` : item) : []
 }
+
+
+const vowels = {
+    A: true, E: true, I: true, O: true, U:true
+}
+function reverseVowels(str) {
+    const vowelArr = str.split('').filter(item => vowels[item.toUpperCase()]).reverse()
+    return str.split('')
+}
+
+console.log('result', reverseVowels('Reverse Vowels In A String'))
