@@ -546,4 +546,19 @@ function reverseVowels(str) {
     return result
 }
 
-console.log('result', reverseVowels('Reverse Vowels In A String'))
+
+var numberFormat = function (number) {
+    console.log('number',number, number.splice('').reverse().join('').replace(/\d{3}/g, (num)=> `${num}`))
+    switch (number) {
+        case number > 99:
+            return number.toString().match(/\d{3}/g)?.join(',').toString()
+        case number < 0 && number.toString().length > 2:
+            return `-${number.toString().match(/\d{3}/g)?.join(',')}`
+        default: return number
+    }
+    return
+};
+
+console.log('result', numberFormat(100000))
+console.log('result', numberFormat(10))
+console.log('result', numberFormat(-1000))
