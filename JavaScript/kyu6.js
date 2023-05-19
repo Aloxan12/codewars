@@ -531,15 +531,16 @@ function solution(str) {
 
 
 const vowels = {
-    A: true, E: true, I: true, O: true, U:true
+    A: true, E: true, I: true, O: true, U: true
 }
+
 function reverseVowels(str) {
     const vowelArr = str.split('').filter(item => vowels[item.toUpperCase()]).reverse()
     let result = ''
-    for(let i = 0; i < str.length; i++){
-        if(vowels[str[i].toUpperCase()]){
+    for (let i = 0; i < str.length; i++) {
+        if (vowels[str[i].toUpperCase()]) {
             result += vowelArr.shift()
-        }else{
+        } else {
             result += str[i]
         }
     }
@@ -548,6 +549,6 @@ function reverseVowels(str) {
 
 
 var numberFormat = function (number) {
-    const result = `${number}`.split('').reverse().join('').replace(/\d{3}/g, (num)=> `${num},`).split('').reverse().join('').replace('-,', '-')
+    const result = `${number}`.split('').reverse().join('').replace(/\d{3}/g, (num) => `${num},`).split('').reverse().join('').replace('-,', '-')
     return result[0] === ',' ? result.slice(1) : result
 };
