@@ -548,17 +548,11 @@ function reverseVowels(str) {
 
 
 var numberFormat = function (number) {
-    console.log('number',number, number.splice('').reverse().join('').replace(/\d{3}/g, (num)=> `${num}`))
-    switch (number) {
-        case number > 99:
-            return number.toString().match(/\d{3}/g)?.join(',').toString()
-        case number < 0 && number.toString().length > 2:
-            return `-${number.toString().match(/\d{3}/g)?.join(',')}`
-        default: return number
-    }
-    return
+    const result = `${number}`.split('').reverse().join('').replace(/\d{3}/g, (num)=> `${num},`).split('').reverse().join('').replace('-,', '-')
+    return result[0] === ',' ? result.slice(1) : result
 };
 
 console.log('result', numberFormat(100000))
-console.log('result', numberFormat(10))
+console.log('result', numberFormat(-420902))
+console.log('result', numberFormat(5678545))
 console.log('result', numberFormat(-1000))
