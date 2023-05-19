@@ -551,8 +551,3 @@ var numberFormat = function (number) {
     const result = `${number}`.split('').reverse().join('').replace(/\d{3}/g, (num)=> `${num},`).split('').reverse().join('').replace('-,', '-')
     return result[0] === ',' ? result.slice(1) : result
 };
-
-console.log('result', numberFormat(100000))
-console.log('result', numberFormat(-420902))
-console.log('result', numberFormat(5678545))
-console.log('result', numberFormat(-1000))
