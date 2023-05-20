@@ -182,3 +182,14 @@ function finalGrade(exam, projects) {
 function pillars(numPill, dist, width) {
     return numPill>1?(numPill-1)*dist*100+(numPill-2)*width:0;
 }
+
+function countBy(x, n) {
+    let result = [];
+    for(let i = 1; i <= n; i++){
+        result.push(i*x)
+    }
+    return result;
+}
+
+console.log('countBy', countBy(1,10))
+console.log('countBy', countBy(2,5))
