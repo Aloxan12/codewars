@@ -315,4 +315,7 @@ export function solution_3(roman: string): number {
     return res;
 }
 
-console.log(solution_3('XXI'))
+var numberFormat = function (num: number) {
+    const result = `${num}`.split('').reverse().join('').replace(/\d{3}/g, (num) => `${num},`).split('').reverse().join('').replace('-,', '-')
+    return result[0] === ',' ? result.slice(1) : result
+};
