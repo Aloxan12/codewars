@@ -307,10 +307,10 @@ function solution_2(str: string) {
 
 export function solution_3(roman: string): number {
     let res: number = 0;
-    const romanMap: { [key: string]: number } = {M:1000, D:500, C:100, L:50, X:10, V:5, I:1};
+    const romanMap: { [key: string]: number } = {M: 1000, D: 500, C: 100, L: 50, X: 10, V: 5, I: 1};
     const others: string[] = ["CD", "CM", "XL", "XC", "IV", "IX"];
-    for(let i=0; i < roman.length; i++){
-        others.indexOf(roman[i]+ roman[i+1]) === -1 ? res += romanMap[roman[i]] : res -= romanMap[roman[i]];
+    for (let i = 0; i < roman.length; i++) {
+        others.indexOf(roman[i] + roman[i + 1]) === -1 ? res += romanMap[roman[i]] : res -= romanMap[roman[i]];
     }
     return res;
 }
@@ -320,7 +320,7 @@ var numberFormat = function (num: number) {
     return result[0] === ',' ? result.slice(1) : result
 };
 
-const vowels:{[key: string]: boolean} = {
+const vowels: { [key: string]: boolean } = {
     A: true, E: true, I: true, O: true, U: true
 }
 
