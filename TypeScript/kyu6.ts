@@ -319,3 +319,20 @@ var numberFormat = function (num: number) {
     const result = `${num}`.split('').reverse().join('').replace(/\d{3}/g, (num) => `${num},`).split('').reverse().join('').replace('-,', '-')
     return result[0] === ',' ? result.slice(1) : result
 };
+
+const vowels:{[key: string]: boolean} = {
+    A: true, E: true, I: true, O: true, U: true
+}
+
+function reverseVowels(str: string) {
+    const vowelArr = str.split('').filter(item => vowels[item.toUpperCase()]).reverse()
+    let result = ''
+    for (let i = 0; i < str.length; i++) {
+        if (vowels[str[i].toUpperCase()]) {
+            result += vowelArr.shift()
+        } else {
+            result += str[i]
+        }
+    }
+    return result
+}
