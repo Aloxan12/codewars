@@ -552,3 +552,9 @@ var numberFormat = function (number) {
     const result = `${number}`.split('').reverse().join('').replace(/\d{3}/g, (num) => `${num},`).split('').reverse().join('').replace('-,', '-')
     return result[0] === ',' ? result.slice(1) : result
 };
+
+function deleteNth(arr,n){
+    return
+}
+
+console.log(deleteNth([1,2,3,1,2,1,2,3], 2))
