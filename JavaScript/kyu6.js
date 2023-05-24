@@ -554,8 +554,6 @@ var numberFormat = function (number) {
 };
 
 function deleteNth(arr, n) {
-    const indexArr = [... new Set(arr.map((item) => arr.map((i, indx) => i === item ? indx : null).filter(p => !!p || p === 0).slice(0, n).join(',')).join(',').split(','))]
+    const indexArr = [...new Set(arr.map((item) => arr.map((i, indx) => i === item ? indx : null).filter(p => !!p || p === 0).slice(0, n).join(',')).join(',').split(','))]
     return arr.filter((item, index) => indexArr.find(i => +i === index))
 }
-
-console.log(deleteNth([20,37,20,21], 2))
