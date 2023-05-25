@@ -557,3 +557,15 @@ function deleteNth(arr, n) {
     const indexArr = [...new Set(arr.map((item) => arr.map((i, indx) => i === item ? indx : null).filter(p => !!p || p === 0).slice(0, n).join(',')).join(',').split(','))]
     return arr.filter((item, index) => indexArr.find(i => +i === index))
 }
+
+function isPrime(num) {
+    let res = true
+    for(let i = 2; i < num; i++){
+        if(Number.isInteger((num / i))){
+            res = false
+        }
+    }
+    return num < 2 ? false : res
+}
+
+console.log(isPrime(75))
