@@ -570,7 +570,3 @@ function isPrime(num) {
     }
     return num < 2 ? false : res
 }
-
-console.log(isPrime(2))
-console.log(isPrime(3))
-console.log(isPrime(110229001))
