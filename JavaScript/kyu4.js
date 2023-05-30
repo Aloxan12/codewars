@@ -89,12 +89,27 @@ snail = function(array) {
 
 
 
-function formatDuration (seconds) {
-    const minute = Math.floor(seconds / 60)
-    const sec = minute % 1 === 0 ? seconds - (minute * 60) : 0
-    const hour = minute > 60
-    return `${minute} ${sec}`
+function formatDuration(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    const sec = seconds % 60;
+
+    let hours = Math.floor(seconds / 3600);
+    minutes = minutes % 60;
+
+    let days = Math.floor(hours / 24);
+    hours = hours % 24;
+
+    let years = Math.floor(days / 365);
+    days = days % 365;
+
+    if(!seconds)return 0
+    if(!sec && !minutes && !hours && !days && !years)return 0
+    if(!seconds)return 0
+    if(!seconds)return 0
+    return `${years} years, ${days} days, ${hours} hours, ${minutes} minutes, ${sec} seconds`;
 }
 
+console.log(formatDuration(2))
 console.log(formatDuration(62))
-console.log(formatDuration(3662))
+console.log(formatDuration(613662))
+console.log(formatDuration(61366200))
