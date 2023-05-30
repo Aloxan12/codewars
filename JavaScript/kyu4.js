@@ -90,5 +90,11 @@ snail = function(array) {
 
 
 function formatDuration (seconds) {
-    // Complete this function
+    const minute = Math.floor(seconds / 60)
+    const sec = minute % 1 === 0 ? seconds - (minute * 60) : 0
+    const hour = minute > 60
+    return `${minute} ${sec}`
 }
+
+console.log(formatDuration(62))
+console.log(formatDuration(3662))
