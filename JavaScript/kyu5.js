@@ -117,11 +117,12 @@ function nine(operator) {
     else return 9
 }
 
-function plus(number) {return ` + ${number}`}
-function minus(number) {return ` - ${number}`}
-function times(number) {return ` * ${number}`}
-function dividedBy(number) {return ` / ${number}`}
+const plus = (number) => ` + ${number}`
+const minus = (number) => ` - ${number}`
+const times = (number) => ` * ${number}`
+const dividedBy = (number) => ` / ${number}`
 
-
-console.log(three(dividedBy(five())))
-console.log(three(dividedBy(eight())))
+console.log(three(plus(five())))
+console.log(five(minus(two())))
+console.log(three(times(five())))
+console.log(eight(dividedBy(two())))
