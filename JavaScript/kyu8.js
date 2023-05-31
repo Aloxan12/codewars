@@ -190,3 +190,12 @@ function countBy(x, n) {
     }
     return result;
 }
+
+
+const one =(op)=> op ? op(1) : 1
+const two =(op)=> op ? op(2) : 2
+const op =(num)=> (v)=> {
+    return v + num
+}
+
+console.log('res', one(op(two())))
