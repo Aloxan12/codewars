@@ -1,3 +1,4 @@
+
 function interleave() {
     if (arguments.length === 0) {
         return []
@@ -72,6 +73,66 @@ let arr_en = {'a': 'n', 'b': 'o', 'c': 'p', 'd': 'q', 'e': 'r', 'f': 's', 'g': '
 function rot13(message){
     return message.replace(/[A-Za-z]/g, (letter)=> letter === letter.toLowerCase() ? arr_en[letter] : arr_en[letter.toLowerCase()].toUpperCase())
 }
+// console.log(rot13('test'))
+// console.log(rot13('Grfg'))
 
-console.log(rot13('test'))
-console.log(rot13('Grfg'))
+function zero(operator) {
+    if(operator){
+        return Math.floor(eval(0 + operator))
+    }else return 0
+}
+function one(operator) {
+    if(operator){
+        return Math.floor(eval(1 + operator))
+    }else return 1
+}
+function two(operator) {
+    if(operator){
+        return Math.floor(eval(2 + operator))
+    }else return 2
+}
+function three(operator) {
+    if(!!operator){
+        return Math.floor(eval(3 + operator))
+    }
+    return 3
+}
+function four(operator) {
+    if(!!operator){
+        return Math.floor(eval(4 + operator))
+    }else return 4
+}
+function five(operator) {
+    if(!!operator){
+        return Math.floor(eval(5 + operator))
+    }else return 5
+}
+function six(operator) {
+    if(!!operator){
+        return Math.floor(eval(6 + operator))
+    }else return 6
+}
+function seven(operator ) {
+    if(!!operator){
+        return Math.floor(eval(7 + operator))
+    }else return 7
+}
+function eight(operator ) {
+    if(!!operator){
+        return Math.floor(eval(8 + operator))
+    }else return 8
+}
+function nine(operator) {
+    if(!!operator){
+        return Math.floor(eval(9 + operator))
+    }else return 9
+}
+
+function plus(number) {return ` + ${number}`}
+function minus(number) {return ` - ${number}`}
+function times(number) {return ` * ${number}`}
+function dividedBy(number) {return ` / ${number}`}
+
+
+console.log(three(dividedBy(five())))
+console.log(three(dividedBy(eight())))
