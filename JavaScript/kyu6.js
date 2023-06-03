@@ -559,12 +559,12 @@ function deleteNth(arr, n) {
 }
 
 function isPrime(num) {
-    if(num === 2 || num === 3 || num === 5 || num === 7){
+    if (num === 2 || num === 3 || num === 5 || num === 7) {
         return true
     }
     let res = true
-    for(let i = 2; i < 9; i++){
-        if(Number.isInteger((num / i))){
+    for (let i = 2; i < 9; i++) {
+        if (Number.isInteger((num / i))) {
             res = false
         }
     }

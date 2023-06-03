@@ -661,12 +661,13 @@ export function number_2(array: string[]): string[] {
 }
 
 const MORSE_CODE = { // Библиотека
-    'a':'b'
+    'a': 'b'
 }
+
 export function decodeMorse(morseCode: string): string {
     return morseCode.trim().split('   ').map(word => word.split(' ').map(letter => MORSE_CODE[letter]).join('')).join(' ')
 }
 
-function findNextSquare(sq:number) {
+function findNextSquare(sq: number) {
     return Math.sqrt(sq) % 1 === 0 ? (Math.sqrt(sq) + 1) ** 2 : -1;
 }
