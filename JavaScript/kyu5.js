@@ -122,7 +122,7 @@ const minus = (number) => ` - ${number}`
 const times = (number) => ` * ${number}`
 const dividedBy = (number) => ` / ${number}`
 
-console.log(three(plus(five())))
-console.log(five(minus(two())))
-console.log(three(times(five())))
-console.log(eight(dividedBy(two())))
+// console.log(three(plus(five())))
+// console.log(five(minus(two())))
+// console.log(three(times(five())))
+// console.log(eight(dividedBy(two())))
