@@ -569,7 +569,5 @@ function divisors(integer) {
 function removeSmallest(numbers) {
     const min = Math.min(...numbers)
     const minIndex = numbers.findIndex(item => item === min)
-    return numbers.filter((item, index)=> index !== minIndex);
+    return numbers.filter((item, index) => index !== minIndex);
 }
-
-console.log(removeSmallest([1, 2, 3, 4, 5]))
