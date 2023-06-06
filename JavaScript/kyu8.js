@@ -198,5 +198,3 @@ solution = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
 function logs(x , a, b){
     return (Math.log(a) / Math.log(x)) + (Math.log(b) / Math.log(x))
 }
-
-console.log('logs', logs(10, 2, 3))
