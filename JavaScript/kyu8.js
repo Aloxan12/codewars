@@ -198,11 +198,3 @@ const mass = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
 function logs(x, a, b) {
     return (Math.log(a) / Math.log(x)) + (Math.log(b) / Math.log(x))
 }
-
-// Find the force of gravity between two objects
-const solution_2 = (arr_val, arr_unit) => {
-    const g1 = 6.67 * Math.pow(10,-11) * (Math.pow(1000, -2) * Math.pow(1000, -2)) * Math.pow(100, 2)
-    return [g1]
-};
-
-console.log('solution_2', solution_2([1], [2]))
