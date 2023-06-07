@@ -201,9 +201,8 @@ function logs(x, a, b) {
 
 // Find the force of gravity between two objects
 const solution_2 = (arr_val, arr_unit) => {
-    const g1 = 6.67 * Math.pow(10,11) * (Math.sqrt(1000)) * 10000
-    const g2 = 6.67 * Math.pow(10,11) * 10000
-    return [g1 , g2]
+    const g1 = 6.67 * Math.pow(10,-11) * (Math.pow(1000, -2) * Math.pow(1000, -2)) * Math.pow(100, 2)
+    return [g1]
 };
 
 console.log('solution_2', solution_2([1], [2]))
