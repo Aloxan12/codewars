@@ -191,7 +191,7 @@ function countBy(x, n) {
     return result;
 }
 
-const solution = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
+const mass = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
     return (((givenMass1 / molarMass1) + (givenMass2 / molarMass2)) * (0.082 * (temp + 273.15))) / volume
 }
 
@@ -199,6 +199,11 @@ function logs(x, a, b) {
     return (Math.log(a) / Math.log(x)) + (Math.log(b) / Math.log(x))
 }
 
+// Find the force of gravity between two objects
 const solution_2 = (arr_val, arr_unit) => {
-    // you code goes here
+    const g1 = 6.67 * Math.pow(10,11) * (Math.sqrt(1000)) * 10000
+    const g2 = 6.67 * Math.pow(10,11) * 10000
+    return [g1 , g2]
 };
+
+console.log('solution_2', solution_2([1], [2]))
