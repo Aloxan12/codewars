@@ -201,12 +201,9 @@ function logs(x, a, b) {
 
 function drawStairs(n) {
     let result = ''
-    for(let i = 1; i <= n; i++){
-        if(i === n) result += 'I'
-        if(i !== n) result += `I\n${' '.repeat(i)}`
+    for (let i = 1; i <= n; i++) {
+        if (i === n) result += 'I'
+        if (i !== n) result += `I\n${' '.repeat(i)}`
     }
     return result
 }
-
-console.log(drawStairs(1))
-console.log(drawStairs(4))
