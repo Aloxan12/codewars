@@ -198,3 +198,15 @@ const mass = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
 function logs(x, a, b) {
     return (Math.log(a) / Math.log(x)) + (Math.log(b) / Math.log(x))
 }
+
+function drawStairs(n) {
+    let result = ''
+    for(let i = 1; i <= n; i++){
+        if(i === n) result += 'I'
+        if(i !== n) result += `I\n${' '.repeat(i)}`
+    }
+    return result
+}
+
+console.log(drawStairs(1))
+console.log(drawStairs(4))
