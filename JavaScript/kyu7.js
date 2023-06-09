@@ -571,3 +571,7 @@ function removeSmallest(numbers) {
     const minIndex = numbers.findIndex(item => item === min)
     return numbers.filter((item, index) => index !== minIndex);
 }
+
+function helloWorld() {
+    return String.fromCharCode(72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33);
+}
