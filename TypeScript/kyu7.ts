@@ -672,6 +672,12 @@ function findNextSquare(sq: number) {
     return Math.sqrt(sq) % 1 === 0 ? (Math.sqrt(sq) + 1) ** 2 : -1;
 }
 
+function removeSmallest(numbers: number[]) {
+    const min = Math.min(...numbers)
+    const minIndex = numbers.findIndex(item => item === min)
+    return numbers.filter((item, index) => index !== minIndex);
+}
+
 function helloWorld() {
     return String.fromCharCode(72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33);
 }
