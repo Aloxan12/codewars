@@ -674,6 +674,7 @@ function findNextSquare(sq: number) {
 
 function removeSmallest(numbers: number[]) {
     const min = Math.min(...numbers)
+    // @ts-ignore
     const minIndex = numbers.findIndex(item => item === min)
     return numbers.filter((item, index) => index !== minIndex);
 }
