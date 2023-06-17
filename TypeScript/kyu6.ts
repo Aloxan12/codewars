@@ -340,6 +340,7 @@ function reverseVowels(str: string) {
 function isInteger(value: number): boolean {
     return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;
 }
+
 function isPrime(num: number) {
     if (num === 2 || num === 3 || num === 5 || num === 7) {
         return true
