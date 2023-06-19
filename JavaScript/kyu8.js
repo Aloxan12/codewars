@@ -207,3 +207,5 @@ function drawStairs(n) {
     }
     return result
 }
+
+const STRANGE_STRING = 'oß';
