@@ -570,3 +570,8 @@ function isPrime(num) {
     }
     return num < 2 ? false : res
 }
+
+// Break camelCase
+function solution(string) {
+    return string.replace(/[A-Z]/g, (letter)=> ` ${letter}`)
+}
