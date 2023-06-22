@@ -575,3 +575,10 @@ function isPrime(num) {
 function solution(string) {
     return string.replace(/[A-Z]/g, (letter) => ` ${letter}`)
 }
+
+function expandedForm(num) {
+    return `${num}`.split('').reverse().map((number, index)=> !!Number(number) ? number + '0'.repeat(index) : number)
+}
+
+console.log(expandedForm(12))
+console.log(expandedForm(70304))
