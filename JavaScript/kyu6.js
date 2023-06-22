@@ -577,8 +577,8 @@ function solution(string) {
 }
 
 function expandedForm(num) {
-    return `${num}`.split('').reverse().map((number, index)=> !!Number(number) ? number + '0'.repeat(index) : number)
+    return `${num}`.split('').reverse().map((number, index)=> !!Number(number) ? number + '0'.repeat(index) : number).reverse().filter(item => item !== '0').join(' + ')
 }
 
-console.log(expandedForm(12))
-console.log(expandedForm(70304))
+// console.log(expandedForm(12)) // '10 + 2'
+// console.log(expandedForm(70304)) // '70000 + 300 + 4'
