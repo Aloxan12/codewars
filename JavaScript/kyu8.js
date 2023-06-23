@@ -216,3 +216,7 @@ const areaOrPerimeter = function(l , w) {
 };
 // console.log(areaOrPerimeter(3, 3)) // 9
 // console.log(areaOrPerimeter(6, 10)) // 32
+
+function removeExclamationMarks(s) {
+    return '';
+}
