@@ -100,5 +100,5 @@ Array.prototype.sameStructureAs = function (other) {
 };
 
 // console.log([ 1, 1, 1 ].sameStructureAs([ 2, 2, 2 ]))
-console.log([1,[1,1]].sameStructureAs([[2,2],2]))
-console.log([1,'[',']'].sameStructureAs(['[',']',1]))
+// console.log([1,[1,1]].sameStructureAs([[2,2],2]))
+// console.log([1,'[',']'].sameStructureAs(['[',']',1]))
