@@ -92,12 +92,13 @@ snail = function (array) {
 
 
 Array.prototype.sameStructureAs = function (other) {
-    const structure1 = JSON.stringify(this).replace(/\d+/g, 'x')
-    const structure2 = JSON.stringify(other).replace(/\d+/g, 'x')
+    const structure1 = JSON.stringify(this).replace(/\d+/g, '').replace(/("\[")|("]")/g, '')
+    const structure2 = JSON.stringify(other).replace(/\d+/g, '').replace(/("\[")|("]")/g, '')
     console.log('structure1', structure1)
     console.log('structure2', structure2)
     return structure1 === structure2
 };
 
 // console.log([ 1, 1, 1 ].sameStructureAs([ 2, 2, 2 ]))
-// console.log([1,[1,1]].sameStructureAs([[2,2],2]))
+console.log([1,[1,1]].sameStructureAs([[2,2],2]))
+console.log([1,'[',']'].sameStructureAs(['[',']',1]))
