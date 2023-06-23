@@ -218,5 +218,5 @@ const areaOrPerimeter = function(l , w) {
 // console.log(areaOrPerimeter(6, 10)) // 32
 
 function removeExclamationMarks(s) {
-    return '';
+    return s.replace(/!/g, '');
 }
