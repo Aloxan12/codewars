@@ -851,3 +851,8 @@ export function sameCase(a: string, b: string): number {
         return 0
     }
 }
+
+const areaOrPerimeter = function(l: number, w: number):number {
+    if(l === w)return l * w
+    return 2 * (l + w)
+};
