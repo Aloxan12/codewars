@@ -353,3 +353,7 @@ function isPrime(num: number) {
     }
     return num < 2 ? false : res
 }
+
+function expandedForm(num: number) {
+    return `${num}`.split('').reverse().map((number, index)=> Number(number) * Math.pow(10, index)).reverse().filter(item => !!item).join(' + ')
+}
