@@ -228,8 +228,6 @@ function sumMul(n,m){
         result.push(n)
         m -= n
     }
-    console.log('result', result)
     return result.map((num, index)=> num * (index + 1)).reduce((acc, el)=> acc + el, 0)
 }
-
-console.log('sumMul', sumMul(92 , 15456))
+// console.log('sumMul', sumMul(2 , 9)) // 20
