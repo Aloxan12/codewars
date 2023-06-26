@@ -224,11 +224,12 @@ function removeExclamationMarks(s) {
 function sumMul(n,m){
     if(n >= m)return 'INVALID'
     let result = []
-    while (n <= m){
+    while (n < m){
         result.push(n)
         m -= n
     }
+    console.log('result', result)
     return result.map((num, index)=> num * (index + 1)).reduce((acc, el)=> acc + el, 0)
 }
 
-console.log('sumMul', sumMul(2, 9))
+console.log('sumMul', sumMul(92 , 15456))
