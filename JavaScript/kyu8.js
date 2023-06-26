@@ -220,3 +220,15 @@ const areaOrPerimeter = function(l , w) {
 function removeExclamationMarks(s) {
     return s.replace(/!/g, '');
 }
+
+function sumMul(n,m){
+    if(n >= m)return 'INVALID'
+    let result = []
+    while (n <= m){
+        result.push(n)
+        m -= n
+    }
+    return result.map((num, index)=> num * (index + 1)).reduce((acc, el)=> acc + el, 0)
+}
+
+console.log('sumMul', sumMul(2, 9))
