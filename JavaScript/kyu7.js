@@ -580,20 +580,15 @@ function minMax(arr){
     return [Math.min(...arr),Math.max(...arr)];
 }
 
-function dominator(arr) {
-    let result = -1
-    const obj = arr.reduce((acc, el)=> {
-        !!acc[el] ? acc[el]++ : acc[el] = 1
-        return acc
-    }, {})
-    const maxRepeat = Math.max(...Object.values(obj))
-    for(let value in obj){
-        if(obj[value] === maxRepeat){
-            result = value
-        }
-        if(result === obj[value]) return result = -1
+function dominator(arr){
+    const repeats = {};
+
+    for (let x = 0; x < arr.length; x++) {
+        repeats[arr[x]] = repeats[arr[x]] ? repeats[arr[x]] + 1: 1;
+        if (repeats[arr[x]] > arr.length / 2) return arr[x];
     }
-    return result
+
+    return -1;
 }
-console.log(dominator([3,4,3,2,3,1,3,3])) // 3
-console.log(dominator([1,2,3,4,5])) // -1
+// console.log(dominator([3,4,3,2,3,1,3,3])) // 3
+// console.log(dominator([1,2,3,4,5])) // -1
