@@ -579,3 +579,21 @@ function helloWorld() {
 function minMax(arr){
     return [Math.min(...arr),Math.max(...arr)];
 }
+
+function dominator(arr) {
+    let result = -1
+    const obj = arr.reduce((acc, el)=> {
+        !!acc[el] ? acc[el]++ : acc[el] = 1
+        return acc
+    }, {})
+    const maxRepeat = Math.max(...Object.values(obj))
+    for(let value in obj){
+        if(obj[value] === maxRepeat){
+            result = value
+        }
+        if(result === obj[value]) return result = -1
+    }
+    return result
+}
+console.log(dominator([3,4,3,2,3,1,3,3])) // 3
+console.log(dominator([1,2,3,4,5])) // -1
