@@ -856,3 +856,13 @@ const areaOrPerimeter = function(l: number, w: number):number {
     if(l === w)return l * w
     return 2 * (l + w)
 };
+
+function sumMul(n: number,m: number): number | string{
+    if(n >= m) return 'INVALID'
+    let result = []
+    while (n < m){
+        result.push(n)
+        m -= n
+    }
+    return result.map((num, index)=> num * (index + 1)).reduce((acc, el)=> acc + el, 0)
+}
