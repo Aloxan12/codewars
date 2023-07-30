@@ -682,3 +682,19 @@ function removeSmallest(numbers: number[]) {
 function helloWorld() {
     return String.fromCharCode(72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33);
 }
+
+function minMax(arr:number[]){
+    return [Math.min(...arr),Math.max(...arr)];
+}
+
+function dominator(arr: number[]): number{
+    const repeats:{[key: number]: number} = {};
+    for (let x = 0; x < arr.length; x++) {
+        repeats[arr[x]] = repeats[arr[x]] ? repeats[arr[x]] + 1: 1;
+        if (repeats[arr[x]] > arr.length / 2) return arr[x];
+    }
+
+    return -1;
+}
+// console.log(dominator([3,4,3,2,3,1,3,3])) // 3
+// console.log(dominator([1,2,3,4,5])) // -1
