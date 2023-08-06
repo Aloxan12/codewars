@@ -19,7 +19,7 @@ var romanToInt = function (s) {
     for (let value in values) {
         result = result.replace(value, ` ${values[value]} `)
     }
-    const newRes = result.trim().split(' ').map(item => isNaN(+item) ? item.split('').map(i => values[i]).reduce((acc, el)=> acc + el, 0) : item)
+    const newRes = result.trim().split(' ').map(item => isNaN(+item) ? item.split('').map(i => values[i]).reduce((acc, el) => acc + el, 0) : item)
     return newRes.reduce((acc, el) => acc + +el, 0)
 };
 
