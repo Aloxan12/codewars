@@ -589,3 +589,9 @@ function dominator(arr) {
 
     return -1;
 }
+
+const getFileName = (file) => {
+    return file.split("/").reverse()[0];
+};
+
+console.log(getFileName('https://service.kraab.devcontour.ru/photo/1695658790044-124243454443.jpg'))
