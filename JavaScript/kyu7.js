@@ -594,4 +594,10 @@ const getFileName = (file) => {
     return file.split("/").reverse()[0];
 };
 
-console.log(getFileName('https://service.kraab.devcontour.ru/photo/1695658790044-124243454443.jpg'))
+function getChance(n, x, a){
+    let p = 1;
+    while (a-- > 0) {
+        p = p * (n - x) / n--;
+    }
+    return Math.round(100 * p) / 100.;
+}
