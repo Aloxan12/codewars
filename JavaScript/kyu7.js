@@ -601,3 +601,10 @@ function getChance(n, x, a){
     }
     return Math.round(100 * p) / 100.;
 }
+
+function reverseMiddle(array) {
+    if(array.length <= 3) return array.reverse()
+    return reverseMiddle(array.slice(1, -1));
+}
+
+console.log(reverseMiddle([1, 2, 3, 4, 5]))
