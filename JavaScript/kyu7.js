@@ -594,7 +594,7 @@ const getFileName = (file) => {
     return file.split("/").reverse()[0];
 };
 
-function getChance(n, x, a){
+function getChance(n, x, a) {
     let p = 1;
     while (a-- > 0) {
         p = p * (n - x) / n--;
@@ -603,8 +603,6 @@ function getChance(n, x, a){
 }
 
 function reverseMiddle(array) {
-    if(array.length <= 3) return array.reverse()
+    if (array.length <= 3) return array.reverse()
     return reverseMiddle(array.slice(1, -1));
 }
-
-console.log(reverseMiddle([1, 2, 3, 4, 5]))

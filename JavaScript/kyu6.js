@@ -579,6 +579,23 @@ function solution(string) {
 function expandedForm(num) {
     return `${num}`.split('').reverse().map((number, index)=> !!Number(number) ? number + '0'.repeat(index) : number).reverse().filter(item => item !== '0').join(' + ')
 }
-
 // console.log(expandedForm(12)) // '10 + 2'
 // console.log(expandedForm(70304)) // '70000 + 300 + 4'
+
+function findArr(arrA, arrB, rng, wanted) {
+    const wantedRes = wanted === 'even'
+    const [min, max] = rng
+    const arrARes =  Object.entries(arrA.reduce((acc, el)=> ({...acc, [el]: acc[el] ? acc[el] +1 : 1}),{}))
+        .filter((([key, el])=> el >1)).map(([key, el]) => +key)
+    const arrBRes =  Object.entries(arrB.reduce((acc, el)=> ({...acc, [el]: acc[el] ? acc[el] +1 : 1}),{}))
+        .filter((([key, el])=> el >1)).map(([key, el]) => +key)
+    const resArr = arrARes
+        .filter(item => arrBRes
+            .includes(item) && (wantedRes ? item % 2 === 0 : item % 2 !== 0) && (item >=min) && (item <= max) )
+    return [...new Set(resArr)];
+}
+const arrA = [1, -2, 7, 2, 1, 3, 4, 7, 1, 0, 2, 3, 0, 4];
+const arrB = [0, 4, 2, -1, 1, 1, 1, 1, 2, 3, 3, 7, 7, 0, 4];
+const rng =  [-4, -1];
+const wanted = 'even';
+console.log(findArr(arrA, arrB, rng, wanted))
