@@ -23,5 +23,10 @@ var romanToInt = function (s) {
     return newRes.reduce((acc, el) => acc + +el, 0)
 };
 
-console.log(romanToInt('III'))
-console.log(romanToInt('MCMXCIV'))
+// console.log(romanToInt('III'))
+// console.log(romanToInt('MCMXCIV'))
+
+var plusOne = function(digits) {
+    return String(BigInt(digits.join('')) + BigInt('1')).split('').map(Number)
+};
+console.log('plusOne', plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]))
