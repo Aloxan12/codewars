@@ -29,4 +29,30 @@ var romanToInt = function (s) {
 var plusOne = function(digits) {
     return String(BigInt(digits.join('')) + BigInt('1')).split('').map(Number)
 };
-console.log('plusOne', plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]))
+// console.log('plusOne', plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]))
+
+
+// крч нужно разбить строку на массив, где разделитель знак '\n'
+// важно! если встречается этот разделительный знак в массив должен добавиться пустая строка как элемент.
+// вот пример текста и правильный результат:
+
+// '(Job) ALERT! Vermitteln zahlt sich aus!\n\nHolt talentierte Freund:innen & Familie ins VERKEHRSBUERO und sichert euch eine 400€ Vermittlungsprämie. \n\nEure Empfehlungen stärken unser Team. \n\nAlle Details im Intranet unter "Mitarbeiter:innenangebote".'
+
+// ["(Job) ALERT! Vermitteln zahlt sich aus!",
+//  "",
+//  "",
+//  "Holt talentierte Freund:innen &amp; Familie",
+//  " ins VERKEHRSBUERO und sichert euch eine 400€ Vermittlungsprämie. ",
+//  "",
+//  "",
+//  "Eure Empfehlungen stärken unser Team. ",
+// "",
+//  "",
+//  "Alle Details im Intranet unter \&quot;Mitarbeiter:innenangebote\&quot;."]
+
+function cutFn (string) {
+    console.log('type ', typeof string)
+    return string.replace(/\n\n/g, 'разделительстрокаразделительстрокаразделитель').replace(/\n/g, 'разделительстрокаразделитель').split('разделитель').map(item => item === 'строка' ? "" : item)
+}
+const res = cutFn('(Job) ALERT! Vermitteln zahlt sich aus!\n\nHolt talentierte Freund:innen & Familie ins VERKEHRSBUERO und sichert euch eine 400€ Vermittlungsprämie. \n\nEure Empfehlungen stärken unser Team. \n\nAlle Details im Intranet unter "Mitarbeiter:innenangebote".')
+console.log('res', res )
