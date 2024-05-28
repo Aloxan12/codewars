@@ -50,11 +50,10 @@ var plusOne = function(digits) {
 //  "",
 //  "Alle Details im Intranet unter \&quot;Mitarbeiter:innenangebote\&quot;."]
 
-// function cutFn (string) {
-//     console.log('type ', typeof string)
-//     return string.replace(/\n\n/g, 'разделительстрокаразделительстрокаразделитель').replace(/\n/g, 'разделительстрокаразделитель').split('разделитель').map(item => item === 'строка' ? "" : item)
-// }
-// const res = cutFn('(Job) ALERT! Vermitteln zahlt sich aus!\n\nHolt talentierte Freund:innen & Familie ins VERKEHRSBUERO und sichert euch eine 400€ Vermittlungsprämie. \n\nEure Empfehlungen stärken unser Team. \n\nAlle Details im Intranet unter "Mitarbeiter:innenangebote".')
+function cutFn (string) {
+    return string.replace(/\n\n/g, 'разделительстрокаразделительстрокаразделитель').replace(/\n/g, 'разделительстрокаразделитель').split('разделитель').map(item => item === 'строка' ? "" : item)
+}
+const res = cutFn('(Job) ALERT! Vermitteln zahlt sich aus!\n\nHolt talentierte Freund:innen & Familie ins VERKEHRSBUERO und sichert euch eine 400€ Vermittlungsprämie. \n\nEure Empfehlungen stärken unser Team. \n\nAlle Details im Intranet unter "Mitarbeiter:innenangebote".')
 // console.log('res', res )
 
 
