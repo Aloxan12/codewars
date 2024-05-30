@@ -56,3 +56,17 @@ function cutFn (string) {
 const res = cutFn('(Job) ALERT! Vermitteln zahlt sich aus!\n\nHolt talentierte Freund:innen & Familie ins VERKEHRSBUERO und sichert euch eine 400€ Vermittlungsprämie. \n\nEure Empfehlungen stärken unser Team. \n\nAlle Details im Intranet unter "Mitarbeiter:innenangebote".')
 // console.log('res', res )
 
+
+
+const promiseFn = ()=>{
+    console.log('1')
+    return new Promise((resolve => {
+        console.log('2')
+        return setTimeout(()=> resolve(3), 2000)
+    })).then((res)=>{
+        console.log(res)
+    })
+}
+
+
+console.log(promiseFn())
