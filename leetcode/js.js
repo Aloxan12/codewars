@@ -64,8 +64,10 @@ const promiseFn = ()=>{
         console.log('2')
         return setTimeout(()=> resolve(3), 2000)
     })).then((res)=>{
-        console.log(res)
-    })
+        console.log('res', res)
+        return new Promise((resolve, reject) => reject('ошибка'))
+    }).catch((err)=> console.log('err', err))
+        .finally(()=> console.log('last'))
 }
 
 
