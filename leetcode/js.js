@@ -57,18 +57,10 @@ const res = cutFn('(Job) ALERT! Vermitteln zahlt sich aus!\n\nHolt talentierte F
 // console.log('res', res )
 
 
-
-const promiseFn = ()=>{
-    console.log('1')
-    return new Promise((resolve => {
-        console.log('2')
-        return setTimeout(()=> resolve(3), 2000)
-    })).then((res)=>{
-        console.log('res', res)
-        return new Promise((resolve, reject) => reject('ошибка'))
-    }).catch((err)=> console.log('err', err))
-        .finally(()=> console.log('last'))
+const isNewWeight = (newWeight, oldWeight) => {
+    return newWeight >= oldWeight + 0.005 || newWeight <= oldWeight - 0.005
 }
 
-
-console.log(promiseFn())
+console.log('isNewWeight', isNewWeight(0.009, 0))
+console.log('isNewWeight', isNewWeight(0.003, 0))
+console.log('isNewWeight', isNewWeight(1.023, 1.027))
