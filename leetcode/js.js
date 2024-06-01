@@ -26,7 +26,7 @@ var romanToInt = function (s) {
 // console.log(romanToInt('III'))
 // console.log(romanToInt('MCMXCIV'))
 
-var plusOne = function(digits) {
+var plusOne = function (digits) {
     return String(BigInt(digits.join('')) + BigInt('1')).split('').map(Number)
 };
 // console.log('plusOne', plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]))
@@ -50,17 +50,9 @@ var plusOne = function(digits) {
 //  "",
 //  "Alle Details im Intranet unter \&quot;Mitarbeiter:innenangebote\&quot;."]
 
-function cutFn (string) {
+function cutFn(string) {
     return string.replace(/\n\n/g, 'разделительстрокаразделительстрокаразделитель').replace(/\n/g, 'разделительстрокаразделитель').split('разделитель').map(item => item === 'строка' ? "" : item)
 }
+
 const res = cutFn('(Job) ALERT! Vermitteln zahlt sich aus!\n\nHolt talentierte Freund:innen & Familie ins VERKEHRSBUERO und sichert euch eine 400€ Vermittlungsprämie. \n\nEure Empfehlungen stärken unser Team. \n\nAlle Details im Intranet unter "Mitarbeiter:innenangebote".')
 // console.log('res', res )
-
-
-const isNewWeight = (newWeight, oldWeight) => {
-    return newWeight >= oldWeight + 0.005 || newWeight <= oldWeight - 0.005
-}
-
-console.log('isNewWeight', isNewWeight(0.009, 0))
-console.log('isNewWeight', isNewWeight(0.003, 0))
-console.log('isNewWeight', isNewWeight(1.023, 1.027))

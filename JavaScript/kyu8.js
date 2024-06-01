@@ -170,13 +170,7 @@ function sameCase(a, b) {
 }
 
 function finalGrade(exam, projects) {
-    return exam > 90 || projects > 10
-        ? 100
-        : exam > 75 && projects > 4
-            ? 90
-            : exam > 50 && projects > 1
-                ? 75
-                : 0
+    return exam > 90 || projects > 10 ? 100 : exam > 75 && projects > 4 ? 90 : exam > 50 && projects > 1 ? 75 : 0
 }
 
 function pillars(numPill, dist, width) {
@@ -232,3 +226,11 @@ function sumMul(n, m) {
 }
 
 // console.log('sumMul', sumMul(2 , 9)) // 20
+
+const isNewWeight = (newWeight, oldWeight) => {
+    return newWeight >= oldWeight + 0.005 || newWeight <= oldWeight - 0.005
+}
+
+// console.log('isNewWeight', isNewWeight(0.009, 0))
+// console.log('isNewWeight', isNewWeight(0.003, 0))
+// console.log('isNewWeight', isNewWeight(1.023, 1.027))
