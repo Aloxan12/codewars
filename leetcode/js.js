@@ -56,3 +56,10 @@ function cutFn(string) {
 
 const res = cutFn('(Job) ALERT! Vermitteln zahlt sich aus!\n\nHolt talentierte Freund:innen & Familie ins VERKEHRSBUERO und sichert euch eine 400€ Vermittlungsprämie. \n\nEure Empfehlungen stärken unser Team. \n\nAlle Details im Intranet unter "Mitarbeiter:innenangebote".')
 // console.log('res', res )
+
+
+const reg = /^(https?:\/\/)(t.me\/@|wa.me\/@)[^\s/$.:?#].[^\s]*$/;
+
+console.log(reg.test('https://t.me/alex'))
+console.log(reg.test('https://wa.me/@alex'))
+console.log(reg.test('https://@alex'))
