@@ -22,4 +22,29 @@ var merge = function(nums1, m, nums2, n) {
     return [...nums1, ...nums2].filter(Boolean).sort((a, b) => a - b).slice(0, m + n)
 };
 
-console.log(merge([1,2,3,0,0,0], 3, [2,5,6], 3))
+// console.log(merge([1,2,3,0,0,0], 3, [2,5,6], 3))
+
+
+const replaceRuToEn = (key) => {
+    return key
+        .replace(/Х/g, '{')
+        .replace(/Ъ/g, '}')
+        .replace(/Э/g, '"')
+        .replace(/ш/g, 'i')
+        .replace(/в/g, 'd')
+        .replace(/с/g, 'c')
+        .replace(/щ/g, 'o')
+        .replace(/в/g, 'd')
+        .replace(/у/g, 'e')
+        .replace(/Ж/g, ':')
+        .replace(/ц/g, 'w')
+        .replace(/у/g, 'e')
+        .replace(/ш/g, 'i')
+        .replace(/п/g, 'g')
+        .replace(/р/g, 'h')
+        .replace(/е/g, 't')
+        .replace(/ю/g, '.')
+        .replace(/б/g, ',')
+}
+
+console.log(replaceRuToEn('ХЭшвЭЖ1233бЭсщвуЭЖЭ3389342812ЭбЭцушпреЭЖ1ю035Ъ'))
