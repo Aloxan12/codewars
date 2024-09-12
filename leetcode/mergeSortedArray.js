@@ -28,4 +28,4 @@ var merge = function(nums1, m, nums2, n) {
 const toCARG = (oldSum, newSum,)=>{
  return Math.round((Math.pow((newSum / oldSum), (1 / 4)) - 1) * 100)
 }
-console.log(toCARG(13429753, 8652498))
+console.log(toCARG(872, 1000))
