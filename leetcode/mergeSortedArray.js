@@ -25,7 +25,14 @@ var merge = function(nums1, m, nums2, n) {
 // console.log(merge([1,2,3,0,0,0], 3, [2,5,6], 3))
 
 
-const toCARG = (oldSum, newSum,)=>{
- return Math.round((Math.pow((newSum / oldSum), (1 / 4)) - 1) * 100)
-}
-console.log(toCARG(872, 1000))
+// const toCARG = (oldSum, newSum,)=>{
+//  return Math.round((Math.pow((newSum / oldSum), (1 / 4)) - 1) * 100)
+// }
+// console.log(toCARG(872, 1000))
+
+
+const old = [{id: 1}, {id: 2}]
+const newArr = [{id: 2}, {id: 3}]
+
+const deletedArr = newArr.filter(item => !old.some(i => i.id === item.id))
+console.log(deletedArr)
