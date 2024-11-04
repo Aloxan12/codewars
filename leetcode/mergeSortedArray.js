@@ -30,9 +30,17 @@ var merge = function(nums1, m, nums2, n) {
 // }
 // console.log(toCARG(872, 1000))
 
+//
+// const old = [{id: 1}, {id: 2}]
+// const newArr = [{id: 2}, {id: 3}]
+//
+// const deletedArr = newArr.filter(item => !old.some(i => i.id === item.id))
+// console.log(deletedArr)
 
-const old = [{id: 1}, {id: 2}]
-const newArr = [{id: 2}, {id: 3}]
-
-const deletedArr = newArr.filter(item => !old.some(i => i.id === item.id))
-console.log(deletedArr)
+let x = 1;
+const aaa = () => {
+    console.log(x);
+};
+x = 2;
+aaa();
+x = 3;
