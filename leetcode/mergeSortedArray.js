@@ -37,17 +37,10 @@ var merge = function(nums1, m, nums2, n) {
 // const deletedArr = newArr.filter(item => !old.some(i => i.id === item.id))
 // console.log(deletedArr)
 
-function doSomething() {
-    return new Promise((resolve, reject) => {
-        console.log("Готово.");
-        // Успех в половине случаев.
-        if (Math.random() > 0.5) {
-            resolve("Успех");
-        } else {
-            throw new Error('Ошибка')
-        }
-    });
-}
+const arr = [1,2,3,4,6,8,9,10]
 
-const promise = doSomething();
-promise.then((value)=> console.log(`${value}`), (value)=>console.log(`${value}`));
+const mergeBigArray = (arr) => {}
+
+console.log(mergeBigArray(arr))
+// in [1,2,3,4,6,8,9,10]
+// out [1-4, 6, 8-10]
