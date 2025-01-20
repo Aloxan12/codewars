@@ -39,7 +39,19 @@ var merge = function(nums1, m, nums2, n) {
 
 const arr = [1,2,3,4,6,8,9,10]
 
-const mergeBigArray = (arr) => {}
+const mergeBigArray = (arr) => {
+    const result= [];
+    for(let i= 0; i<arr.length; i++){
+        const startIndex = 0
+        const endIndex = 0
+        if(arr[i] + 1 === arr[i + 1]){
+            result.push('-')
+        }else{
+            result.push(arr[i])
+        }
+    }
+    return result
+}
 
 console.log(mergeBigArray(arr))
 // in [1,2,3,4,6,8,9,10]
